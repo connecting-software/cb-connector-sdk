@@ -8468,12 +8468,18 @@ references:
   commentId: F:MG.CB.Connector.Properties.AuthenticationType.Basic
   fullName: MG.CB.Connector.Properties.AuthenticationType.Basic
   nameWithType: AuthenticationType.Basic
-- uid: MG.CB.Connector.Properties.AuthenticationType.OAuth
-  name: OAuth
-  href: api/MG.CB.Connector.Properties.AuthenticationType.html#MG_CB_Connector_Properties_AuthenticationType_OAuth
-  commentId: F:MG.CB.Connector.Properties.AuthenticationType.OAuth
-  fullName: MG.CB.Connector.Properties.AuthenticationType.OAuth
-  nameWithType: AuthenticationType.OAuth
+- uid: MG.CB.Connector.Properties.AuthenticationType.OAuth1
+  name: OAuth1
+  href: api/MG.CB.Connector.Properties.AuthenticationType.html#MG_CB_Connector_Properties_AuthenticationType_OAuth1
+  commentId: F:MG.CB.Connector.Properties.AuthenticationType.OAuth1
+  fullName: MG.CB.Connector.Properties.AuthenticationType.OAuth1
+  nameWithType: AuthenticationType.OAuth1
+- uid: MG.CB.Connector.Properties.AuthenticationType.OAuth2
+  name: OAuth2
+  href: api/MG.CB.Connector.Properties.AuthenticationType.html#MG_CB_Connector_Properties_AuthenticationType_OAuth2
+  commentId: F:MG.CB.Connector.Properties.AuthenticationType.OAuth2
+  fullName: MG.CB.Connector.Properties.AuthenticationType.OAuth2
+  nameWithType: AuthenticationType.OAuth2
 - uid: MG.CB.Connector.Properties.ConnectorProperties`1
   name: ConnectorProperties<T>
   href: api/MG.CB.Connector.Properties.ConnectorProperties-1.html
@@ -8570,6 +8576,23 @@ references:
   fullName.vb: MG.CB.Connector.Properties.ConnectorProperties(Of T).GeneratePropertyInfo
   nameWithType: ConnectorProperties<T>.GeneratePropertyInfo
   nameWithType.vb: ConnectorProperties(Of T).GeneratePropertyInfo
+- uid: MG.CB.Connector.Properties.ConnectorProperties`1.GetKey
+  name: GetKey()
+  href: api/MG.CB.Connector.Properties.ConnectorProperties-1.html#MG_CB_Connector_Properties_ConnectorProperties_1_GetKey
+  commentId: M:MG.CB.Connector.Properties.ConnectorProperties`1.GetKey
+  fullName: MG.CB.Connector.Properties.ConnectorProperties<T>.GetKey()
+  fullName.vb: MG.CB.Connector.Properties.ConnectorProperties(Of T).GetKey()
+  nameWithType: ConnectorProperties<T>.GetKey()
+  nameWithType.vb: ConnectorProperties(Of T).GetKey()
+- uid: MG.CB.Connector.Properties.ConnectorProperties`1.GetKey*
+  name: GetKey
+  href: api/MG.CB.Connector.Properties.ConnectorProperties-1.html#MG_CB_Connector_Properties_ConnectorProperties_1_GetKey_
+  commentId: Overload:MG.CB.Connector.Properties.ConnectorProperties`1.GetKey
+  isSpec: "True"
+  fullName: MG.CB.Connector.Properties.ConnectorProperties<T>.GetKey
+  fullName.vb: MG.CB.Connector.Properties.ConnectorProperties(Of T).GetKey
+  nameWithType: ConnectorProperties<T>.GetKey
+  nameWithType.vb: ConnectorProperties(Of T).GetKey
 - uid: MG.CB.Connector.Properties.ConnectorProperties`1.LoadDecorators
   name: LoadDecorators()
   href: api/MG.CB.Connector.Properties.ConnectorProperties-1.html#MG_CB_Connector_Properties_ConnectorProperties_1_LoadDecorators

@@ -1,0 +1,996 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IDataHandlerFactory
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDataHandlerFactory
+   ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MG.CB.Connector.IDataHandlerFactory">
+  
+  
+  <h1 id="MG_CB_Connector_IDataHandlerFactory" data-uid="MG.CB.Connector.IDataHandlerFactory" class="text-break">Interface IDataHandlerFactory
+  </h1>
+  <div class="markdown level0 summary"><p>Factory implementation that always creates <a class="xref" href="MG.CB.Command.DataHandler.Interfaces.IDataHandler.html">IDataHandler</a> objects.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MG.CB.Connector.html">MG.CB.Connector</a></h6>
+  <h6><strong>Assembly</strong>: CB.Connector.dll</h6>
+  <h5 id="MG_CB_Connector_IDataHandlerFactory_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDataHandlerFactory</code></pre>
+  </div>
+  <h5 id="MG_CB_Connector_IDataHandlerFactory_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>A class that implements the <a class="xref" href="MG.CB.Connector.IDataHandlerFactory.html">IDataHandlerFactory</a> interface has no behavior except to manufacture new instances of classes that implement the <a class="xref" href="MG.CB.Command.DataHandler.Interfaces.IDataHandler.html">IDataHandler</a> interface.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_Aggregate__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.Aggregate@)">TryCreate(out Aggregate)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.Aggregate.html">Aggregate</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out Aggregate handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.Aggregate.html">Aggregate</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.Aggregate.html">Aggregate</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.Aggregate.html">Aggregate</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_CrossJoin__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.CrossJoin@)">TryCreate(out CrossJoin)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.CrossJoin.html">CrossJoin</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out CrossJoin handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.CrossJoin.html">CrossJoin</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.CrossJoin.html">CrossJoin</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.CrossJoin.html">CrossJoin</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_DeleteSink__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.DeleteSink@)">TryCreate(out DeleteSink)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.DeleteSink.html">DeleteSink</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out DeleteSink handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.DeleteSink.html">DeleteSink</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.DeleteSink.html">DeleteSink</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.DeleteSink.html">DeleteSink</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_Distinct__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.Distinct@)">TryCreate(out Distinct)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.Distinct.html">Distinct</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out Distinct handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.Distinct.html">Distinct</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.Distinct.html">Distinct</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.Distinct.html">Distinct</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_ExecuteSink__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.ExecuteSink@)">TryCreate(out ExecuteSink)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.ExecuteSink.html">ExecuteSink</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out ExecuteSink handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.ExecuteSink.html">ExecuteSink</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.ExecuteSink.html">ExecuteSink</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.ExecuteSink.html">ExecuteSink</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_FullJoin__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.FullJoin@)">TryCreate(out FullJoin)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.FullJoin.html">FullJoin</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out FullJoin handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.FullJoin.html">FullJoin</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.FullJoin.html">FullJoin</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.FullJoin.html">FullJoin</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_Having__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.Having@)">TryCreate(out Having)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.Having.html">Having</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out Having handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.Having.html">Having</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.Having.html">Having</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.Having.html">Having</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_InnerJoin__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.InnerJoin@)">TryCreate(out InnerJoin)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.InnerJoin.html">InnerJoin</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out InnerJoin handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.InnerJoin.html">InnerJoin</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.InnerJoin.html">InnerJoin</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.InnerJoin.html">InnerJoin</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_InsertSink__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.InsertSink@)">TryCreate(out InsertSink)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.InsertSink.html">InsertSink</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out InsertSink handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.InsertSink.html">InsertSink</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.InsertSink.html">InsertSink</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.InsertSink.html">InsertSink</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_LeftJoin__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.LeftJoin@)">TryCreate(out LeftJoin)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.LeftJoin.html">LeftJoin</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out LeftJoin handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.LeftJoin.html">LeftJoin</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.LeftJoin.html">LeftJoin</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.LeftJoin.html">LeftJoin</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_Limit__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.Limit@)">TryCreate(out Limit)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.Limit.html">Limit</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out Limit handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.Limit.html">Limit</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.Limit.html">Limit</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.Limit.html">Limit</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_OrderBy__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.OrderBy@)">TryCreate(out OrderBy)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.OrderBy.html">OrderBy</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out OrderBy handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.OrderBy.html">OrderBy</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.OrderBy.html">OrderBy</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.OrderBy.html">OrderBy</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_RightJoin__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.RightJoin@)">TryCreate(out RightJoin)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.RightJoin.html">RightJoin</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out RightJoin handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.RightJoin.html">RightJoin</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.RightJoin.html">RightJoin</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.RightJoin.html">RightJoin</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_SelectSink__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.SelectSink@)">TryCreate(out SelectSink)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.SelectSink.html">SelectSink</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out SelectSink handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.SelectSink.html">SelectSink</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.SelectSink.html">SelectSink</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.SelectSink.html">SelectSink</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_SubQuery__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.SubQuery@)">TryCreate(out SubQuery)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.SubQuery.html">SubQuery</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out SubQuery handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.SubQuery.html">SubQuery</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.SubQuery.html">SubQuery</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.SubQuery.html">SubQuery</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_TableFunctionSource__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.TableFunctionSource@)">TryCreate(out TableFunctionSource)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.TableFunctionSource.html">TableFunctionSource</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out TableFunctionSource handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.TableFunctionSource.html">TableFunctionSource</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.TableFunctionSource.html">TableFunctionSource</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.TableFunctionSource.html">TableFunctionSource</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_TableSource__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.TableSource@)">TryCreate(out TableSource)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.TableSource.html">TableSource</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out TableSource handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.TableSource.html">TableSource</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.TableSource.html">TableSource</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.TableSource.html">TableSource</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_UpdateSink__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.UpdateSink@)">TryCreate(out UpdateSink)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.UpdateSink.html">UpdateSink</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out UpdateSink handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.UpdateSink.html">UpdateSink</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.UpdateSink.html">UpdateSink</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.UpdateSink.html">UpdateSink</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Connector_IDataHandlerFactory_TryCreate_" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate*"></a>
+  <h4 id="MG_CB_Connector_IDataHandlerFactory_TryCreate_MG_CB_Command_DataHandler_Where__" data-uid="MG.CB.Connector.IDataHandlerFactory.TryCreate(MG.CB.Command.DataHandler.Where@)">TryCreate(out Where)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="MG.CB.Command.DataHandler.Where.html">Where</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryCreate(out Where handler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Command.DataHandler.Where.html">Where</a></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>When this method returns, contains a new <a class="xref" href="MG.CB.Command.DataHandler.Where.html">Where</a> instance; otherwise, <code>null</code>. This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="MG.CB.Command.DataHandler.Where.html">Where</a> was successfully created; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MG.CB.Connector.Properties.Extensions.ConnectorPropertiesExtensions.html#MG_CB_Connector_Properties_Extensions_ConnectorPropertiesExtensions_TryParse_System_Object_System_Type_System_Object__">ConnectorPropertiesExtensions.TryParse(Object, Type, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Connector.Properties.Extensions.ConnectorPropertiesExtensions.html#MG_CB_Connector_Properties_Extensions_ConnectorPropertiesExtensions_Parse_System_Object_System_Type_">ConnectorPropertiesExtensions.Parse(Object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Connector.Properties.Extensions.ConnectorPropertiesExtensions.html#MG_CB_Connector_Properties_Extensions_ConnectorPropertiesExtensions_Decrypt_System_Object_System_String_">ConnectorPropertiesExtensions.Decrypt(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Connector.Properties.Extensions.ConnectorPropertiesExtensions.html#MG_CB_Connector_Properties_Extensions_ConnectorPropertiesExtensions_Encrypt_System_Object_System_String_">ConnectorPropertiesExtensions.Encrypt(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Connector.Properties.Extensions.ConnectorPropertiesExtensions.html#MG_CB_Connector_Properties_Extensions_ConnectorPropertiesExtensions_IsEncrypted_System_Object_System_String_System_Text_Encoding_">ConnectorPropertiesExtensions.IsEncrypted(Object, String, Encoding)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

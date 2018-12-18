@@ -1,0 +1,1199 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IResultFormatter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IResultFormatter
+   ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter">
+  
+  
+  <h1 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter" class="text-break">Interface IResultFormatter
+  </h1>
+  <div class="markdown level0 summary"><p>Provides base functionality for formatting data that belong to the result set.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MG.CB.Metadata.DataModel.Dataware.Interfaces.html">MG.CB.Metadata.DataModel.Dataware.Interfaces</a></h6>
+  <h6><strong>Assembly</strong>: CB.Connector.dll</h6>
+  <h5 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IResultFormatter</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_Deserialize_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.Deserialize*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_Deserialize_System_IO_BinaryReader_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.Deserialize(System.IO.BinaryReader,System.Object)">Deserialize(BinaryReader, Object)</h4>
+  <div class="markdown level1 summary"><p>Converts the specified result to an object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object Deserialize(BinaryReader reader, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>Reads primitive data types as binary values in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_DeserializeRow_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.DeserializeRow*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_DeserializeRow_System_IO_BinaryReader_MG_CB_Metadata_DataModel_Dataware_Interfaces_ITableResult_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.DeserializeRow(System.IO.BinaryReader,MG.CB.Metadata.DataModel.Dataware.Interfaces.ITableResult,System.Object)">DeserializeRow(BinaryReader, ITableResult, Object)</h4>
+  <div class="markdown level1 summary"><p>Deserializes the specified <a class="xref" href="MG.CB.Metadata.DataModel.Dataware.Interfaces.ITableResult.html">ITableResult</a> to an <a class="xref" href="MG.CB.Metadata.DataModel.Dataware.Interfaces.ITableResultRow.html">ITableResultRow</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITableResultRow DeserializeRow(BinaryReader reader, ITableResult result, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>Reads primitive data types as binary values in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MG.CB.Metadata.DataModel.Dataware.Interfaces.ITableResult.html">ITableResult</a></td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The <a class="xref" href="MG.CB.Metadata.DataModel.Dataware.Interfaces.ITableResult.html">ITableResult</a> to deserialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Metadata.DataModel.Dataware.Interfaces.ITableResultRow.html">ITableResultRow</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_DeserializeRowData_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.DeserializeRowData*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_DeserializeRowData_System_IO_BinaryReader_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.DeserializeRowData(System.IO.BinaryReader,System.Object)">DeserializeRowData(BinaryReader, Object)</h4>
+  <div class="markdown level1 summary"><p>Deserializes the specified object to an <a class="xref" href="MG.CB.Metadata.DataModel.Dataware.Interfaces.IRowData.html">IRowData</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IRowData DeserializeRowData(BinaryReader reader, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>Reads primitive data types as binary values in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Metadata.DataModel.Dataware.Interfaces.IRowData.html">IRowData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_DeserializeValueArray_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.DeserializeValueArray*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_DeserializeValueArray_System_IO_BinaryReader_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.DeserializeValueArray(System.IO.BinaryReader,System.Object)">DeserializeValueArray(BinaryReader, Object)</h4>
+  <div class="markdown level1 summary"><p>Deserializes the specified object to an object array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object[] DeserializeValueArray(BinaryReader reader, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryReader</span></td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>Reads primitive data types as binary values in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_FinishSerialization_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.FinishSerialization*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_FinishSerialization_System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.FinishSerialization(System.IO.BinaryWriter,System.Object)">FinishSerialization(BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Finishes the serialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void FinishSerialization(BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_Serialize_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.Serialize*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_Serialize_System_Object_System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.Serialize(System.Object,System.IO.BinaryWriter,System.Object)">Serialize(Object, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Serialize(object value, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeBool_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeBool*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeBool_System_Nullable_System_Boolean__System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeBool(System.Nullable{System.Boolean},System.IO.BinaryWriter,System.Object)">SerializeBool(Nullable&lt;Boolean&gt;, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeBool(bool? value, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeByte_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeByte*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeByte_System_Nullable_System_Byte__System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeByte(System.Nullable{System.Byte},System.IO.BinaryWriter,System.Object)">SerializeByte(Nullable&lt;Byte&gt;, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeByte(byte? value, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Byte</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeByteArray_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeByteArray*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeByteArray_System_Byte___System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeByteArray(System.Byte[],System.IO.BinaryWriter,System.Object)">SerializeByteArray(Byte[], BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeByteArray(byte[] value, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeChar_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeChar*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeChar_System_Nullable_System_Char__System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeChar(System.Nullable{System.Char},System.IO.BinaryWriter,System.Object)">SerializeChar(Nullable&lt;Char&gt;, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeChar(char? value, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Char</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeDateTime_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeDateTime*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeDateTime_System_Nullable_System_DateTime__System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeDateTime(System.Nullable{System.DateTime},System.IO.BinaryWriter,System.Object)">SerializeDateTime(Nullable&lt;DateTime&gt;, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeDateTime(DateTime? value, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeDecimal_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeDecimal*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeDecimal_System_Nullable_System_Decimal__System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeDecimal(System.Nullable{System.Decimal},System.IO.BinaryWriter,System.Object)">SerializeDecimal(Nullable&lt;Decimal&gt;, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeDecimal(decimal? value, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Decimal</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeDouble_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeDouble*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeDouble_System_Nullable_System_Double__System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeDouble(System.Nullable{System.Double},System.IO.BinaryWriter,System.Object)">SerializeDouble(Nullable&lt;Double&gt;, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeDouble(double? value, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeInt16_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeInt16*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeInt16_System_Nullable_System_Int16__System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeInt16(System.Nullable{System.Int16},System.IO.BinaryWriter,System.Object)">SerializeInt16(Nullable&lt;Int16&gt;, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeInt16(short? value, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int16</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeInt32_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeInt32*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeInt32_System_Nullable_System_Int32__System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeInt32(System.Nullable{System.Int32},System.IO.BinaryWriter,System.Object)">SerializeInt32(Nullable&lt;Int32&gt;, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeInt32(int? value, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeInt64_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeInt64*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeInt64_System_Nullable_System_Int64__System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeInt64(System.Nullable{System.Int64},System.IO.BinaryWriter,System.Object)">SerializeInt64(Nullable&lt;Int64&gt;, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeInt64(long? value, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeRow_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeRow*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeRow_MG_CB_Metadata_DataModel_Dataware_Interfaces_ITableResultRow_System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeRow(MG.CB.Metadata.DataModel.Dataware.Interfaces.ITableResultRow,System.IO.BinaryWriter,System.Object)">SerializeRow(ITableResultRow, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified row.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeRow(ITableResultRow row, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Metadata.DataModel.Dataware.Interfaces.ITableResultRow.html">ITableResultRow</a></td>
+        <td><span class="parametername">row</span></td>
+        <td><p>The row to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeRowData_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeRowData*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeRowData_System_Collections_Generic_IList_MG_CB_Command_DataHandler_Argument_Interfaces_IColumnArgument__MG_CB_Metadata_DataModel_Dataware_Interfaces_IRowData_System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeRowData(System.Collections.Generic.IList{MG.CB.Command.DataHandler.Argument.Interfaces.IColumnArgument},MG.CB.Metadata.DataModel.Dataware.Interfaces.IRowData,System.IO.BinaryWriter,System.Object)">SerializeRowData(IList&lt;IColumnArgument&gt;, IRowData, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified data that belongs to a row. Each value for each column.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeRowData(IList&lt;IColumnArgument&gt; columns, IRowData rowData, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="MG.CB.Command.DataHandler.Argument.Interfaces.IColumnArgument.html">IColumnArgument</a>&gt;</td>
+        <td><span class="parametername">columns</span></td>
+        <td><p>The columns that are included in the result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MG.CB.Metadata.DataModel.Dataware.Interfaces.IRowData.html">IRowData</a></td>
+        <td><span class="parametername">rowData</span></td>
+        <td><p>The data to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeSbyte_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeSbyte*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeSbyte_System_Nullable_System_SByte__System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeSbyte(System.Nullable{System.SByte},System.IO.BinaryWriter,System.Object)">SerializeSbyte(Nullable&lt;SByte&gt;, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeSbyte(sbyte? value, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.SByte</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeSingle_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeSingle*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeSingle_System_Nullable_System_Single__System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeSingle(System.Nullable{System.Single},System.IO.BinaryWriter,System.Object)">SerializeSingle(Nullable&lt;Single&gt;, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeSingle(float? value, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeString_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeString*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeString_System_String_System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeString(System.String,System.IO.BinaryWriter,System.Object)">SerializeString(String, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeString(string value, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeUInt16_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeUInt16*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeUInt16_System_Nullable_System_UInt16__System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeUInt16(System.Nullable{System.UInt16},System.IO.BinaryWriter,System.Object)">SerializeUInt16(Nullable&lt;UInt16&gt;, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeUInt16(ushort? value, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt16</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeUInt32_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeUInt32*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeUInt32_System_Nullable_System_UInt32__System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeUInt32(System.Nullable{System.UInt32},System.IO.BinaryWriter,System.Object)">SerializeUInt32(Nullable&lt;UInt32&gt;, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeUInt32(uint? value, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt32</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeUInt64_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeUInt64*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_SerializeUInt64_System_Nullable_System_UInt64__System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.SerializeUInt64(System.Nullable{System.UInt64},System.IO.BinaryWriter,System.Object)">SerializeUInt64(Nullable&lt;UInt64&gt;, BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes the specified object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SerializeUInt64(ulong? value, BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to serialize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_StartSerialization_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.StartSerialization*"></a>
+  <h4 id="MG_CB_Metadata_DataModel_Dataware_Interfaces_IResultFormatter_StartSerialization_System_IO_BinaryWriter_System_Object_" data-uid="MG.CB.Metadata.DataModel.Dataware.Interfaces.IResultFormatter.StartSerialization(System.IO.BinaryWriter,System.Object)">StartSerialization(BinaryWriter, Object)</h4>
+  <div class="markdown level1 summary"><p>Starts the serialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void StartSerialization(BinaryWriter writer, object context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.BinaryWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>Writes primitive types in binary to a stream and supports writing strings in a specific encoding.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to serialize the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MG.CB.Connector.Properties.Extensions.ConnectorPropertiesExtensions.html#MG_CB_Connector_Properties_Extensions_ConnectorPropertiesExtensions_TryParse_System_Object_System_Type_System_Object__">ConnectorPropertiesExtensions.TryParse(Object, Type, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Connector.Properties.Extensions.ConnectorPropertiesExtensions.html#MG_CB_Connector_Properties_Extensions_ConnectorPropertiesExtensions_Parse_System_Object_System_Type_">ConnectorPropertiesExtensions.Parse(Object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Connector.Properties.Extensions.ConnectorPropertiesExtensions.html#MG_CB_Connector_Properties_Extensions_ConnectorPropertiesExtensions_Decrypt_System_Object_System_String_">ConnectorPropertiesExtensions.Decrypt(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Connector.Properties.Extensions.ConnectorPropertiesExtensions.html#MG_CB_Connector_Properties_Extensions_ConnectorPropertiesExtensions_Encrypt_System_Object_System_String_">ConnectorPropertiesExtensions.Encrypt(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Connector.Properties.Extensions.ConnectorPropertiesExtensions.html#MG_CB_Connector_Properties_Extensions_ConnectorPropertiesExtensions_IsEncrypted_System_Object_System_String_System_Text_Encoding_">ConnectorPropertiesExtensions.IsEncrypted(Object, String, Encoding)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

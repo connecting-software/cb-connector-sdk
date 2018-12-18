@@ -1,0 +1,709 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ColumnSource
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ColumnSource
+   ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource">
+  
+  
+  <h1 id="MG_CB_Command_DataHandler_Argument_ColumnSource" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource" class="text-break">Class ColumnSource
+  </h1>
+  <div class="markdown level0 summary"><p>Provides a base class for a column-reference whose values come directly from the database. This class cannot be inherited.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html">ColumnArgument</a></div>
+    <div class="level2"><span class="xref">ColumnSource</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.Interfaces.IColumnArgument.html">IColumnArgument</a></div>
+    <div><a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.IColumn.html">IColumn</a></div>
+    <div><a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.IProperty.html">IProperty</a></div>
+    <div><a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.IOrdinalElement.html">IOrdinalElement</a></div>
+    <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.Interfaces.IIdentifier.html">IIdentifier</a></div>
+    <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.Interfaces.IArgument.html">IArgument</a></div>
+    <div><a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.ITypedElement.html">ITypedElement</a></div>
+    <div><a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.INamedElement.html">INamedElement</a></div>
+    <div><a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.IElement.html">IElement</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_DefaultName">ColumnArgument.DefaultName</a>
+    </div>
+    <div>
+      <a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_GeneratedNameFormat">ColumnArgument.GeneratedNameFormat</a>
+    </div>
+    <div>
+      <a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_IsSortable">ColumnArgument.IsSortable</a>
+    </div>
+    <div>
+      <a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_IsSourceColumn">ColumnArgument.IsSourceColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_IsRequired">ColumnArgument.IsRequired</a>
+    </div>
+    <div>
+      <a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_ArgumentColumn">ColumnArgument.ArgumentColumn</a>
+    </div>
+    <div>
+      <a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_MetadataColumn">ColumnArgument.MetadataColumn</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MG.CB.Command.DataHandler.Argument.html">MG.CB.Command.DataHandler.Argument</a></h6>
+  <h6><strong>Assembly</strong>: CB.Connector.dll</h6>
+  <h5 id="MG_CB_Command_DataHandler_Argument_ColumnSource_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ColumnSource : ColumnArgument, IColumnArgument, IColumn, IProperty, IOrdinalElement, IIdentifier, IArgument, ITypedElement, INamedElement, IElement</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="MG_CB_Command_DataHandler_Argument_ColumnSource__ctor_" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.#ctor*"></a>
+  <h4 id="MG_CB_Command_DataHandler_Argument_ColumnSource__ctor_MG_CB_Metadata_MetaModel_Interfaces_IColumn_MG_CB_Metadata_MetaModel_Interfaces_INamedElement_" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.#ctor(MG.CB.Metadata.MetaModel.Interfaces.IColumn,MG.CB.Metadata.MetaModel.Interfaces.INamedElement)">ColumnSource(IColumn, INamedElement)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnSource.html">ColumnSource</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ColumnSource(IColumn column, INamedElement owner = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.IColumn.html">IColumn</a></td>
+        <td><span class="parametername">column</span></td>
+        <td><p>The metadata.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.INamedElement.html">INamedElement</a></td>
+        <td><span class="parametername">owner</span></td>
+        <td><p>The container for the metadata.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>column</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Unexpected implementation of column argument.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="MG_CB_Command_DataHandler_Argument_ColumnSource_DefaultValue_" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.DefaultValue*"></a>
+  <h4 id="MG_CB_Command_DataHandler_Argument_ColumnSource_DefaultValue" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.DefaultValue">DefaultValue</h4>
+  <div class="markdown level1 summary"><p>Gets the default value of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object DefaultValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The default value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_DefaultValue">ColumnArgument.DefaultValue</a></div>
+  
+  
+  <a id="MG_CB_Command_DataHandler_Argument_ColumnSource_Description_" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.Description*"></a>
+  <h4 id="MG_CB_Command_DataHandler_Argument_ColumnSource_Description" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the description defined for <a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.IElement.html">IElement</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IDescriptor Description { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.IDescriptor.html">IDescriptor</a></td>
+        <td><p>The description.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_Description">ColumnArgument.Description</a></div>
+  
+  
+  <a id="MG_CB_Command_DataHandler_Argument_ColumnSource_IsAutoincrementable_" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.IsAutoincrementable*"></a>
+  <h4 id="MG_CB_Command_DataHandler_Argument_ColumnSource_IsAutoincrementable" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.IsAutoincrementable">IsAutoincrementable</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is auto-incremented, meaning that a unique number is generated automatically when a new record is inserted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsAutoincrementable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance is auto-incremented; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_IsAutoincrementable">ColumnArgument.IsAutoincrementable</a></div>
+  
+  
+  <a id="MG_CB_Command_DataHandler_Argument_ColumnSource_IsForeignKey_" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.IsForeignKey*"></a>
+  <h4 id="MG_CB_Command_DataHandler_Argument_ColumnSource_IsForeignKey" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.IsForeignKey">IsForeignKey</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is a foreign key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsForeignKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance is a foreign key; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_IsForeignKey">ColumnArgument.IsForeignKey</a></div>
+  
+  
+  <a id="MG_CB_Command_DataHandler_Argument_ColumnSource_IsNullable_" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.IsNullable*"></a>
+  <h4 id="MG_CB_Command_DataHandler_Argument_ColumnSource_IsNullable" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.IsNullable">IsNullable</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance that can accepts null values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsNullable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance does not accept null values; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_IsNullable">ColumnArgument.IsNullable</a></div>
+  
+  
+  <a id="MG_CB_Command_DataHandler_Argument_ColumnSource_IsPrimaryKey_" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.IsPrimaryKey*"></a>
+  <h4 id="MG_CB_Command_DataHandler_Argument_ColumnSource_IsPrimaryKey" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.IsPrimaryKey">IsPrimaryKey</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is a primary key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsPrimaryKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance is a primary key; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_IsPrimaryKey">ColumnArgument.IsPrimaryKey</a></div>
+  
+  
+  <a id="MG_CB_Command_DataHandler_Argument_ColumnSource_IsReadOnly_" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.IsReadOnly*"></a>
+  <h4 id="MG_CB_Command_DataHandler_Argument_ColumnSource_IsReadOnly" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.IsReadOnly">IsReadOnly</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance is read-only, meaning that the column may not be written to after initialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsReadOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance is read-only; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_IsReadOnly">ColumnArgument.IsReadOnly</a></div>
+  
+  
+  <a id="MG_CB_Command_DataHandler_Argument_ColumnSource_IsSearchable_" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.IsSearchable*"></a>
+  <h4 id="MG_CB_Command_DataHandler_Argument_ColumnSource_IsSearchable" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.IsSearchable">IsSearchable</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance is capable of being computationally searched, meaning that the column can be called in <code>where</code> clause.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsSearchable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance is capable of being computationally searched; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_IsSearchable">ColumnArgument.IsSearchable</a></div>
+  
+  
+  <a id="MG_CB_Command_DataHandler_Argument_ColumnSource_IsUnique_" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.IsUnique*"></a>
+  <h4 id="MG_CB_Command_DataHandler_Argument_ColumnSource_IsUnique" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.IsUnique">IsUnique</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is included in the definition of a primary key or unique key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsUnique { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance is included in the definition of a primary key or unique key; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_IsUnique">ColumnArgument.IsUnique</a></div>
+  
+  
+  <a id="MG_CB_Command_DataHandler_Argument_ColumnSource_Name_" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.Name*"></a>
+  <h4 id="MG_CB_Command_DataHandler_Argument_ColumnSource_Name" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the named element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name of the named element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_Name">ColumnArgument.Name</a></div>
+  <h5 id="MG_CB_Command_DataHandler_Argument_ColumnSource_Name_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Must not exceed 128 characters</p>
+</div>
+  
+  
+  <a id="MG_CB_Command_DataHandler_Argument_ColumnSource_Ordinal_" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.Ordinal*"></a>
+  <h4 id="MG_CB_Command_DataHandler_Argument_ColumnSource_Ordinal" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.Ordinal">Ordinal</h4>
+  <div class="markdown level1 summary"><p>Gets the element’s ordinal position, which specifies where an element is in an order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Ordinal { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The ordinal position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_Ordinal">ColumnArgument.Ordinal</a></div>
+  
+  
+  <a id="MG_CB_Command_DataHandler_Argument_ColumnSource_Owner_" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.Owner*"></a>
+  <h4 id="MG_CB_Command_DataHandler_Argument_ColumnSource_Owner" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.Owner">Owner</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the owner of the named element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed INamedElement Owner { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.INamedElement.html">INamedElement</a></td>
+        <td><p>A <span class="xref">System.String</span> value that specifies the owner of the named element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_Owner">ColumnArgument.Owner</a></div>
+  
+  
+  <a id="MG_CB_Command_DataHandler_Argument_ColumnSource_QualifiedName_" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.QualifiedName*"></a>
+  <h4 id="MG_CB_Command_DataHandler_Argument_ColumnSource_QualifiedName" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.QualifiedName">QualifiedName</h4>
+  <div class="markdown level1 summary"><p>Gets the name that allows the named element to be identified within a hierarchy of nested namespaces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string QualifiedName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The qualified name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_QualifiedName">ColumnArgument.QualifiedName</a></div>
+  <h5 id="MG_CB_Command_DataHandler_Argument_ColumnSource_QualifiedName_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It is constructed from the names of the containing namespaces starting at the root of the hierarchy and ending with the name of the named element itself.</p>
+</div>
+  
+  
+  <a id="MG_CB_Command_DataHandler_Argument_ColumnSource_Type_" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.Type*"></a>
+  <h4 id="MG_CB_Command_DataHandler_Argument_ColumnSource_Type" data-uid="MG.CB.Command.DataHandler.Argument.ColumnSource.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Gets the type of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IDataType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.IDataType.html">IDataType</a></td>
+        <td><p>Returns the data type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html#MG_CB_Command_DataHandler_Argument_ColumnArgument_Type">ColumnArgument.Type</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MG.CB.Command.DataHandler.Argument.Interfaces.IColumnArgument.html">IColumnArgument</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.IColumn.html">IColumn</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.IProperty.html">IProperty</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.IOrdinalElement.html">IOrdinalElement</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Command.DataHandler.Argument.Interfaces.IIdentifier.html">IIdentifier</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Command.DataHandler.Argument.Interfaces.IArgument.html">IArgument</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.ITypedElement.html">ITypedElement</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.INamedElement.html">INamedElement</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Metadata.MetaModel.Interfaces.IElement.html">IElement</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MG.CB.Connector.Properties.Extensions.ConnectorPropertiesExtensions.html#MG_CB_Connector_Properties_Extensions_ConnectorPropertiesExtensions_TryParse_System_Object_System_Type_System_Object__">ConnectorPropertiesExtensions.TryParse(Object, Type, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Connector.Properties.Extensions.ConnectorPropertiesExtensions.html#MG_CB_Connector_Properties_Extensions_ConnectorPropertiesExtensions_Parse_System_Object_System_Type_">ConnectorPropertiesExtensions.Parse(Object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Connector.Properties.Extensions.ConnectorPropertiesExtensions.html#MG_CB_Connector_Properties_Extensions_ConnectorPropertiesExtensions_Decrypt_System_Object_System_String_">ConnectorPropertiesExtensions.Decrypt(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Connector.Properties.Extensions.ConnectorPropertiesExtensions.html#MG_CB_Connector_Properties_Extensions_ConnectorPropertiesExtensions_Encrypt_System_Object_System_String_">ConnectorPropertiesExtensions.Encrypt(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Connector.Properties.Extensions.ConnectorPropertiesExtensions.html#MG_CB_Connector_Properties_Extensions_ConnectorPropertiesExtensions_IsEncrypted_System_Object_System_String_System_Text_Encoding_">ConnectorPropertiesExtensions.IsEncrypted(Object, String, Encoding)</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Metadata.MetaModel.Extensions.NamedElement.html#MG_CB_Metadata_MetaModel_Extensions_NamedElement_GetQualifiedName_MG_CB_Metadata_MetaModel_Interfaces_INamedElement_">NamedElement.GetQualifiedName(INamedElement)</a>
+  </div>
+  <div>
+      <a class="xref" href="MG.CB.Metadata.MetaModel.Extensions.NamedElement.html#MG_CB_Metadata_MetaModel_Extensions_NamedElement_GetDepth_MG_CB_Metadata_MetaModel_Interfaces_INamedElement_">NamedElement.GetDepth(INamedElement)</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="MG.CB.Command.DataHandler.Argument.ColumnArgument.html">ColumnArgument</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

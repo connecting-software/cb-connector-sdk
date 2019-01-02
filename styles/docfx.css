@@ -262,6 +262,7 @@ article section {
 #autocollapse .navbar-brand {
   margin-left: 0;
   padding-top: 5px;
+  width: 260px;
 }
 .collapse.in,
 .collapsing {

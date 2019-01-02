@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How To | CB Connector SDK website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="How To | CB Connector SDK website ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="how-to">How To</h1>
+
+<p>To get you up to speed with CB Connector SQK, we've listed some of the most common questions on this page.</p>
+<h2 id="how-to-design-your-meta-model">How to: Design Your Meta Model</h2>
+<p>Do the following:</p>
+<ol>
+<li><p>Decide what objects you want to include in your Meta Model.</p>
+<p>The first step in designing your Meta Model is deciding which aspects of your specific data source are important enough to include in the model.</p>
+<p>When you have a reasonably complete set of objects, move on to the next step: deciding how these objects relate to each other.</p>
+</li>
+<li><p>Determine which of these objects should be tables and which should be columns within those tables.</p>
+<p>No rules exist about what to identify as tables and which of the attributes in the system belong to which table.</p>
+<p>When implementing the Entity Relationship Model (ERM) in a relational database, you should take a look at the following table.</p>
+<table>
+<thead>
+<tr>
+<th>ER Model</th>
+<th>Relational Model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Regular Entity</td>
+<td>Create a relation (table) with primary key and non-key attributes (columns).</td>
+</tr>
+<tr>
+<td>Weak Entity</td>
+<td>Create a relation with a composite primary key (which includes the primary key of the entity on which this weak entity depends) and non-key attributes.</td>
+</tr>
+<tr>
+<td>One-to-one (1:1) relationship</td>
+<td>Place the primary key of either entity in the relation for the other entity or do this for both entities.</td>
+</tr>
+<tr>
+<td>One-to-many (1:M) relationship</td>
+<td>Place the primary key of the entity on the one side of the relationship as foreign key in the relation for the entity on the many side.</td>
+</tr>
+<tr>
+<td>Many-to-many (M:N or M:M) relationship or associative entity</td>
+<td>Create a relation with a composite primary key using the primary keys of the related entities, plus any non-key attributes of the relationship or associate entity.</td>
+</tr>
+<tr>
+<td>Many-to-many (M:N or M:M) relationship or associative entity with additional key(s)</td>
+<td>Create a relation with a composite primary key using the primary keys of the related entities and additional primary key attributes associated with the relationship or associative entity, plus any non-key attributes of the relationship or associative entity.</td>
+</tr>
+<tr>
+<td>Many-to-many (M:N or M:M) relationship or associative entity with its own key</td>
+<td>Create a relation with the primary key associated with the relationship or associative entity, plus any non-key attributes of the relationship or associative entity and the primary keys of the related entities (as foreign key attributes).</td>
+</tr>
+<tr>
+<td>Supertypes and Subtypes</td>
+<td>Create a relation for the supertype, which contains the primary key and all non-key attributes in common with all subtypes, plus create a separate relation for each subclass with the same primary key (with the same or local name) but with only the non-key attributes related to that subclass.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Define tables according to your determination of how you need to organize the objects.</p>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>© 2018 - Connecting Software </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

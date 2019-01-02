@@ -1,0 +1,515 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TableFunctionSource
+   | CB Connector SDK website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TableFunctionSource
+   | CB Connector SDK website ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource">
+  
+  
+  <h1 id="CB_Connector_Command_DataHandler_TableFunctionSource" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource" class="text-break">Class TableFunctionSource
+  </h1>
+  <div class="markdown level0 summary"><p>Provides an abstract class for defining <code>table-valued function</code> in a parsed statement.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html">DataHandler</a></div>
+    <div class="level2"><a class="xref" href="CB.Connector.Command.DataHandler.DataSource.html">DataSource</a></div>
+    <div class="level3"><span class="xref">TableFunctionSource</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="CB.Connector.Command.DataHandler.Interfaces.IDataHandler.html">IDataHandler</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="CB.Connector.Metadata.MetaModel.INamedElement.html">INamedElement</a></div>
+    <div><a class="xref" href="CB.Connector.Metadata.MetaModel.IElement.html">IElement</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_Previous">DataHandler.Previous</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_AllColumns">DataHandler.AllColumns</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_Register_CB_Connector_Command_DataHandler_Interfaces_IDataHandler_">DataHandler.Register(IDataHandler)</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_Execute_CB_Connector_Metadata_DataModel_IResultSetLoader_CB_Connector_Command_Interfaces_IExecutionContext_">DataHandler.Execute(IResultSetLoader, IExecutionContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_OnInit">DataHandler.OnInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_Dispose_System_Boolean_">DataHandler.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_Dispose">DataHandler.Dispose()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CB.Connector.Command.DataHandler.html">CB.Connector.Command.DataHandler</a></h6>
+  <h6><strong>Assembly</strong>: CB.Connector.dll</h6>
+  <h5 id="CB_Connector_Command_DataHandler_TableFunctionSource_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class TableFunctionSource : DataSource, IDataHandler, IDisposable, INamedElement, IElement</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_TableFunctionSource_Arguments_" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.Arguments*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_TableFunctionSource_Arguments" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.Arguments">Arguments</h4>
+  <div class="markdown level1 summary"><p>Represents an <a class="xref" href="CB.Connector.Command.DataHandler.DataHandlerArguments.TableFunctionSourceArguments.html">TableFunctionSourceArguments</a> object defined for the <a class="xref" href="CB.Connector.Command.DataHandler.TableFunctionSource.html">TableFunctionSource</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TableFunctionSourceArguments Arguments { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Command.DataHandler.DataHandlerArguments.TableFunctionSourceArguments.html">TableFunctionSourceArguments</a></td>
+        <td><p>An <a class="xref" href="CB.Connector.Command.DataHandler.DataHandlerArguments.TableFunctionSourceArguments.html">TableFunctionSourceArguments</a> object that represents the data handler’s state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_TableFunctionSource_Description_" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.Description*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_TableFunctionSource_Description" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the description defined for <a class="xref" href="CB.Connector.Metadata.MetaModel.IElement.html">IElement</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IDescriptor Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.IDescriptor.html">IDescriptor</a></td>
+        <td><p>The description.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CB.Connector.Command.DataHandler.DataSource.html#CB_Connector_Command_DataHandler_DataSource_Description">DataSource.Description</a></div>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_TableFunctionSource_Elements_" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.Elements*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_TableFunctionSource_Elements" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.Elements">Elements</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of elements defined in the metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IElementCollection&lt;IColumnArgument&gt; Elements { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Collections.IElementCollection-1.html">IElementCollection</a>&lt;<a class="xref" href="CB.Connector.Command.DataHandler.Argument.IColumnArgument.html">IColumnArgument</a>&gt;</td>
+        <td><p>The collection of elements defined in the metadata.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_Elements">DataHandler.Elements</a></div>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_TableFunctionSource_Name_" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.Name*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_TableFunctionSource_Name" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the named element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name of the named element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CB.Connector.Command.DataHandler.DataSource.html#CB_Connector_Command_DataHandler_DataSource_Name">DataSource.Name</a></div>
+  <h5 id="CB_Connector_Command_DataHandler_TableFunctionSource_Name_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Must not exceed 128 characters</p>
+</div>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_TableFunctionSource_OriginalName_" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.OriginalName*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_TableFunctionSource_OriginalName" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.OriginalName">OriginalName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the original name of the source element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string OriginalName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The full name of the source element. Returns {account_name.schema_name.element_name}.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CB.Connector.Command.DataHandler.DataSource.html#CB_Connector_Command_DataHandler_DataSource_OriginalName">DataSource.OriginalName</a></div>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_TableFunctionSource_Owner_" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.Owner*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_TableFunctionSource_Owner" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.Owner">Owner</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the owner of the named element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override INamedElement Owner { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.INamedElement.html">INamedElement</a></td>
+        <td><p>A <span class="xref">System.String</span> value that specifies the owner of the named element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CB.Connector.Command.DataHandler.DataSource.html#CB_Connector_Command_DataHandler_DataSource_Owner">DataSource.Owner</a></div>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_TableFunctionSource_QualifiedName_" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.QualifiedName*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_TableFunctionSource_QualifiedName" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.QualifiedName">QualifiedName</h4>
+  <div class="markdown level1 summary"><p>Gets the name that allows the named element to be identified within a hierarchy of nested namespaces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string QualifiedName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The qualified name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CB.Connector.Command.DataHandler.DataSource.html#CB_Connector_Command_DataHandler_DataSource_QualifiedName">DataSource.QualifiedName</a></div>
+  <h5 id="CB_Connector_Command_DataHandler_TableFunctionSource_QualifiedName_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It is constructed from the names of the containing namespaces starting at the root of the hierarchy and ending with the name of the named element itself.</p>
+</div>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_TableFunctionSource_ResultColumns_" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.ResultColumns*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_TableFunctionSource_ResultColumns" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.ResultColumns">ResultColumns</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of columns that belong to the result set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ICollection&lt;IColumnArgument&gt; ResultColumns { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="CB.Connector.Command.DataHandler.Argument.IColumnArgument.html">IColumnArgument</a>&gt;</td>
+        <td><p>The collection of columns that belong to the result set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_ResultColumns">DataHandler.ResultColumns</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_TableFunctionSource_Init_" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.Init*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_TableFunctionSource_Init_CB_Connector_Command_DataHandler_Interfaces_IDataHandlerArguments_" data-uid="CB.Connector.Command.DataHandler.TableFunctionSource.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandlerArguments)">Init(IDataHandlerArguments)</h4>
+  <div class="markdown level1 summary"><p>Initializes an object’s data at the time the server creates it without explicitly using a constructor for the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed bool Init(IDataHandlerArguments args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Command.DataHandler.Interfaces.IDataHandlerArguments.html">IDataHandlerArguments</a></td>
+        <td><span class="parametername">args</span></td>
+        <td><p>An <a class="xref" href="CB.Connector.Command.DataHandler.Interfaces.IDataHandlerArguments.html">IDataHandlerArguments</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the <a class="xref" href="CB.Connector.Command.DataHandler.Interfaces.IDataHandler.html">IDataHandler</a> was successfully initialized; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_Init_CB_Connector_Command_DataHandler_Interfaces_IDataHandlerArguments_">DataHandler.Init(IDataHandlerArguments)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.Interfaces.IDataHandler.html">IDataHandler</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.INamedElement.html">INamedElement</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.IElement.html">IElement</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="CB.Connector.Property.Extensions.ConnectorPropertiesExtensions.html#CB_Connector_Property_Extensions_ConnectorPropertiesExtensions_TryParse_System_Object_System_Type_System_Object__">ConnectorPropertiesExtensions.TryParse(Object, Type, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Property.Extensions.ConnectorPropertiesExtensions.html#CB_Connector_Property_Extensions_ConnectorPropertiesExtensions_Parse_System_Object_System_Type_">ConnectorPropertiesExtensions.Parse(Object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Property.Extensions.ConnectorPropertiesExtensions.html#CB_Connector_Property_Extensions_ConnectorPropertiesExtensions_Decrypt_System_Object_System_String_">ConnectorPropertiesExtensions.Decrypt(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Property.Extensions.ConnectorPropertiesExtensions.html#CB_Connector_Property_Extensions_ConnectorPropertiesExtensions_Encrypt_System_Object_System_String_">ConnectorPropertiesExtensions.Encrypt(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Property.Extensions.ConnectorPropertiesExtensions.html#CB_Connector_Property_Extensions_ConnectorPropertiesExtensions_IsEncrypted_System_Object_System_String_System_Text_Encoding_">ConnectorPropertiesExtensions.IsEncrypted(Object, String, Encoding)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.Extensions.NamedElement.html#CB_Connector_Metadata_MetaModel_Extensions_NamedElement_GetQualifiedName_CB_Connector_Metadata_MetaModel_INamedElement_">NamedElement.GetQualifiedName(INamedElement)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.Extensions.NamedElement.html#CB_Connector_Metadata_MetaModel_Extensions_NamedElement_GetDepth_CB_Connector_Metadata_MetaModel_INamedElement_">NamedElement.GetDepth(INamedElement)</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CB.Connector.Command.DataHandler.DataSource.html">DataSource</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>© 2018 - Connecting Software </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

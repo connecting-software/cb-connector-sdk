@@ -1,0 +1,543 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Reference | CB Connector SDK website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Reference | CB Connector SDK website ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="reference">Reference</h1>
+
+<p>This section provides reference information for:</p>
+<ul>
+<li>CB.Connector library</li>
+<li>CB custom connectors</li>
+</ul>
+<h2 id="supported-sql-commands">Supported SQL Commands</h2>
+<table>
+<thead>
+<tr>
+<th>Command Or Option</th>
+<th>Data Handler</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SELECT</strong></td>
+<td>SelectSink</td>
+<td>Retrieves data</td>
+</tr>
+<tr>
+<td>DISTINCT</td>
+<td>Distinct</td>
+<td>Limits values to unique values</td>
+</tr>
+<tr>
+<td>AGGREGATE FUNCTIONS</td>
+<td>Aggregate</td>
+<td>Used with SELECT to return mathematical summaries on columns</td>
+</tr>
+<tr>
+<td>FROM</td>
+<td>TableSource, TableFunctionSource</td>
+<td>Specifies from which tables or table-valued functions to retrieve data</td>
+</tr>
+<tr>
+<td>INNER JOIN</td>
+<td>InnerJoin</td>
+<td>Returns only the rows with matching values in both tables</td>
+</tr>
+<tr>
+<td>RIGHT JOIN</td>
+<td>RightJoin</td>
+<td>Returns rows with matching values and includes all rows from the right table with unmatched values.</td>
+</tr>
+<tr>
+<td>LEFT JOIN</td>
+<td>LeftJoin</td>
+<td>Returns rows with matching values and includes all rows from the left table with unmatched values.</td>
+</tr>
+<tr>
+<td>CROSS JOIN</td>
+<td>CrossJoin</td>
+<td>Returns the Cartesian product between two or more tables</td>
+</tr>
+<tr>
+<td>FULL JOIN</td>
+<td>FullJoin</td>
+<td>Returns rows with matching values and includes all rows from both tables with unmatched values.</td>
+</tr>
+<tr>
+<td>WHERE</td>
+<td>Where</td>
+<td>Restricts the selection of rows based on a search criterion</td>
+</tr>
+<tr>
+<td>HAVING</td>
+<td>Having</td>
+<td>Restricts the selection of grouped rows based on a search criterion</td>
+</tr>
+<tr>
+<td>GROUP BY</td>
+<td>Aggregate</td>
+<td>Groups the selected rows based on one or more attributes</td>
+</tr>
+<tr>
+<td>ORDER BY</td>
+<td>OrderBy</td>
+<td>Orders the selected rows based on one or more attributes</td>
+</tr>
+<tr>
+<td><strong>INSERT</strong></td>
+<td>InsertSink</td>
+<td>Adds one or more rows of data</td>
+</tr>
+<tr>
+<td><strong>UPDATE</strong></td>
+<td>UpdateSink</td>
+<td>Modifies existing data</td>
+</tr>
+<tr>
+<td><strong>DELETE</strong></td>
+<td>DeleteSink</td>
+<td>Removes one or more rows of data</td>
+</tr>
+<tr>
+<td><strong>EXEC</strong></td>
+<td>ExecuteSink</td>
+<td>Executes a stored procedure or function</td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-data-types">Supported Data Types</h2>
+<h3 id="primitive-types">Primitive Types</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MgAnyType</td>
+<td>Type to which all other types conform</td>
+</tr>
+<tr>
+<td>MgBoolean</td>
+<td>Binary-valued logic (true, false or UNKNOWN)</td>
+</tr>
+<tr>
+<td>MgByteArray</td>
+<td>Binary data</td>
+</tr>
+<tr>
+<td>MgByte</td>
+<td>Unsigned 8-bit integer</td>
+</tr>
+<tr>
+<td>MgChar</td>
+<td>Unicode 16-bit character</td>
+</tr>
+<tr>
+<td>MgDateTime</td>
+<td>Date and time w/ time-zone offset</td>
+</tr>
+<tr>
+<td>MgDecimal</td>
+<td>Numeric values with decimal representation</td>
+</tr>
+<tr>
+<td>MgDouble</td>
+<td>Binary64 Floating-point number</td>
+</tr>
+<tr>
+<td>MgInt16</td>
+<td>Signed 16-bit integer</td>
+</tr>
+<tr>
+<td>MgInt32</td>
+<td>Signed 32-bit integer</td>
+</tr>
+<tr>
+<td>MgInt64</td>
+<td>Signed 64-bit integer</td>
+</tr>
+<tr>
+<td>MgSbyte</td>
+<td>Signed 8-bit integer</td>
+</tr>
+<tr>
+<td>MgSingle</td>
+<td>Binary32 Floating-point number</td>
+</tr>
+<tr>
+<td>MgString</td>
+<td>Sequence of UTF-8 characters</td>
+</tr>
+<tr>
+<td>MgUInt16</td>
+<td>Unsigned 32-bit integer</td>
+</tr>
+<tr>
+<td>MgUInt32</td>
+<td>Unsigned 16-bit integer</td>
+</tr>
+<tr>
+<td>MgUInt64</td>
+<td>Unsigned 64-bit integer</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parametric-types">Parametric Types</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ParametricType</td>
+<td>Parametrized over type</td>
+</tr>
+</tbody>
+</table>
+<h3 id="complex-types">Complex Types</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TableType</td>
+<td>Represents the definition of a table structure</td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-sql-functions">Supported SQL Functions</h2>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Creating SQL scalar-valued, aggregate or table-valued functions is a task that you would perform when designing your custom connector.</p>
+</div>
+<h3 id="arithmetic-functions">Arithmetic Functions</h3>
+<table>
+<thead>
+<tr>
+<th>Arithmetic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>add</td>
+<td>Add</td>
+</tr>
+<tr>
+<td>div</td>
+<td>Subtract</td>
+</tr>
+<tr>
+<td>mult</td>
+<td>Multiply</td>
+</tr>
+<tr>
+<td>sub</td>
+<td>Divide</td>
+</tr>
+<tr>
+<td>mod</td>
+<td>Raise to the power of</td>
+</tr>
+</tbody>
+</table>
+<h3 id="aggregate-functions">Aggregate Functions</h3>
+<table>
+<thead>
+<tr>
+<th>Aggregate</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COUNT</td>
+<td>The number of rows with non-null values for a given attribute</td>
+</tr>
+<tr>
+<td>MIN</td>
+<td>The minimum attribute value found in an attribute</td>
+</tr>
+<tr>
+<td>MAX</td>
+<td>The maximum attribute value found in an attribute</td>
+</tr>
+<tr>
+<td>SUM</td>
+<td>The sum of all values for a given attribute</td>
+</tr>
+<tr>
+<td>AVG</td>
+<td>The average of all values for a given attribute</td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-sql-operators">Supported SQL Operators</h2>
+<h3 id="comparison-operators">Comparison Operators</h3>
+<table>
+<thead>
+<tr>
+<th>Comparison</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>=</td>
+<td>Equal to</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>Less than</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>Greater than</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>Less than or equal to</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>Greater than or equal to</td>
+</tr>
+<tr>
+<td>&lt;&gt;, !=, ^=</td>
+<td>Not equal to</td>
+</tr>
+</tbody>
+</table>
+<h3 id="logical-operators">Logical Operators</h3>
+<table>
+<thead>
+<tr>
+<th>Logical</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AND</td>
+<td>Combines multiple conditions</td>
+</tr>
+<tr>
+<td>OR</td>
+<td>Combines multiple conditions</td>
+</tr>
+<tr>
+<td>NOT</td>
+<td>Negates a condition</td>
+</tr>
+</tbody>
+</table>
+<h3 id="special-operators">Special Operators</h3>
+<table>
+<thead>
+<tr>
+<th>Special</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BETWEEN</td>
+<td>Checks whether an attribute value is within a range</td>
+</tr>
+<tr>
+<td>IS NULL</td>
+<td>Checks whether an attribute value is null</td>
+</tr>
+<tr>
+<td>LIKE</td>
+<td>Checks whether an attribute value matches a given string pattern</td>
+</tr>
+<tr>
+<td>IN</td>
+<td>Checks whether an attribute value matches any value within a list</td>
+</tr>
+</tbody>
+</table>
+<h2 id="system-information">System Information</h2>
+<h3 id="system-procedures">System Procedures</h3>
+<p>Query the following system procedures to access schema information, and statistics.</p>
+<table>
+<thead>
+<tr>
+<th>Procedure</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SPSYSODBCTABLES</td>
+<td>Lists the available tables.</td>
+</tr>
+<tr>
+<td>SPSYSODBCCOLUMNS</td>
+<td>Describes the columns of the available tables.</td>
+</tr>
+<tr>
+<td>SPSYSODBCPRIMARYKEYS</td>
+<td>Describes the primary keys.</td>
+</tr>
+<tr>
+<td>SPSYSODBCPROCEDURES</td>
+<td>Describes the available stored procedures.</td>
+</tr>
+<tr>
+<td>SPSYSODBCPROCEDURECOLUMNS</td>
+<td>Describes stored procedure parameters.</td>
+</tr>
+<tr>
+<td>SPSYSODBCTYPES</td>
+<td>Lists the available types.</td>
+</tr>
+<tr>
+<td>SPSYSODBCSPECIALCOLUMNS</td>
+<td>Describes the special columns.</td>
+</tr>
+<tr>
+<td>SPSYSODBCSTATISTICS</td>
+<td>Returns query statistics.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="system-functions">System Functions</h3>
+<p>The following system functions return information about the database and database objects:</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SCOPE_IDENTITY</td>
+<td>Returns the last identity(ies) value(s) inserted into one or multiple column(s) in the same scope.</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>© 2018 - Connecting Software </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

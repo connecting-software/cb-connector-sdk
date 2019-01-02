@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Implementing Session.cs | CB Connector SDK website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Implementing Session.cs | CB Connector SDK website ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="implementing-sessioncs">Implementing Session.cs</h1>
+
+<h2 id="creating-the-new-class">Creating the new class</h2>
+<p>If you have choosen to create your connector solution using Visual Studio Project Template, you can skip this step.</p>
+<p>Start by creating a new ExecutionSession class. A reference to this library is required in your class.</p>
+<pre><code class="lang-cs">using CB.Connector;
+using CB.Connector.Classes;
+using CB.Connector.Metadata.MetaModel;
+using CB.Connector.Metadata.MetaModel.Factories;
+</code></pre>
+<h2 id="implement-the-constructor">Implement the Constructor</h2>
+<p>First implement the constructor. Do the following:</p>
+<ul>
+<li><p>Create an instance of a class that implements the <a href="/api/CB.Connector.Metadata.MetaModel.IMetaModel.yml">IMetaModel</a> interface.</p>
+<p>There are several options available for loading related data in custom connectors. It is important for you to understand these options. The following are the options for loading related data:</p>
+<ul>
+<li><em>Eager Loading</em>, which is used to load all the needed objects at once (all the child objects will be loaded during a single call). A large amount of data is loaded at once. See <a href="/api/CB.Connector.Metadata.MetaModel.IBuilder.yml">IBuilder.cs reference</a>.</li>
+<li><em>Lazy Loading</em>, which is used to defer initialization of an object until the point at which is needed (a child object is loaded only when it is accessed for the first time). See <a href="/api/CB.Connector.Metadata.MetaModel.ILoader.yml">ILoader.cs reference</a>.</li>
+</ul>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Depending on the size of those objects, it is recommended to use <em>caching</em>. Caching enables you to store data in memory for rapid access.</p>
+</div>
+</li>
+<li><p>Create an instance of a class that implements the <a href="/api/CB.Connector.IDataHandlerFactory.yml">IDataHandlerFactory</a> interface.</p>
+</li>
+</ul>
+<p>The following code example shows the final implementation:</p>
+<pre><code class="lang-cs">public ExecutionSession(Connector connector) : base(connector)
+{
+    string connString = connector.ConnectorProperties.ConnectionString;
+    if (connString == null)
+    {
+        throw new Exception(&quot;ConnectionString property is missing!&quot;);
+    }
+
+    string targetDatabase = connString.Split(';').FirstOrDefault(x =&gt; x.StartsWith(&quot;Database&quot;, StringComparison.OrdinalIgnoreCase));
+    if (targetDatabase == null)
+    {
+        throw new Exception(&quot;Database in ConnectionString property is missing!&quot;);
+    }
+
+    int assignmentPos = targetDatabase.IndexOf('=');
+    if (assignmentPos &gt; 0)
+    {
+        targetDatabase = targetDatabase.Substring(assignmentPos + 1);
+    }
+    
+    if (connector.CachingProvider.ContainsKey(targetDatabase))
+    {
+        MetaModel = (IMetaModel)connector.CachingProvider.GetItem(targetDatabase, DateTime.UtcNow.AddMinutes(10));
+    }
+    else
+    {
+        var loader = new SqlMetaDataLoader(this);
+        MetaModel = LazyMetaModelFactory.Instance.CreateMetaModel(targetDatabase, &quot;dbo&quot;, loader); 
+        connector.CachingProvider.AddItem(MetaModel.Name, MetaModel, DateTime.UtcNow.AddMinutes(10));
+    }
+    HandlerFactory = new HandlerFactory(this);
+
+    //Defines a data structure containing the query language definition of your data source.
+    CommandInfo = new ContextSqlCommandInfo();
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>© 2018 - Connecting Software </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

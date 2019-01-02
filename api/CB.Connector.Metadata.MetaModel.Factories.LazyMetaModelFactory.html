@@ -1,0 +1,562 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LazyMetaModelFactory
+   | CB Connector SDK website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LazyMetaModelFactory
+   | CB Connector SDK website ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory">
+  
+  
+  <h1 id="CB_Connector_Metadata_MetaModel_Factories_LazyMetaModelFactory" data-uid="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory" class="text-break">Class LazyMetaModelFactory
+  </h1>
+  <div class="markdown level0 summary"><p>Factory implementation that always creates MetaModel objects. It should be used for <code>lazy loading</code>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.html">MetaModelFactory</a></div>
+    <div class="level2"><span class="xref">LazyMetaModelFactory</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.html#CB_Connector_Metadata_MetaModel_Factories_MetaModelFactory_Create__1_System_Object___">MetaModelFactory.Create&lt;T&gt;(Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.html#CB_Connector_Metadata_MetaModel_Factories_MetaModelFactory_CreateDescriptor_System_String_System_String_">MetaModelFactory.CreateDescriptor(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.html#CB_Connector_Metadata_MetaModel_Factories_MetaModelFactory_CreateParameter_System_String_CB_Connector_Metadata_MetaModel_IDataType_System_Boolean_System_Int32_CB_Connector_Metadata_MetaModel_ParameterDirectionKind_System_Boolean_">MetaModelFactory.CreateParameter(String, IDataType, Boolean, Int32, ParameterDirectionKind, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.html#CB_Connector_Metadata_MetaModel_Factories_MetaModelFactory_CreateColumn_System_String_CB_Connector_Metadata_MetaModel_IDataType_System_Boolean_System_Int32_System_Boolean_System_Boolean_System_Boolean_System_Boolean_">MetaModelFactory.CreateColumn(String, IDataType, Boolean, Int32, Boolean, Boolean, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.html#CB_Connector_Metadata_MetaModel_Factories_MetaModelFactory_CreateForeignKey_System_String_CB_Connector_Metadata_MetaModel_ITable_">MetaModelFactory.CreateForeignKey(String, ITable)</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.html#CB_Connector_Metadata_MetaModel_Factories_MetaModelFactory_CreateUniqueKey_System_String_">MetaModelFactory.CreateUniqueKey(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.html#CB_Connector_Metadata_MetaModel_Factories_MetaModelFactory_CreateNotNull_System_String_">MetaModelFactory.CreateNotNull(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.html#CB_Connector_Metadata_MetaModel_Factories_MetaModelFactory_CreatePrimaryKey_System_String_">MetaModelFactory.CreatePrimaryKey(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.html#CB_Connector_Metadata_MetaModel_Factories_MetaModelFactory_CreateParametricType_System_Func_CB_Connector_Metadata_MetaModel_IDataType___CB_Connector_Metadata_MetaModel_IDataType__">MetaModelFactory.CreateParametricType(Func&lt;IDataType[], IDataType&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.html#CB_Connector_Metadata_MetaModel_Factories_MetaModelFactory_CreateTableType_System_String_">MetaModelFactory.CreateTableType(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.html#CB_Connector_Metadata_MetaModel_Factories_MetaModelFactory_CreateJsonType_System_String_">MetaModelFactory.CreateJsonType(String)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CB.Connector.Metadata.MetaModel.Factories.html">CB.Connector.Metadata.MetaModel.Factories</a></h6>
+  <h6><strong>Assembly</strong>: CB.Connector.dll</h6>
+  <h5 id="CB_Connector_Metadata_MetaModel_Factories_LazyMetaModelFactory_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LazyMetaModelFactory : MetaModelFactory</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="CB_Connector_Metadata_MetaModel_Factories_LazyMetaModelFactory_Instance_" data-uid="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory.Instance*"></a>
+  <h4 id="CB_Connector_Metadata_MetaModel_Factories_LazyMetaModelFactory_Instance" data-uid="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory.Instance">Instance</h4>
+  <div class="markdown level1 summary"><p>Gets an instance of <a class="xref" href="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory.html">LazyMetaModelFactory</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LazyMetaModelFactory Instance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory.html">LazyMetaModelFactory</a></td>
+        <td><p>The instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CB_Connector_Metadata_MetaModel_Factories_LazyMetaModelFactory_CreateFunction_" data-uid="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory.CreateFunction*"></a>
+  <h4 id="CB_Connector_Metadata_MetaModel_Factories_LazyMetaModelFactory_CreateFunction_System_String_CB_Connector_Metadata_MetaModel_FunctionType_CB_Connector_Metadata_MetaModel_ILoader_" data-uid="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory.CreateFunction(System.String,CB.Connector.Metadata.MetaModel.FunctionType,CB.Connector.Metadata.MetaModel.ILoader)">CreateFunction(String, FunctionType, ILoader)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="CB.Connector.Metadata.MetaModel.IFunction.html">IFunction</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IFunction CreateFunction(string name, FunctionType functionType, ILoader loader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The unique name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.FunctionType.html">FunctionType</a></td>
+        <td><span class="parametername">functionType</span></td>
+        <td><p>The type of the function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a></td>
+        <td><span class="parametername">loader</span></td>
+        <td><p>An <a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a> object that enable loading an element (or a set of elements).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.IFunction.html">IFunction</a></td>
+        <td><p>A new <a class="xref" href="CB.Connector.Metadata.MetaModel.IProcedure.html">IProcedure</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="CB_Connector_Metadata_MetaModel_Factories_LazyMetaModelFactory_CreateMetaModel_" data-uid="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory.CreateMetaModel*"></a>
+  <h4 id="CB_Connector_Metadata_MetaModel_Factories_LazyMetaModelFactory_CreateMetaModel_System_String_System_String_CB_Connector_Metadata_MetaModel_ILoader_" data-uid="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory.CreateMetaModel(System.String,System.String,CB.Connector.Metadata.MetaModel.ILoader)">CreateMetaModel(String, String, ILoader)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="CB.Connector.Metadata.MetaModel.IMetaModel.html">IMetaModel</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMetaModel CreateMetaModel(string name, string defaultSchema, ILoader loader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The unique name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">defaultSchema</span></td>
+        <td><p>The default schema name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a></td>
+        <td><span class="parametername">loader</span></td>
+        <td><p>An <a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a> object that enable loading an element (or a set of elements).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.IMetaModel.html">IMetaModel</a></td>
+        <td><p>A new <a class="xref" href="CB.Connector.Metadata.MetaModel.IMetaModel.html">IMetaModel</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="CB_Connector_Metadata_MetaModel_Factories_LazyMetaModelFactory_CreateProcedure_" data-uid="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory.CreateProcedure*"></a>
+  <h4 id="CB_Connector_Metadata_MetaModel_Factories_LazyMetaModelFactory_CreateProcedure_System_String_CB_Connector_Metadata_MetaModel_ILoader_" data-uid="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory.CreateProcedure(System.String,CB.Connector.Metadata.MetaModel.ILoader)">CreateProcedure(String, ILoader)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="CB.Connector.Metadata.MetaModel.IProcedure.html">IProcedure</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IProcedure CreateProcedure(string name, ILoader loader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The unique name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a></td>
+        <td><span class="parametername">loader</span></td>
+        <td><p>An <a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a> object that enable loading an element (or a set of elements).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.IProcedure.html">IProcedure</a></td>
+        <td><p>A new <a class="xref" href="CB.Connector.Metadata.MetaModel.IProcedure.html">IProcedure</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="CB_Connector_Metadata_MetaModel_Factories_LazyMetaModelFactory_CreateSchema_" data-uid="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory.CreateSchema*"></a>
+  <h4 id="CB_Connector_Metadata_MetaModel_Factories_LazyMetaModelFactory_CreateSchema_System_String_CB_Connector_Metadata_MetaModel_ILoader_" data-uid="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory.CreateSchema(System.String,CB.Connector.Metadata.MetaModel.ILoader)">CreateSchema(String, ILoader)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="CB.Connector.Metadata.MetaModel.ISchema.html">ISchema</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISchema CreateSchema(string name, ILoader loader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The unique name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a></td>
+        <td><span class="parametername">loader</span></td>
+        <td><p>An <a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a> object that enable loading an element (or a set of elements).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.ISchema.html">ISchema</a></td>
+        <td><p>A new <a class="xref" href="CB.Connector.Metadata.MetaModel.ISchema.html">ISchema</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="CB_Connector_Metadata_MetaModel_Factories_LazyMetaModelFactory_CreateTable_" data-uid="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory.CreateTable*"></a>
+  <h4 id="CB_Connector_Metadata_MetaModel_Factories_LazyMetaModelFactory_CreateTable_System_String_CB_Connector_Metadata_MetaModel_ILoader_" data-uid="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory.CreateTable(System.String,CB.Connector.Metadata.MetaModel.ILoader)">CreateTable(String, ILoader)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="CB.Connector.Metadata.MetaModel.ITable.html">ITable</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITable CreateTable(string name, ILoader loader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The unique name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a></td>
+        <td><span class="parametername">loader</span></td>
+        <td><p>An <a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a> object that enable loading an element (or a set of elements).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.ITable.html">ITable</a></td>
+        <td><p>A new <a class="xref" href="CB.Connector.Metadata.MetaModel.ITable.html">ITable</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="CB_Connector_Metadata_MetaModel_Factories_LazyMetaModelFactory_CreateView_" data-uid="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory.CreateView*"></a>
+  <h4 id="CB_Connector_Metadata_MetaModel_Factories_LazyMetaModelFactory_CreateView_System_String_CB_Connector_Metadata_MetaModel_ILoader_" data-uid="CB.Connector.Metadata.MetaModel.Factories.LazyMetaModelFactory.CreateView(System.String,CB.Connector.Metadata.MetaModel.ILoader)">CreateView(String, ILoader)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="CB.Connector.Metadata.MetaModel.IView.html">IView</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IView CreateView(string name, ILoader loader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The unique name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a></td>
+        <td><span class="parametername">loader</span></td>
+        <td><p>An <a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a> object that enable loading an element (or a set of elements).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.IView.html">IView</a></td>
+        <td><p>A new <a class="xref" href="CB.Connector.Metadata.MetaModel.IView.html">IView</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="CB.Connector.Property.Extensions.ConnectorPropertiesExtensions.html#CB_Connector_Property_Extensions_ConnectorPropertiesExtensions_TryParse_System_Object_System_Type_System_Object__">ConnectorPropertiesExtensions.TryParse(Object, Type, out Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Property.Extensions.ConnectorPropertiesExtensions.html#CB_Connector_Property_Extensions_ConnectorPropertiesExtensions_Parse_System_Object_System_Type_">ConnectorPropertiesExtensions.Parse(Object, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Property.Extensions.ConnectorPropertiesExtensions.html#CB_Connector_Property_Extensions_ConnectorPropertiesExtensions_Decrypt_System_Object_System_String_">ConnectorPropertiesExtensions.Decrypt(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Property.Extensions.ConnectorPropertiesExtensions.html#CB_Connector_Property_Extensions_ConnectorPropertiesExtensions_Encrypt_System_Object_System_String_">ConnectorPropertiesExtensions.Encrypt(Object, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Property.Extensions.ConnectorPropertiesExtensions.html#CB_Connector_Property_Extensions_ConnectorPropertiesExtensions_IsEncrypted_System_Object_System_String_System_Text_Encoding_">ConnectorPropertiesExtensions.IsEncrypted(Object, String, Encoding)</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.html">MetaModelFactory</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>© 2018 - Connecting Software </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
-    public class Example
-    {
+ public class Example
+ {
         //Define a property with ConnectorPropertyAttribute.
         [ConnectorProperty(
             Key = "Version",
@@ -37,4 +37,4 @@
             get => Shadows.ExpiresAt;
             set => Shadows.ExpiresAt = value;
         }
-    }
+ }

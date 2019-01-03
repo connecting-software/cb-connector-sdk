@@ -118,7 +118,7 @@ by any valid realization of the model containing the constraint (that is, rules)
       <section><p>Provides a base interface for defining a <code>SQL Function</code> that accepts input parameters and must return one or more values.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.IJsonType.html">IJsonType</a></h4>
-      <section><p>Provides a base interface for a complex data type for accessing data in a JavaScript Object Notation (JSON) document.</p>
+      <section><p>Provides a base interface for representing the definition of a JavaScript Object Notation (JSON) document.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a></h4>
       <section><p>Represents the type that implements <code>lazy loading</code> for loading related data.</p>
@@ -170,7 +170,7 @@ It is the conceptual organization of the relational database.</p>
       <section><p>Provides a base interface for defining a <code>SQL Table</code> that is a logical structure identifiable within the schema. A table may own columns and constraints.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.ITableType.html">ITableType</a></h4>
-      <section><p>Provides a base interface for defining a complex data type which is used to define the structured data of a specific table.</p>
+      <section><p>Provides a base interface for representing the definition of a table structure.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.ITypedElement.html">ITypedElement</a></h4>
       <section><p>Provides a base interface for defining a named element that has a type specified for it.</p>
@@ -210,12 +210,15 @@ A view can be used to perform joins and simplify multiple tables into a single v
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
-          <div class="container">
+          <div class="container" style="text-align: center;">
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
             
-            <span>© 2018 - Connecting Software </span>
+            <span class="pull-left">© 2018 - Connecting Software </span>
+            <span>      
+              <a title="GitHub" href="https://github.com/connecting-software"><img width="24" alt="GitHub Logomark" src="http://www.stickpng.com/assets/images/5847f98fcef1014c0b5e48c0.png"></a>
+            </span>
           </div>
         </div>
       </footer>

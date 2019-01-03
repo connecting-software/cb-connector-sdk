@@ -388,7 +388,7 @@ article section {
 
 .sr-item>.item-href {
   font-size: 14px;
-  color: #093;
+  color: #337ab7;
 }
 
 .sr-item>.item-brief {
@@ -396,12 +396,12 @@ article section {
 }
 
 .pagination>li>a {
-  color: #47A7A0
+  color: #337ab7
 }
 
 .pagination>.active>a {
-  background-color: #47A7A0;
-  border-color: #47A7A0;
+  background-color: rgb(10, 70, 134);
+  border-color: rgb(10, 70, 134);
 }
 
 .fixed_header {

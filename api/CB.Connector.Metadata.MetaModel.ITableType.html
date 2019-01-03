@@ -83,7 +83,7 @@
   
   <h1 id="CB_Connector_Metadata_MetaModel_ITableType" data-uid="CB.Connector.Metadata.MetaModel.ITableType" class="text-break">Interface ITableType
   </h1>
-  <div class="markdown level0 summary"><p>Provides a base interface for defining a complex data type which is used to define the structured data of a specific table.</p>
+  <div class="markdown level0 summary"><p>Provides a base interface for representing the definition of a table structure.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
@@ -119,9 +119,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface ITableType : IComplexType, IDataType, INamespace, INamedElement, IElement</code></pre>
   </div>
-  <h5 id="CB_Connector_Metadata_MetaModel_ITableType_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>For typed tables, the names and data types of the columns of the table become the names and data types of the columns of the typed table.</p>
-</div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="CB.Connector.Property.Extensions.ConnectorPropertiesExtensions.html#CB_Connector_Property_Extensions_ConnectorPropertiesExtensions_TryParse_System_Object_System_Type_System_Object__">ConnectorPropertiesExtensions.TryParse(Object, Type, out Object)</a>
@@ -168,12 +165,15 @@
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
-          <div class="container">
+          <div class="container" style="text-align: center;">
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
             
-            <span>© 2018 - Connecting Software </span>
+            <span class="pull-left">© 2018 - Connecting Software </span>
+            <span>      
+              <a title="GitHub" href="https://github.com/connecting-software"><img width="24" alt="GitHub Logomark" src="http://www.stickpng.com/assets/images/5847f98fcef1014c0b5e48c0.png"></a>
+            </span>
           </div>
         </div>
       </footer>

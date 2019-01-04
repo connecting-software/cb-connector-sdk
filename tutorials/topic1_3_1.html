@@ -86,7 +86,7 @@
 using CB.Connector.Exceptions;
 </code></pre>
 <h2 id="implementing-the-testconnection-method">Implementing the TestConnection method</h2>
-<p>First implement the <em><a href="/api/CB.Connector.Classes.BaseConnector-2.yml">TestConnection(TProperty) method</a></em>. This method is called by CB Server to test the connection against your specific data source and to retrieve the configuration properties, as shown in the following example:</p>
+<p>First implement the <em><a href="../api/CB.Connector.Classes.BaseConnector-2.html">TestConnection(TProperty) method</a></em>. This method is called by CB Server to test the connection against your specific data source and to retrieve the configuration properties, as shown in the following example:</p>
 <pre><code class="lang-cs">public override Properties TestConnection(Properties properties)
 {
     try
@@ -107,7 +107,7 @@ using CB.Connector.Exceptions;
 }
 </code></pre>
 <h2 id="implementing-the-dispose-method">Implementing the Dispose() method</h2>
-<p>The next step is to implement the <em><a href="/api/CB.Connector.Classes.BaseConnector-2.yml">Dispose() method</a></em> to realease resources, as shown in the following example:</p>
+<p>The next step is to implement the <em><a href="../api/CB.Connector.Classes.BaseConnector-2.html">Dispose() method</a></em> to realease resources, as shown in the following example:</p>
 <pre><code class="lang-cs">#region IDisposable
 
 private bool _disposed;

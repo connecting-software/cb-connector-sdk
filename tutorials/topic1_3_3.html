@@ -86,7 +86,7 @@
 using CB.Connector.Command.DataHandler;
 </code></pre>
 <h2 id="implement-the-trycreate-method">Implement the TryCreate method</h2>
-<p>First implement the <em><a href="/api/CB.Connector.Classes.DataHandlerFactory.yml">TryCreate method</a></em>. This method is called by CB Server to check if your custom connector supports a specific <em>SQL data manipulation command</em>, and if so, to get a new <em>data handler</em> object, as shown in the following example:</p>
+<p>First implement the <em><a href="../api/CB.Connector.Classes.DataHandlerFactory.html">TryCreate method</a></em>. This method is called by CB Server to check if your custom connector supports a specific <em>SQL data manipulation command</em>, and if so, to get a new <em>data handler</em> object, as shown in the following example:</p>
 <pre><code class="lang-cs">public override bool TryCreate(out Where handler)
 {
     //Where clause is supported by the custom connector.

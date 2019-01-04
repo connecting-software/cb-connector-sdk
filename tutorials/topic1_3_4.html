@@ -81,7 +81,7 @@
 
 <h2 id="creating-the-new-class">Creating the new class</h2>
 <p>If you have choosen to create your connector solution using Visual Studio Project Template, you can skip this step.</p>
-<p>Start by creating a new ExecutionSession class. A reference to this library is required in your class.</p>
+<p>Start by creating a new ExecutionSession class. A reference to CB.Connector library is required in your class.</p>
 <pre><code class="lang-cs">using CB.Connector;
 using CB.Connector.Classes;
 using CB.Connector.Metadata.MetaModel;
@@ -90,18 +90,18 @@ using CB.Connector.Metadata.MetaModel.Factories;
 <h2 id="implement-the-constructor">Implement the Constructor</h2>
 <p>First implement the constructor. Do the following:</p>
 <ul>
-<li><p>Create an instance of a class that implements the <a href="/api/CB.Connector.Metadata.MetaModel.IMetaModel.yml">IMetaModel</a> interface.</p>
+<li><p>Create an instance of a class that implements the <a href="../api/CB.Connector.Metadata.MetaModel.IMetaModel.html">IMetaModel</a> interface.</p>
 <p>There are several options available for loading related data in custom connectors. It is important for you to understand these options. The following are the options for loading related data:</p>
 <ul>
-<li><em>Eager Loading</em>, which is used to load all the needed objects at once (all the child objects will be loaded during a single call). A large amount of data is loaded at once. See <a href="/api/CB.Connector.Metadata.MetaModel.IBuilder.yml">IBuilder.cs reference</a>.</li>
-<li><em>Lazy Loading</em>, which is used to defer initialization of an object until the point at which is needed (a child object is loaded only when it is accessed for the first time). See <a href="/api/CB.Connector.Metadata.MetaModel.ILoader.yml">ILoader.cs reference</a>.</li>
+<li><em>Eager Loading</em>, which is used to load all the needed objects at once (all the child objects will be loaded during a single call). A large amount of data is loaded at once. See <a href="../api/CB.Connector.Metadata.MetaModel.IBuilder.html">IBuilder.cs reference</a>.</li>
+<li><em>Lazy Loading</em>, which is used to defer initialization of an object until the point at which is needed (a child object is loaded only when it is accessed for the first time). See <a href="../api/CB.Connector.Metadata.MetaModel.ILoader.html">ILoader.cs reference</a>.</li>
 </ul>
 <div class="TIP">
-<h5>TIP</h5>
+<h5>Tip</h5>
 <p>Depending on the size of those objects, it is recommended to use <em>caching</em>. Caching enables you to store data in memory for rapid access.</p>
 </div>
 </li>
-<li><p>Create an instance of a class that implements the <a href="/api/CB.Connector.IDataHandlerFactory.yml">IDataHandlerFactory</a> interface.</p>
+<li><p>Create an instance of a class that implements the <a href="../api/CB.Connector.IDataHandlerFactory.html">IDataHandlerFactory</a> interface.</p>
 </li>
 </ul>
 <p>The following code example shows the final implementation:</p>

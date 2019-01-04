@@ -86,13 +86,13 @@
 </code></pre>
 <h2 id="implementing-the-getkey-method">Implementing the GetKey() method</h2>
 <p>If you have choosen to create your connector solution using Visual Studio Project Template, you can skip this step.</p>
-<p>First implement the <em><a href="/api/CB.Connector.Property.ConnectorProperties-1.yml">GetKey() method</a></em>. This returns the private RSA key used to encrypt and decrypt data with the RSA algorithm.</p>
+<p>First implement the <em><a href="../api/CB.Connector.Property.ConnectorProperties-1.html">GetKey() method</a></em>. This returns the private RSA key used to encrypt and decrypt data with the RSA algorithm.</p>
 <p>To generate a private/public RSA key pair, do the following:</p>
 <ol>
 <li><p>Download the <a href="https://coso365.sharepoint.com/:u:/s/CBDevelopment/EZHBJizGiyJDn11IRrv6YIoBQFMkzjDvX0mu5dSg5_-A7g?e=3RacqQ">RSAKeyHelperApp.exe</a>.</p>
 </li>
 <li><p>Double-click <em>RSAKeyHelperApp.exe</em> to open <strong>Command Prompt</strong> window.</p>
-<p><img src="/images/RSAKeyGeneratorApp.png" alt="Command Prompt window"></p>
+<p><img src="../images/RSAKeyGeneratorApp.png" alt="Command Prompt window"></p>
 </li>
 </ol>
 <h2 id="defining-properties">Defining properties</h2>
@@ -101,13 +101,13 @@
 <li><p>Specify authentication type</p>
 <p>There are several options available for user authentication in custom connectors. It is important for you to understand these options. The following are the options for configuring user authentication:</p>
 <ul>
-<li>OAuth 2.0 Authentication (see <a href="/api/CB.Connector.Authentication.OAuth.IOAuth2Configuration.yml">IOAuth2Configuration.cs reference</a>)</li>
-<li>Basic Authentication (see <a href="/api/CB.Connector.Authentication.BasicAuth.IBasicAuthConfiguration.yml">IBasicAuthConfiguration.cs reference</a>)</li>
+<li>OAuth 2.0 Authentication (see <a href="../api/CB.Connector.Authentication.OAuth.IOAuth2Configuration.html">IOAuth2Configuration.cs reference</a>)</li>
+<li>Basic Authentication (see <a href="../api/CB.Connector.Authentication.BasicAuth.IBasicAuthConfiguration.html">IBasicAuthConfiguration.cs reference</a>)</li>
 <li>No Authentication</li>
 </ul>
 </li>
 <li><p>Create the properties definition</p>
-<p>After you apply the <a href="/api/CB.Connector.Property.ConnectorPropertyAttribute.yml">ConnectorPropertyAttribute</a>, you can begin to define the specifics of your attribute. The following code example describes this process:</p>
+<p>After you apply the <a href="../api/CB.Connector.Property.ConnectorPropertyAttribute.html">ConnectorPropertyAttribute</a>, you can begin to define the specifics of your attribute. The following code example describes this process:</p>
 <pre><code class="lang-cs">//No authentication
 public class Properties : ConnectorProperties&lt;Properties&gt;
 {

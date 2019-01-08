@@ -73,14 +73,14 @@
 <h1 id="overview">Overview</h1>
 
 <h2 id="what-is-connect-bridge-platform">What is Connect Bridge Platform?</h2>
-<p>Connect Bridge (CB) is a powerful, yet easy to use integration platform that enables casual users to manage data stored in hundreds of data sources via the Structured Query Language (SQL), and reshape it to meet their needs.</p>
-<p>Supported data sources include a wide range of databases, servers, Microsoft Azure services and many other third-party online services. <strong>Connect Bridge Platform</strong> provides a Connector SDK so that third parties can create their own custom connectors.</p>
+<p>Connect Bridge (CB) is a powerful, yet easy to use integration platform that enables casual users to manage data stored in hundreds of data sources via the Structured Query Language (SQL).</p>
+<p>Supported data sources include a wide range of databases, servers, Microsoft Azure services and many other third-party online services. <strong>Connect Bridge Platform</strong> also provides a Connector SDK so that third parties can create their own custom connectors.</p>
 <p><strong>Connect Bridge Platform</strong> is divided into <strong>three major layers</strong>: Client, Server and Plugin.</p>
 <p><img src="images/Flow-graphic.jpg" alt="Flow"></p>
 <h2 id="what-is-connect-bridge-connector-sdk">What is Connect Bridge Connector SDK?</h2>
-<p>The Connect Bridge Connector SDK helps users to create their own custom connectors and seamlessly plug them into Connect Bridge Platform.</p>
-<p>What are connectors? Simply put, they enable users to seamlessly connect to any data source and access data using Transact-SQL language.</p>
-<p>Connect Bridge Connector SDK provides a Connector API leveraged by a set of tools so that third parties can create their own custom connectors to integrate with CB Server. Connector API enables users to migrate a relational or non-relational data source to a SQL-based relational database.</p>
+<p>We offer a wide variety of connectors, but sometimes you might want to call APIs, services, and systems that aren't available as prebuilt connectors. To support more tailored scenarios, you can build <em>custom connectors</em>.</p>
+<p>Connect Bridge Connector SDK helps you to create your own custom connectors and seamlessly plug them into Connect Bridge Platform.</p>
+<p>What are connectors? Simply put, a <strong>connector</strong> is a proxy or a wrapper around an API that enables users to seamlessly access data using Transact-SQL language. Examples of popular connectors include Office 365, Salesforce, Dropbox, Google services, and more.</p>
 <p>The following are some technical features:</p>
 <ul>
 <li>Eager and lazy loading</li>
@@ -98,6 +98,11 @@
 <li>In-memory caching for improving the performance by reducing the effort required to generate content</li>
 <li>Compatibility with Transact-SQL</li>
 <li>Insert multiple rows using single insert statement</li>
+<li>Enhance data source's capabilities
+<ul>
+<li>Execute unsupported predicates, joins, aggregation, and more</li>
+</ul>
+</li>
 </ul>
 <h2 id="get-started">Get Started</h2>
 <p>Add the CB.Connector.dll to your project or install the CB Connector SDK Tools for Visual Studio. Then watch videos, read tutorials, and advanced documentation to help you make the most of CB Connector SDK.</p>

@@ -136,6 +136,72 @@ protected virtual void Dispose(bool disposing)
 
 #endregion
 </code></pre>
+<h2 id="example">Example</h2>
+<p>The following code example shows the final implementation:</p>
+<pre><code class="lang-cs">public class Connector : BaseConnector&lt;Properties, ExecutionSession&gt;
+{
+    ///&lt;summary&gt;
+    /// The recommended format for the name is CB\&lt;YourSource\&gt;Connector*.
+    /// You can set to MSolDev1, MSolDev2 or MSolDev3 if your connector does not belong to CB licensing system. 
+    ///&lt;/summary&gt;
+    public override string Name { get; } = &quot;CBTestConnector&quot;;
+    public override string Description { get; } = &quot;SQL Database Connector&quot;;
+    public override string Author { get; } = &quot;Connecting Software&quot;;
+    
+    public override Properties TestConnection(Properties properties)
+    {
+        try
+        {
+            using (var conn = new SqlConnection(properties.ConnectionString))
+            {
+
+                var database = new Server(new ServerConnection(conn)).Databases[conn.Database];
+                database.AutoClose = true;
+                return ConnectorProperties;
+            }
+        }
+        catch (Exception e)
+        {
+            throw ConnectorExceptionFactory.Create(ConnectorExceptionType.TestConnectionException, e);
+        }
+    }
+    
+    #region IDisposable
+
+    private bool _disposed;
+    
+    /// &lt;summary&gt; Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. &lt;/summary&gt;
+    public override void Dispose()
+    {
+        Dispose(true);
+        GC.SuppressFinalize(this);
+    }
+
+    /// &lt;summary&gt; Finalizes an instance of the &lt;see cref=&quot;BaseConnector{TProperty,TSession}.Sessions&quot; /&gt; class. &lt;/summary&gt;
+    ~Connector()
+    {
+        Dispose(false);
+    }
+
+    /// &lt;summary&gt;
+    /// Releases unmanaged and - optionally - managed resources.
+    /// &lt;/summary&gt;
+    /// &lt;param name=&quot;disposing&quot;&gt;
+    /// &lt;c&gt;true&lt;/c&gt; to release both managed and unmanaged resources;
+    /// &lt;c&gt;false&lt;/c&gt; to release only unmanaged resources.
+    /// &lt;/param&gt;
+    protected virtual void Dispose(bool disposing)
+    {
+        if (_disposed) return;
+        if (disposing)
+            foreach (var session in Sessions)
+                session?.Dispose();
+        _disposed = true;
+    }
+
+    #endregion
+}
+</code></pre>
 </article>
           </div>
           

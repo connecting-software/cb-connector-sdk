@@ -126,15 +126,6 @@
       <a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_Previous">DataHandler.Previous</a>
     </div>
     <div>
-      <a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_ResultColumns">DataHandler.ResultColumns</a>
-    </div>
-    <div>
-      <a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_AllColumns">DataHandler.AllColumns</a>
-    </div>
-    <div>
-      <a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_Elements">DataHandler.Elements</a>
-    </div>
-    <div>
       <a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_Register_CB_Connector_Command_DataHandler_Interfaces_IDataHandler_">DataHandler.Register(IDataHandler)</a>
     </div>
     <div>
@@ -180,8 +171,50 @@
   <h5 id="CB_Connector_Command_DataHandler_Join_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>The responsibility of <code>join</code> clause is to combine rows from two or more tables, based on a related column between them.</p>
 </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_Join__ctor_" data-uid="CB.Connector.Command.DataHandler.Join.#ctor*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_Join__ctor" data-uid="CB.Connector.Command.DataHandler.Join.#ctor">Join()</h4>
+  <div class="markdown level1 summary"><p>Constructor. Initializes a new instance of the <a class="xref" href="CB.Connector.Command.DataHandler.BaseDataSink.html">BaseDataSink</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Join()</code></pre>
+  </div>
   <h3 id="properties">Properties
   </h3>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_Join_AllColumns_" data-uid="CB.Connector.Command.DataHandler.Join.AllColumns*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_Join_AllColumns" data-uid="CB.Connector.Command.DataHandler.Join.AllColumns">AllColumns</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of columns that are used by <code>next</code> handlers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ICollection&lt;IColumnArgument&gt; AllColumns { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="CB.Connector.Command.DataHandler.Argument.IColumnArgument.html">IColumnArgument</a>&gt;</td>
+        <td><p>The collection of columns that are used by <code>next</code> handlers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_AllColumns">DataHandler.AllColumns</a></div>
   
   
   <a id="CB_Connector_Command_DataHandler_Join_Arguments_" data-uid="CB.Connector.Command.DataHandler.Join.Arguments*"></a>
@@ -209,6 +242,64 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_Join_Elements_" data-uid="CB.Connector.Command.DataHandler.Join.Elements*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_Join_Elements" data-uid="CB.Connector.Command.DataHandler.Join.Elements">Elements</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of elements defined in the metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IElementCollection&lt;IColumnArgument&gt; Elements { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Collections.IElementCollection-1.html">IElementCollection</a>&lt;<a class="xref" href="CB.Connector.Command.DataHandler.Argument.IColumnArgument.html">IColumnArgument</a>&gt;</td>
+        <td><p>The collection of elements defined in the metadata.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_Elements">DataHandler.Elements</a></div>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_Join_ResultColumns_" data-uid="CB.Connector.Command.DataHandler.Join.ResultColumns*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_Join_ResultColumns" data-uid="CB.Connector.Command.DataHandler.Join.ResultColumns">ResultColumns</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of columns that belong to the result set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ICollection&lt;IColumnArgument&gt; ResultColumns { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="CB.Connector.Command.DataHandler.Argument.IColumnArgument.html">IColumnArgument</a>&gt;</td>
+        <td><p>The collection of columns that belong to the result set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_ResultColumns">DataHandler.ResultColumns</a></div>
   <h3 id="methods">Methods
   </h3>
   

@@ -1456,6 +1456,66 @@ references:
   commentId: N:CB.Connector.Collections.Classes
   fullName: CB.Connector.Collections.Classes
   nameWithType: CB.Connector.Collections.Classes
+- uid: CB.Connector.Collections.Classes.ColumnArgumentCollection
+  name: ColumnArgumentCollection
+  href: api/CB.Connector.Collections.Classes.ColumnArgumentCollection.html
+  commentId: T:CB.Connector.Collections.Classes.ColumnArgumentCollection
+  fullName: CB.Connector.Collections.Classes.ColumnArgumentCollection
+  nameWithType: ColumnArgumentCollection
+- uid: CB.Connector.Collections.Classes.ColumnArgumentCollection.#ctor(CB.Connector.Metadata.MetaModel.ILoader,CB.Connector.Metadata.MetaModel.INamedElement,System.Func{CB.Connector.Command.DataHandler.Argument.IColumnArgument,System.String})
+  name: ColumnArgumentCollection(ILoader, INamedElement, Func<IColumnArgument, String>)
+  href: api/CB.Connector.Collections.Classes.ColumnArgumentCollection.html#CB_Connector_Collections_Classes_ColumnArgumentCollection__ctor_CB_Connector_Metadata_MetaModel_ILoader_CB_Connector_Metadata_MetaModel_INamedElement_System_Func_CB_Connector_Command_DataHandler_Argument_IColumnArgument_System_String__
+  commentId: M:CB.Connector.Collections.Classes.ColumnArgumentCollection.#ctor(CB.Connector.Metadata.MetaModel.ILoader,CB.Connector.Metadata.MetaModel.INamedElement,System.Func{CB.Connector.Command.DataHandler.Argument.IColumnArgument,System.String})
+  name.vb: ColumnArgumentCollection(ILoader, INamedElement, Func(Of IColumnArgument, String))
+  fullName: CB.Connector.Collections.Classes.ColumnArgumentCollection.ColumnArgumentCollection(CB.Connector.Metadata.MetaModel.ILoader, CB.Connector.Metadata.MetaModel.INamedElement, System.Func<CB.Connector.Command.DataHandler.Argument.IColumnArgument, System.String>)
+  fullName.vb: CB.Connector.Collections.Classes.ColumnArgumentCollection.ColumnArgumentCollection(CB.Connector.Metadata.MetaModel.ILoader, CB.Connector.Metadata.MetaModel.INamedElement, System.Func(Of CB.Connector.Command.DataHandler.Argument.IColumnArgument, System.String))
+  nameWithType: ColumnArgumentCollection.ColumnArgumentCollection(ILoader, INamedElement, Func<IColumnArgument, String>)
+  nameWithType.vb: ColumnArgumentCollection.ColumnArgumentCollection(ILoader, INamedElement, Func(Of IColumnArgument, String))
+- uid: CB.Connector.Collections.Classes.ColumnArgumentCollection.#ctor(CB.Connector.Metadata.MetaModel.ILoader,System.Func{CB.Connector.Command.DataHandler.Argument.IColumnArgument,System.String})
+  name: ColumnArgumentCollection(ILoader, Func<IColumnArgument, String>)
+  href: api/CB.Connector.Collections.Classes.ColumnArgumentCollection.html#CB_Connector_Collections_Classes_ColumnArgumentCollection__ctor_CB_Connector_Metadata_MetaModel_ILoader_System_Func_CB_Connector_Command_DataHandler_Argument_IColumnArgument_System_String__
+  commentId: M:CB.Connector.Collections.Classes.ColumnArgumentCollection.#ctor(CB.Connector.Metadata.MetaModel.ILoader,System.Func{CB.Connector.Command.DataHandler.Argument.IColumnArgument,System.String})
+  name.vb: ColumnArgumentCollection(ILoader, Func(Of IColumnArgument, String))
+  fullName: CB.Connector.Collections.Classes.ColumnArgumentCollection.ColumnArgumentCollection(CB.Connector.Metadata.MetaModel.ILoader, System.Func<CB.Connector.Command.DataHandler.Argument.IColumnArgument, System.String>)
+  fullName.vb: CB.Connector.Collections.Classes.ColumnArgumentCollection.ColumnArgumentCollection(CB.Connector.Metadata.MetaModel.ILoader, System.Func(Of CB.Connector.Command.DataHandler.Argument.IColumnArgument, System.String))
+  nameWithType: ColumnArgumentCollection.ColumnArgumentCollection(ILoader, Func<IColumnArgument, String>)
+  nameWithType.vb: ColumnArgumentCollection.ColumnArgumentCollection(ILoader, Func(Of IColumnArgument, String))
+- uid: CB.Connector.Collections.Classes.ColumnArgumentCollection.#ctor*
+  name: ColumnArgumentCollection
+  href: api/CB.Connector.Collections.Classes.ColumnArgumentCollection.html#CB_Connector_Collections_Classes_ColumnArgumentCollection__ctor_
+  commentId: Overload:CB.Connector.Collections.Classes.ColumnArgumentCollection.#ctor
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.ColumnArgumentCollection.ColumnArgumentCollection
+  nameWithType: ColumnArgumentCollection.ColumnArgumentCollection
+- uid: CB.Connector.Collections.Classes.ColumnArgumentCollection.Contains(System.String)
+  name: Contains(String)
+  href: api/CB.Connector.Collections.Classes.ColumnArgumentCollection.html#CB_Connector_Collections_Classes_ColumnArgumentCollection_Contains_System_String_
+  commentId: M:CB.Connector.Collections.Classes.ColumnArgumentCollection.Contains(System.String)
+  fullName: CB.Connector.Collections.Classes.ColumnArgumentCollection.Contains(System.String)
+  nameWithType: ColumnArgumentCollection.Contains(String)
+- uid: CB.Connector.Collections.Classes.ColumnArgumentCollection.Contains*
+  name: Contains
+  href: api/CB.Connector.Collections.Classes.ColumnArgumentCollection.html#CB_Connector_Collections_Classes_ColumnArgumentCollection_Contains_
+  commentId: Overload:CB.Connector.Collections.Classes.ColumnArgumentCollection.Contains
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.ColumnArgumentCollection.Contains
+  nameWithType: ColumnArgumentCollection.Contains
+- uid: CB.Connector.Collections.Classes.ColumnArgumentCollection.TryGetValue*
+  name: TryGetValue
+  href: api/CB.Connector.Collections.Classes.ColumnArgumentCollection.html#CB_Connector_Collections_Classes_ColumnArgumentCollection_TryGetValue_
+  commentId: Overload:CB.Connector.Collections.Classes.ColumnArgumentCollection.TryGetValue
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.ColumnArgumentCollection.TryGetValue
+  nameWithType: ColumnArgumentCollection.TryGetValue
+- uid: CB.Connector.Collections.Classes.ColumnArgumentCollection.TryGetValue``1(System.String,``0@)
+  name: TryGetValue<TValue>(String, out TValue)
+  href: api/CB.Connector.Collections.Classes.ColumnArgumentCollection.html#CB_Connector_Collections_Classes_ColumnArgumentCollection_TryGetValue__1_System_String___0__
+  commentId: M:CB.Connector.Collections.Classes.ColumnArgumentCollection.TryGetValue``1(System.String,``0@)
+  name.vb: TryGetValue(Of TValue)(String, ByRef TValue)
+  fullName: CB.Connector.Collections.Classes.ColumnArgumentCollection.TryGetValue<TValue>(System.String, out TValue)
+  fullName.vb: CB.Connector.Collections.Classes.ColumnArgumentCollection.TryGetValue(Of TValue)(System.String, ByRef TValue)
+  nameWithType: ColumnArgumentCollection.TryGetValue<TValue>(String, out TValue)
+  nameWithType.vb: ColumnArgumentCollection.TryGetValue(Of TValue)(String, ByRef TValue)
 - uid: CB.Connector.Collections.Classes.ElementCollection`1
   name: ElementCollection<T>
   href: api/CB.Connector.Collections.Classes.ElementCollection-1.html
@@ -1980,6 +2040,14 @@ references:
   fullName.vb: CB.Connector.Collections.Classes.LoadableCollection(Of T).GetKeyForItem
   nameWithType: LoadableCollection<T>.GetKeyForItem
   nameWithType.vb: LoadableCollection(Of T).GetKeyForItem
+- uid: CB.Connector.Collections.Classes.LoadableCollection`1.Ghost
+  name: Ghost
+  href: api/CB.Connector.Collections.Classes.LoadableCollection-1.html#CB_Connector_Collections_Classes_LoadableCollection_1_Ghost
+  commentId: F:CB.Connector.Collections.Classes.LoadableCollection`1.Ghost
+  fullName: CB.Connector.Collections.Classes.LoadableCollection<T>.Ghost
+  fullName.vb: CB.Connector.Collections.Classes.LoadableCollection(Of T).Ghost
+  nameWithType: LoadableCollection<T>.Ghost
+  nameWithType.vb: LoadableCollection(Of T).Ghost
 - uid: CB.Connector.Collections.Classes.LoadableCollection`1.IsLoaded
   name: IsLoaded
   href: api/CB.Connector.Collections.Classes.LoadableCollection-1.html#CB_Connector_Collections_Classes_LoadableCollection_1_IsLoaded
@@ -2031,6 +2099,14 @@ references:
   fullName.vb: CB.Connector.Collections.Classes.LoadableCollection(Of T).LoadedValues
   nameWithType: LoadableCollection<T>.LoadedValues
   nameWithType.vb: LoadableCollection(Of T).LoadedValues
+- uid: CB.Connector.Collections.Classes.LoadableCollection`1.Loader
+  name: Loader
+  href: api/CB.Connector.Collections.Classes.LoadableCollection-1.html#CB_Connector_Collections_Classes_LoadableCollection_1_Loader
+  commentId: F:CB.Connector.Collections.Classes.LoadableCollection`1.Loader
+  fullName: CB.Connector.Collections.Classes.LoadableCollection<T>.Loader
+  fullName.vb: CB.Connector.Collections.Classes.LoadableCollection(Of T).Loader
+  nameWithType: LoadableCollection<T>.Loader
+  nameWithType.vb: LoadableCollection(Of T).Loader
 - uid: CB.Connector.Collections.Classes.LoadableCollection`1.Remove(`0)
   name: Remove(T)
   href: api/CB.Connector.Collections.Classes.LoadableCollection-1.html#CB_Connector_Collections_Classes_LoadableCollection_1_Remove__0_
@@ -7398,6 +7474,32 @@ references:
   commentId: T:CB.Connector.Command.DataHandler.Join
   fullName: CB.Connector.Command.DataHandler.Join
   nameWithType: Join
+- uid: CB.Connector.Command.DataHandler.Join.#ctor
+  name: Join()
+  href: api/CB.Connector.Command.DataHandler.Join.html#CB_Connector_Command_DataHandler_Join__ctor
+  commentId: M:CB.Connector.Command.DataHandler.Join.#ctor
+  fullName: CB.Connector.Command.DataHandler.Join.Join()
+  nameWithType: Join.Join()
+- uid: CB.Connector.Command.DataHandler.Join.#ctor*
+  name: Join
+  href: api/CB.Connector.Command.DataHandler.Join.html#CB_Connector_Command_DataHandler_Join__ctor_
+  commentId: Overload:CB.Connector.Command.DataHandler.Join.#ctor
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.Join.Join
+  nameWithType: Join.Join
+- uid: CB.Connector.Command.DataHandler.Join.AllColumns
+  name: AllColumns
+  href: api/CB.Connector.Command.DataHandler.Join.html#CB_Connector_Command_DataHandler_Join_AllColumns
+  commentId: P:CB.Connector.Command.DataHandler.Join.AllColumns
+  fullName: CB.Connector.Command.DataHandler.Join.AllColumns
+  nameWithType: Join.AllColumns
+- uid: CB.Connector.Command.DataHandler.Join.AllColumns*
+  name: AllColumns
+  href: api/CB.Connector.Command.DataHandler.Join.html#CB_Connector_Command_DataHandler_Join_AllColumns_
+  commentId: Overload:CB.Connector.Command.DataHandler.Join.AllColumns
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.Join.AllColumns
+  nameWithType: Join.AllColumns
 - uid: CB.Connector.Command.DataHandler.Join.Arguments
   name: Arguments
   href: api/CB.Connector.Command.DataHandler.Join.html#CB_Connector_Command_DataHandler_Join_Arguments
@@ -7411,6 +7513,19 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.Join.Arguments
   nameWithType: Join.Arguments
+- uid: CB.Connector.Command.DataHandler.Join.Elements
+  name: Elements
+  href: api/CB.Connector.Command.DataHandler.Join.html#CB_Connector_Command_DataHandler_Join_Elements
+  commentId: P:CB.Connector.Command.DataHandler.Join.Elements
+  fullName: CB.Connector.Command.DataHandler.Join.Elements
+  nameWithType: Join.Elements
+- uid: CB.Connector.Command.DataHandler.Join.Elements*
+  name: Elements
+  href: api/CB.Connector.Command.DataHandler.Join.html#CB_Connector_Command_DataHandler_Join_Elements_
+  commentId: Overload:CB.Connector.Command.DataHandler.Join.Elements
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.Join.Elements
+  nameWithType: Join.Elements
 - uid: CB.Connector.Command.DataHandler.Join.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandlerArguments)
   name: Init(IDataHandlerArguments)
   href: api/CB.Connector.Command.DataHandler.Join.html#CB_Connector_Command_DataHandler_Join_Init_CB_Connector_Command_DataHandler_Interfaces_IDataHandlerArguments_
@@ -7424,6 +7539,19 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.Join.Init
   nameWithType: Join.Init
+- uid: CB.Connector.Command.DataHandler.Join.ResultColumns
+  name: ResultColumns
+  href: api/CB.Connector.Command.DataHandler.Join.html#CB_Connector_Command_DataHandler_Join_ResultColumns
+  commentId: P:CB.Connector.Command.DataHandler.Join.ResultColumns
+  fullName: CB.Connector.Command.DataHandler.Join.ResultColumns
+  nameWithType: Join.ResultColumns
+- uid: CB.Connector.Command.DataHandler.Join.ResultColumns*
+  name: ResultColumns
+  href: api/CB.Connector.Command.DataHandler.Join.html#CB_Connector_Command_DataHandler_Join_ResultColumns_
+  commentId: Overload:CB.Connector.Command.DataHandler.Join.ResultColumns
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.Join.ResultColumns
+  nameWithType: Join.ResultColumns
 - uid: CB.Connector.Command.DataHandler.LeftJoin
   name: LeftJoin
   href: api/CB.Connector.Command.DataHandler.LeftJoin.html
@@ -7931,6 +8059,19 @@ references:
   commentId: T:CB.Connector.Command.Interfaces.IExecutionContext
   fullName: CB.Connector.Command.Interfaces.IExecutionContext
   nameWithType: IExecutionContext
+- uid: CB.Connector.Command.Interfaces.IExecutionContext.AddAdditionalCurrentHandler(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
+  name: AddAdditionalCurrentHandler(IDataHandler)
+  href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_AddAdditionalCurrentHandler_CB_Connector_Command_DataHandler_Interfaces_IDataHandler_
+  commentId: M:CB.Connector.Command.Interfaces.IExecutionContext.AddAdditionalCurrentHandler(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
+  fullName: CB.Connector.Command.Interfaces.IExecutionContext.AddAdditionalCurrentHandler(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
+  nameWithType: IExecutionContext.AddAdditionalCurrentHandler(IDataHandler)
+- uid: CB.Connector.Command.Interfaces.IExecutionContext.AddAdditionalCurrentHandler*
+  name: AddAdditionalCurrentHandler
+  href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_AddAdditionalCurrentHandler_
+  commentId: Overload:CB.Connector.Command.Interfaces.IExecutionContext.AddAdditionalCurrentHandler
+  isSpec: "True"
+  fullName: CB.Connector.Command.Interfaces.IExecutionContext.AddAdditionalCurrentHandler
+  nameWithType: IExecutionContext.AddAdditionalCurrentHandler
 - uid: CB.Connector.Command.Interfaces.IExecutionContext.CancellationToken
   name: CancellationToken
   href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_CancellationToken

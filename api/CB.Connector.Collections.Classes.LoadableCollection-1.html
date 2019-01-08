@@ -91,6 +91,7 @@ by key. Default implementation for <code>Lazy Loading</code>.</p>
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">LoadableCollection&lt;T&gt;</span></div>
+      <div class="level2"><a class="xref" href="CB.Connector.Collections.Classes.ColumnArgumentCollection.html">ColumnArgumentCollection</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -221,6 +222,58 @@ by key. Default implementation for <code>Lazy Loading</code>.</p>
         <td><span class="parametername">keySelector</span></td>
         <td><p>A function to extract a key from an element.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="CB_Connector_Collections_Classes_LoadableCollection_1_Ghost" data-uid="CB.Connector.Collections.Classes.LoadableCollection`1.Ghost">Ghost</h4>
+  <div class="markdown level1 summary"><p>ghost object (the collection owner)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly INamedElement Ghost</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.INamedElement.html">INamedElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="CB_Connector_Collections_Classes_LoadableCollection_1_Loader" data-uid="CB.Connector.Collections.Classes.LoadableCollection`1.Loader">Loader</h4>
+  <div class="markdown level1 summary"><p>collection loader member</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ILoader Loader</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -484,7 +537,7 @@ by key. Default implementation for <code>Lazy Loading</code>.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Contains(string key)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual bool Contains(string key)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -696,7 +749,7 @@ by key. Default implementation for <code>Lazy Loading</code>.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TryGetValue&lt;TValue&gt;(string key, out TValue value)
+    <pre><code class="lang-csharp hljs">public virtual bool TryGetValue&lt;TValue&gt;(string key, out TValue value)
     where TValue : T</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>

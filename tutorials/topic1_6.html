@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Implementing ConnectorProperties.cs | CB Connector SDK website </title>
+    <title>Making your own custom connector recognizable by CB Server | CB Connector SDK website </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Implementing ConnectorProperties.cs | CB Connector SDK website ">
+    <meta name="title" content="Making your own custom connector recognizable by CB Server | CB Connector SDK website ">
     <meta name="generator" content="docfx 2.40.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -77,59 +77,9 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="implementing-connectorpropertiescs">Implementing ConnectorProperties.cs</h1>
+<h1 id="making-your-own-custom-connector-recognizable-by-cb-server">Making your own custom connector recognizable by CB Server</h1>
 
-<h2 id="creating-the-new-class">Creating the new class</h2>
-<p>If you have choosen to create your connector solution using Visual Studio Project Template, you can skip this step.</p>
-<p>Start by creating a new Properties class. You need to implement one method from the ConnectorProperties class using the CB.Connector library. A reference to this library is required in your class.</p>
-<pre><code class="lang-cs">using CB.Connector.Property;
-</code></pre>
-<h2 id="implementing-the-getkey-method">Implementing the GetKey() method</h2>
-<p>If you have choosen to create your connector solution using Visual Studio Project Template, you can skip this step.</p>
-<p>First implement the <em><a href="../api/CB.Connector.Property.ConnectorProperties-1.html">GetKey() method</a></em>. This returns the private RSA key used to encrypt and decrypt data with the RSA algorithm.</p>
-<p>To generate a private/public RSA key pair, do the following:</p>
-<ol>
-<li><p>Download the <strong>RSAKeyHelperApp.exe</strong>.</p>
-</li>
-<li><p>Double-click <em>RSAKeyHelperApp.exe</em> to open <strong>Command Prompt</strong> window.</p>
-<p><img src="../images/RSAKeyGeneratorApp.png" alt="Command Prompt window"></p>
-</li>
-</ol>
-<h2 id="defining-properties">Defining properties</h2>
-<p>The next step is to define the properties required to interact with your specific data source.</p>
-<ol>
-<li><p>Specify authentication type</p>
-<p>There are several options available for user authentication in custom connectors. It is important for you to understand these options. The following are the options for configuring user authentication:</p>
-<ul>
-<li>OAuth 2.0 Authentication (see <a href="../api/CB.Connector.Authentication.OAuth.IOAuth2Configuration.html">IOAuth2Configuration.cs reference</a>)</li>
-<li>Basic Authentication (see <a href="../api/CB.Connector.Authentication.BasicAuth.IBasicAuthConfiguration.html">IBasicAuthConfiguration.cs reference</a>)</li>
-<li>No Authentication</li>
-</ul>
-</li>
-<li><p>Create the properties definition</p>
-<p>After you apply the <a href="../api/CB.Connector.Property.ConnectorPropertyAttribute.html">ConnectorPropertyAttribute</a>, you can begin to define the specifics of your attribute. The following code example describes this process:</p>
-<pre><code class="lang-cs">//No authentication
-public class Properties : ConnectorProperties&lt;Properties&gt;
-{
-    //Apply the ConnectorPropertyAttribute
-    [ConnectorProperty(
-        Key = &quot;ConnectionString&quot;,
-        Name = &quot;ConnectionString&quot;,
-        Description =
-            &quot;A string that specifies information about a data source and the means of connecting to it.&quot;,
-        Flags = ConnectorPropertyFlags.None,
-        IsEncrypted = false )]
-    public string ConnectionString { get; set; }
-
-    protected override string GetKey()
-    {
-        //In case your connector has no encrypted property.
-        return string.Empty;
-    }
-}
-</code></pre>
-</li>
-</ol>
+<p>Please contact us via e-mail at <a href="mailto:office@connecting-software.com">office@connecting-software.com</a> for a <strong>valid license</strong> file including your custom connector name.</p>
 </article>
           </div>
           

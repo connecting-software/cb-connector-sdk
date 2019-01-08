@@ -136,6 +136,14 @@
 <li><p>Define tables according to your determination of how you need to organize the objects.</p>
 </li>
 </ol>
+<h2 id="how-to-view-cb-server-error-log-file">How to: View CB Server Error Log File?</h2>
+<p>View the CB Server error log to ensure that Connect Bridge processes have completed successfully. This can be helpful to detect (in order of importance) error messages, warning messages, and informational messages.</p>
+<p>By default, the error log is located at <code>Program Files\Connecting Software\Connect Bridge\MgServerService\logOutputfile.txt</code>.</p>
+<p>A new error log is created each time an instance of CB Server is started.</p>
+<p>You can specify what kind of messages should be logged into the CB Server error log file.</p>
+<p>To monitor the content of the CB Server error log file from Windows PowerShell in real time, do the following:</p>
+<pre><code class="lang-PowerShell">Get-content &quot;C:\\Program Files\Connecting Software\Connect Bridge\MgServerService\logOutputfile.txt&quot; -Wait
+</code></pre>
 </article>
           </div>
           

@@ -80,6 +80,47 @@
 <h1 id="how-to">How To</h1>
 
 <p>To get you up to speed with CB Connector SQK, we've listed some of the most common questions on this page.</p>
+<h2 id="how-to-debug-your-solution">How To: Debug your solution</h2>
+<h3 id="attach-to-running-processes-with-the-debugger">Attach to running processes with the debugger</h3>
+<p>To attach to a process on your local computer:</p>
+<ol>
+<li><p>Open Visual Studio as Administrator.</p>
+</li>
+<li><p>In Visual Studio, select <strong>Debug &gt; Attach to Process</strong> to open the <strong>Attach to Process</strong> dialog box.</p>
+<p><strong>Connection type</strong> should be set to <strong>Default</strong>. <strong>Connection target</strong> should be your local machine name.</p>
+<p><img src="../images/processes.PNG" alt="Attach to Process"></p>
+</li>
+<li><p>In the <strong>Available processes</strong> list, find and select <em>MG.Server.exe</em> to attach to.</p>
+</li>
+<li><p>Select <strong>Attach</strong>.</p>
+</li>
+</ol>
+<h3 id="review-the-build-and-debug-properties">Review the build and debug properties</h3>
+<ol>
+<li><p>In <strong>Solution Explorer</strong>, select the project.</p>
+</li>
+<li><p>Select the <strong>Properties</strong> icon, press <strong>Alt+Enter</strong>, or right-click and choose <strong>Properties</strong> to open the <strong>Properties window</strong>.</p>
+</li>
+<li><p>In the <strong>Configuration</strong> list, choose <strong>Debug</strong>.</p>
+</li>
+<li><p>Under <strong>Start action</strong>, select <strong>Start external program</strong>, and add the fully qualified path and name of the service.</p>
+</li>
+<li><p>Add <em>HostType=Application</em> in the <strong>Command line arguments</strong>,</p>
+<p><img src="../images/debug.PNG" alt="Debug"></p>
+</li>
+<li><p>Use <strong>File &gt; Save Selected Items</strong> or <strong>Ctrl+S</strong> to save changes.</p>
+</li>
+<li><p>Set breakpoints in the project.</p>
+</li>
+<li><p>Right-click the project and choose <strong>Set as Startup Project</strong>.</p>
+</li>
+<li><p>Make sure the <strong>Solutions Configuration</strong> field is set to <strong>Debug</strong>.</p>
+</li>
+</ol>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>If debugging does not hit your breakpoints, make sure that your DLL output (by default, the &lt;project&gt;/Debug folder) is the location that the calling service is calling.</p>
+</div>
 <h2 id="how-to-design-your-meta-model">How to: Design Your Meta Model</h2>
 <p>Do the following:</p>
 <ol>
@@ -136,7 +177,7 @@
 <li><p>Define tables according to your determination of how you need to organize the objects.</p>
 </li>
 </ol>
-<h2 id="how-to-view-cb-server-error-log-file">How to: View CB Server Error Log File?</h2>
+<h2 id="how-to-view-cb-server-error-log-file">How to: View CB Server Error Log File</h2>
 <p>View the CB Server error log to ensure that Connect Bridge processes have completed successfully. This can be helpful to detect (in order of importance) error messages, warning messages, and informational messages.</p>
 <p>By default, the error log is located at <code>Program Files\Connecting Software\Connect Bridge\MgServerService\logOutputfile.txt</code>.</p>
 <p>A new error log is created each time an instance of CB Server is started.</p>

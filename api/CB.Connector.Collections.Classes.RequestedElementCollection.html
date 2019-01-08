@@ -167,33 +167,6 @@ It collects elements that were requested by TryGetValue method (or added by Add 
   </h3>
   
   
-  <a id="CB_Connector_Collections_Classes_RequestedElementCollection_AllElements_" data-uid="CB.Connector.Collections.Classes.RequestedElementCollection.AllElements*"></a>
-  <h4 id="CB_Connector_Collections_Classes_RequestedElementCollection_AllElements" data-uid="CB.Connector.Collections.Classes.RequestedElementCollection.AllElements">AllElements</h4>
-  <div class="markdown level1 summary"><p>Gets a collection containing the all elements in the <a class="xref" href="CB.Connector.Collections.Classes.RequestedElementCollection.html">RequestedElementCollection</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ICollection&lt;IColumnArgument&gt; AllElements { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="CB.Connector.Command.DataHandler.Argument.IColumnArgument.html">IColumnArgument</a>&gt;</td>
-        <td><p>A collection containing the all elements in the <a class="xref" href="CB.Connector.Collections.Classes.RequestedElementCollection.html">RequestedElementCollection</a>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="CB_Connector_Collections_Classes_RequestedElementCollection_Count_" data-uid="CB.Connector.Collections.Classes.RequestedElementCollection.Count*"></a>
   <h4 id="CB_Connector_Collections_Classes_RequestedElementCollection_Count" data-uid="CB.Connector.Collections.Classes.RequestedElementCollection.Count">Count</h4>
   <div class="markdown level1 summary"><p>Gets the number of elements contained in the <a class="xref" href="CB.Connector.Collections.Classes.RequestedElementCollection.html">RequestedElementCollection</a>.</p>
@@ -592,6 +565,50 @@ It collects elements that were requested by TryGetValue method (or added by Add 
       <tr>
         <td><span class="xref">System.IndexOutOfRangeException</span></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="CB_Connector_Collections_Classes_RequestedElementCollection_GetAllElements_" data-uid="CB.Connector.Collections.Classes.RequestedElementCollection.GetAllElements*"></a>
+  <h4 id="CB_Connector_Collections_Classes_RequestedElementCollection_GetAllElements_System_String_" data-uid="CB.Connector.Collections.Classes.RequestedElementCollection.GetAllElements(System.String)">GetAllElements(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a collection containing the all elements in the <a class="xref" href="CB.Connector.Collections.Classes.RequestedElementCollection.html">RequestedElementCollection</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;IColumnArgument&gt; GetAllElements(string filterName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filterName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="CB.Connector.Command.DataHandler.Argument.IColumnArgument.html">IColumnArgument</a>&gt;</td>
+        <td><p>A collection containing the all elements in the <a class="xref" href="CB.Connector.Collections.Classes.RequestedElementCollection.html">RequestedElementCollection</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>

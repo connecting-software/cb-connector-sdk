@@ -2216,19 +2216,6 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Collections.Classes.RequestedElementCollection.Add
   nameWithType: RequestedElementCollection.Add
-- uid: CB.Connector.Collections.Classes.RequestedElementCollection.AllElements
-  name: AllElements
-  href: api/CB.Connector.Collections.Classes.RequestedElementCollection.html#CB_Connector_Collections_Classes_RequestedElementCollection_AllElements
-  commentId: P:CB.Connector.Collections.Classes.RequestedElementCollection.AllElements
-  fullName: CB.Connector.Collections.Classes.RequestedElementCollection.AllElements
-  nameWithType: RequestedElementCollection.AllElements
-- uid: CB.Connector.Collections.Classes.RequestedElementCollection.AllElements*
-  name: AllElements
-  href: api/CB.Connector.Collections.Classes.RequestedElementCollection.html#CB_Connector_Collections_Classes_RequestedElementCollection_AllElements_
-  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection.AllElements
-  isSpec: "True"
-  fullName: CB.Connector.Collections.Classes.RequestedElementCollection.AllElements
-  nameWithType: RequestedElementCollection.AllElements
 - uid: CB.Connector.Collections.Classes.RequestedElementCollection.Clear
   name: Clear()
   href: api/CB.Connector.Collections.Classes.RequestedElementCollection.html#CB_Connector_Collections_Classes_RequestedElementCollection_Clear
@@ -2290,6 +2277,19 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Collections.Classes.RequestedElementCollection.Count
   nameWithType: RequestedElementCollection.Count
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection.GetAllElements(System.String)
+  name: GetAllElements(String)
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection.html#CB_Connector_Collections_Classes_RequestedElementCollection_GetAllElements_System_String_
+  commentId: M:CB.Connector.Collections.Classes.RequestedElementCollection.GetAllElements(System.String)
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection.GetAllElements(System.String)
+  nameWithType: RequestedElementCollection.GetAllElements(String)
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection.GetAllElements*
+  name: GetAllElements
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection.html#CB_Connector_Collections_Classes_RequestedElementCollection_GetAllElements_
+  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection.GetAllElements
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection.GetAllElements
+  nameWithType: RequestedElementCollection.GetAllElements
 - uid: CB.Connector.Collections.Classes.RequestedElementCollection.GetEnumerator
   name: GetEnumerator()
   href: api/CB.Connector.Collections.Classes.RequestedElementCollection.html#CB_Connector_Collections_Classes_RequestedElementCollection_GetEnumerator
@@ -2867,23 +2867,23 @@ references:
   fullName.vb: CB.Connector.Collections.IRequestedElementCollection(Of T)
   nameWithType: IRequestedElementCollection<T>
   nameWithType.vb: IRequestedElementCollection(Of T)
-- uid: CB.Connector.Collections.IRequestedElementCollection`1.AllElements
-  name: AllElements
-  href: api/CB.Connector.Collections.IRequestedElementCollection-1.html#CB_Connector_Collections_IRequestedElementCollection_1_AllElements
-  commentId: P:CB.Connector.Collections.IRequestedElementCollection`1.AllElements
-  fullName: CB.Connector.Collections.IRequestedElementCollection<T>.AllElements
-  fullName.vb: CB.Connector.Collections.IRequestedElementCollection(Of T).AllElements
-  nameWithType: IRequestedElementCollection<T>.AllElements
-  nameWithType.vb: IRequestedElementCollection(Of T).AllElements
-- uid: CB.Connector.Collections.IRequestedElementCollection`1.AllElements*
-  name: AllElements
-  href: api/CB.Connector.Collections.IRequestedElementCollection-1.html#CB_Connector_Collections_IRequestedElementCollection_1_AllElements_
-  commentId: Overload:CB.Connector.Collections.IRequestedElementCollection`1.AllElements
+- uid: CB.Connector.Collections.IRequestedElementCollection`1.GetAllElements(System.String)
+  name: GetAllElements(String)
+  href: api/CB.Connector.Collections.IRequestedElementCollection-1.html#CB_Connector_Collections_IRequestedElementCollection_1_GetAllElements_System_String_
+  commentId: M:CB.Connector.Collections.IRequestedElementCollection`1.GetAllElements(System.String)
+  fullName: CB.Connector.Collections.IRequestedElementCollection<T>.GetAllElements(System.String)
+  fullName.vb: CB.Connector.Collections.IRequestedElementCollection(Of T).GetAllElements(System.String)
+  nameWithType: IRequestedElementCollection<T>.GetAllElements(String)
+  nameWithType.vb: IRequestedElementCollection(Of T).GetAllElements(String)
+- uid: CB.Connector.Collections.IRequestedElementCollection`1.GetAllElements*
+  name: GetAllElements
+  href: api/CB.Connector.Collections.IRequestedElementCollection-1.html#CB_Connector_Collections_IRequestedElementCollection_1_GetAllElements_
+  commentId: Overload:CB.Connector.Collections.IRequestedElementCollection`1.GetAllElements
   isSpec: "True"
-  fullName: CB.Connector.Collections.IRequestedElementCollection<T>.AllElements
-  fullName.vb: CB.Connector.Collections.IRequestedElementCollection(Of T).AllElements
-  nameWithType: IRequestedElementCollection<T>.AllElements
-  nameWithType.vb: IRequestedElementCollection(Of T).AllElements
+  fullName: CB.Connector.Collections.IRequestedElementCollection<T>.GetAllElements
+  fullName.vb: CB.Connector.Collections.IRequestedElementCollection(Of T).GetAllElements
+  nameWithType: IRequestedElementCollection<T>.GetAllElements
+  nameWithType.vb: IRequestedElementCollection(Of T).GetAllElements
 - uid: CB.Connector.Command
   name: CB.Connector.Command
   href: api/CB.Connector.Command.html
@@ -4705,19 +4705,6 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.BaseDataSink.BaseDataSink
   nameWithType: BaseDataSink.BaseDataSink
-- uid: CB.Connector.Command.DataHandler.BaseDataSink.AllColumns
-  name: AllColumns
-  href: api/CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_AllColumns
-  commentId: P:CB.Connector.Command.DataHandler.BaseDataSink.AllColumns
-  fullName: CB.Connector.Command.DataHandler.BaseDataSink.AllColumns
-  nameWithType: BaseDataSink.AllColumns
-- uid: CB.Connector.Command.DataHandler.BaseDataSink.AllColumns*
-  name: AllColumns
-  href: api/CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_AllColumns_
-  commentId: Overload:CB.Connector.Command.DataHandler.BaseDataSink.AllColumns
-  isSpec: "True"
-  fullName: CB.Connector.Command.DataHandler.BaseDataSink.AllColumns
-  nameWithType: BaseDataSink.AllColumns
 - uid: CB.Connector.Command.DataHandler.BaseDataSink.Elements
   name: Elements
   href: api/CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_Elements
@@ -4731,6 +4718,19 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.BaseDataSink.Elements
   nameWithType: BaseDataSink.Elements
+- uid: CB.Connector.Command.DataHandler.BaseDataSink.GetAllColumns(System.String)
+  name: GetAllColumns(String)
+  href: api/CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_GetAllColumns_System_String_
+  commentId: M:CB.Connector.Command.DataHandler.BaseDataSink.GetAllColumns(System.String)
+  fullName: CB.Connector.Command.DataHandler.BaseDataSink.GetAllColumns(System.String)
+  nameWithType: BaseDataSink.GetAllColumns(String)
+- uid: CB.Connector.Command.DataHandler.BaseDataSink.GetAllColumns*
+  name: GetAllColumns
+  href: api/CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_GetAllColumns_
+  commentId: Overload:CB.Connector.Command.DataHandler.BaseDataSink.GetAllColumns
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.BaseDataSink.GetAllColumns
+  nameWithType: BaseDataSink.GetAllColumns
 - uid: CB.Connector.Command.DataHandler.BaseDataSink.ResultColumns
   name: ResultColumns
   href: api/CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_ResultColumns
@@ -4762,19 +4762,6 @@ references:
   commentId: T:CB.Connector.Command.DataHandler.DataHandler
   fullName: CB.Connector.Command.DataHandler.DataHandler
   nameWithType: DataHandler
-- uid: CB.Connector.Command.DataHandler.DataHandler.AllColumns
-  name: AllColumns
-  href: api/CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_AllColumns
-  commentId: P:CB.Connector.Command.DataHandler.DataHandler.AllColumns
-  fullName: CB.Connector.Command.DataHandler.DataHandler.AllColumns
-  nameWithType: DataHandler.AllColumns
-- uid: CB.Connector.Command.DataHandler.DataHandler.AllColumns*
-  name: AllColumns
-  href: api/CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_AllColumns_
-  commentId: Overload:CB.Connector.Command.DataHandler.DataHandler.AllColumns
-  isSpec: "True"
-  fullName: CB.Connector.Command.DataHandler.DataHandler.AllColumns
-  nameWithType: DataHandler.AllColumns
 - uid: CB.Connector.Command.DataHandler.DataHandler.Dispose
   name: Dispose()
   href: api/CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_Dispose
@@ -4820,6 +4807,19 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.DataHandler.Execute
   nameWithType: DataHandler.Execute
+- uid: CB.Connector.Command.DataHandler.DataHandler.GetAllColumns(System.String)
+  name: GetAllColumns(String)
+  href: api/CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_GetAllColumns_System_String_
+  commentId: M:CB.Connector.Command.DataHandler.DataHandler.GetAllColumns(System.String)
+  fullName: CB.Connector.Command.DataHandler.DataHandler.GetAllColumns(System.String)
+  nameWithType: DataHandler.GetAllColumns(String)
+- uid: CB.Connector.Command.DataHandler.DataHandler.GetAllColumns*
+  name: GetAllColumns
+  href: api/CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_GetAllColumns_
+  commentId: Overload:CB.Connector.Command.DataHandler.DataHandler.GetAllColumns
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.DataHandler.GetAllColumns
+  nameWithType: DataHandler.GetAllColumns
 - uid: CB.Connector.Command.DataHandler.DataHandler.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandlerArguments)
   name: Init(IDataHandlerArguments)
   href: api/CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_Init_CB_Connector_Command_DataHandler_Interfaces_IDataHandlerArguments_
@@ -7371,19 +7371,6 @@ references:
   commentId: T:CB.Connector.Command.DataHandler.Interfaces.IDataHandler
   fullName: CB.Connector.Command.DataHandler.Interfaces.IDataHandler
   nameWithType: IDataHandler
-- uid: CB.Connector.Command.DataHandler.Interfaces.IDataHandler.AllColumns
-  name: AllColumns
-  href: api/CB.Connector.Command.DataHandler.Interfaces.IDataHandler.html#CB_Connector_Command_DataHandler_Interfaces_IDataHandler_AllColumns
-  commentId: P:CB.Connector.Command.DataHandler.Interfaces.IDataHandler.AllColumns
-  fullName: CB.Connector.Command.DataHandler.Interfaces.IDataHandler.AllColumns
-  nameWithType: IDataHandler.AllColumns
-- uid: CB.Connector.Command.DataHandler.Interfaces.IDataHandler.AllColumns*
-  name: AllColumns
-  href: api/CB.Connector.Command.DataHandler.Interfaces.IDataHandler.html#CB_Connector_Command_DataHandler_Interfaces_IDataHandler_AllColumns_
-  commentId: Overload:CB.Connector.Command.DataHandler.Interfaces.IDataHandler.AllColumns
-  isSpec: "True"
-  fullName: CB.Connector.Command.DataHandler.Interfaces.IDataHandler.AllColumns
-  nameWithType: IDataHandler.AllColumns
 - uid: CB.Connector.Command.DataHandler.Interfaces.IDataHandler.Elements
   name: Elements
   href: api/CB.Connector.Command.DataHandler.Interfaces.IDataHandler.html#CB_Connector_Command_DataHandler_Interfaces_IDataHandler_Elements
@@ -7410,6 +7397,19 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.Interfaces.IDataHandler.Execute
   nameWithType: IDataHandler.Execute
+- uid: CB.Connector.Command.DataHandler.Interfaces.IDataHandler.GetAllColumns(System.String)
+  name: GetAllColumns(String)
+  href: api/CB.Connector.Command.DataHandler.Interfaces.IDataHandler.html#CB_Connector_Command_DataHandler_Interfaces_IDataHandler_GetAllColumns_System_String_
+  commentId: M:CB.Connector.Command.DataHandler.Interfaces.IDataHandler.GetAllColumns(System.String)
+  fullName: CB.Connector.Command.DataHandler.Interfaces.IDataHandler.GetAllColumns(System.String)
+  nameWithType: IDataHandler.GetAllColumns(String)
+- uid: CB.Connector.Command.DataHandler.Interfaces.IDataHandler.GetAllColumns*
+  name: GetAllColumns
+  href: api/CB.Connector.Command.DataHandler.Interfaces.IDataHandler.html#CB_Connector_Command_DataHandler_Interfaces_IDataHandler_GetAllColumns_
+  commentId: Overload:CB.Connector.Command.DataHandler.Interfaces.IDataHandler.GetAllColumns
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.Interfaces.IDataHandler.GetAllColumns
+  nameWithType: IDataHandler.GetAllColumns
 - uid: CB.Connector.Command.DataHandler.Interfaces.IDataHandler.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandlerArguments)
   name: Init(IDataHandlerArguments)
   href: api/CB.Connector.Command.DataHandler.Interfaces.IDataHandler.html#CB_Connector_Command_DataHandler_Interfaces_IDataHandler_Init_CB_Connector_Command_DataHandler_Interfaces_IDataHandlerArguments_
@@ -7487,19 +7487,6 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.Join.Join
   nameWithType: Join.Join
-- uid: CB.Connector.Command.DataHandler.Join.AllColumns
-  name: AllColumns
-  href: api/CB.Connector.Command.DataHandler.Join.html#CB_Connector_Command_DataHandler_Join_AllColumns
-  commentId: P:CB.Connector.Command.DataHandler.Join.AllColumns
-  fullName: CB.Connector.Command.DataHandler.Join.AllColumns
-  nameWithType: Join.AllColumns
-- uid: CB.Connector.Command.DataHandler.Join.AllColumns*
-  name: AllColumns
-  href: api/CB.Connector.Command.DataHandler.Join.html#CB_Connector_Command_DataHandler_Join_AllColumns_
-  commentId: Overload:CB.Connector.Command.DataHandler.Join.AllColumns
-  isSpec: "True"
-  fullName: CB.Connector.Command.DataHandler.Join.AllColumns
-  nameWithType: Join.AllColumns
 - uid: CB.Connector.Command.DataHandler.Join.Arguments
   name: Arguments
   href: api/CB.Connector.Command.DataHandler.Join.html#CB_Connector_Command_DataHandler_Join_Arguments
@@ -7526,6 +7513,19 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.Join.Elements
   nameWithType: Join.Elements
+- uid: CB.Connector.Command.DataHandler.Join.GetAllColumns(System.String)
+  name: GetAllColumns(String)
+  href: api/CB.Connector.Command.DataHandler.Join.html#CB_Connector_Command_DataHandler_Join_GetAllColumns_System_String_
+  commentId: M:CB.Connector.Command.DataHandler.Join.GetAllColumns(System.String)
+  fullName: CB.Connector.Command.DataHandler.Join.GetAllColumns(System.String)
+  nameWithType: Join.GetAllColumns(String)
+- uid: CB.Connector.Command.DataHandler.Join.GetAllColumns*
+  name: GetAllColumns
+  href: api/CB.Connector.Command.DataHandler.Join.html#CB_Connector_Command_DataHandler_Join_GetAllColumns_
+  commentId: Overload:CB.Connector.Command.DataHandler.Join.GetAllColumns
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.Join.GetAllColumns
+  nameWithType: Join.GetAllColumns
 - uid: CB.Connector.Command.DataHandler.Join.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandlerArguments)
   name: Init(IDataHandlerArguments)
   href: api/CB.Connector.Command.DataHandler.Join.html#CB_Connector_Command_DataHandler_Join_Init_CB_Connector_Command_DataHandler_Interfaces_IDataHandlerArguments_
@@ -7821,19 +7821,6 @@ references:
   commentId: T:CB.Connector.Command.DataHandler.TableSource
   fullName: CB.Connector.Command.DataHandler.TableSource
   nameWithType: TableSource
-- uid: CB.Connector.Command.DataHandler.TableSource.AllColumns
-  name: AllColumns
-  href: api/CB.Connector.Command.DataHandler.TableSource.html#CB_Connector_Command_DataHandler_TableSource_AllColumns
-  commentId: P:CB.Connector.Command.DataHandler.TableSource.AllColumns
-  fullName: CB.Connector.Command.DataHandler.TableSource.AllColumns
-  nameWithType: TableSource.AllColumns
-- uid: CB.Connector.Command.DataHandler.TableSource.AllColumns*
-  name: AllColumns
-  href: api/CB.Connector.Command.DataHandler.TableSource.html#CB_Connector_Command_DataHandler_TableSource_AllColumns_
-  commentId: Overload:CB.Connector.Command.DataHandler.TableSource.AllColumns
-  isSpec: "True"
-  fullName: CB.Connector.Command.DataHandler.TableSource.AllColumns
-  nameWithType: TableSource.AllColumns
 - uid: CB.Connector.Command.DataHandler.TableSource.Arguments
   name: Arguments
   href: api/CB.Connector.Command.DataHandler.TableSource.html#CB_Connector_Command_DataHandler_TableSource_Arguments
@@ -7873,6 +7860,19 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.TableSource.Elements
   nameWithType: TableSource.Elements
+- uid: CB.Connector.Command.DataHandler.TableSource.GetAllColumns(System.String)
+  name: GetAllColumns(String)
+  href: api/CB.Connector.Command.DataHandler.TableSource.html#CB_Connector_Command_DataHandler_TableSource_GetAllColumns_System_String_
+  commentId: M:CB.Connector.Command.DataHandler.TableSource.GetAllColumns(System.String)
+  fullName: CB.Connector.Command.DataHandler.TableSource.GetAllColumns(System.String)
+  nameWithType: TableSource.GetAllColumns(String)
+- uid: CB.Connector.Command.DataHandler.TableSource.GetAllColumns*
+  name: GetAllColumns
+  href: api/CB.Connector.Command.DataHandler.TableSource.html#CB_Connector_Command_DataHandler_TableSource_GetAllColumns_
+  commentId: Overload:CB.Connector.Command.DataHandler.TableSource.GetAllColumns
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.TableSource.GetAllColumns
+  nameWithType: TableSource.GetAllColumns
 - uid: CB.Connector.Command.DataHandler.TableSource.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandlerArguments)
   name: Init(IDataHandlerArguments)
   href: api/CB.Connector.Command.DataHandler.TableSource.html#CB_Connector_Command_DataHandler_TableSource_Init_CB_Connector_Command_DataHandler_Interfaces_IDataHandlerArguments_

@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/agent2/_work/35/s/CB.Connector/Common/CB.Connector/docfx_project",
+  "source_base_path": "C:/agent/_work/43/s/CB.Connector/Common/CB.Connector/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -318,7 +318,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Collections.Classes.RequestedElementCollection.html",
-          "hash": "azArMerEAFTlYpEiqqKcoA=="
+          "hash": "7KaiyQ5IoJvRPctRozN3tg=="
         }
       },
       "is_incremental": false,
@@ -378,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Collections.IRequestedElementCollection-1.html",
-          "hash": "dKe8HPh2X1nS9dcisr0GqQ=="
+          "hash": "ba34HCg0/7JwtIrcoSl3Hg=="
         }
       },
       "is_incremental": false,
@@ -414,7 +414,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.Aggregate.html",
-          "hash": "Q3MT9FusdQIcrFgP7bm90Q=="
+          "hash": "iVKr92Rx3wdw0mY9TH9AOA=="
         }
       },
       "is_incremental": false,
@@ -642,7 +642,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.BaseDataSink.html",
-          "hash": "WN3JEIp6QC4z9lDYPkuorg=="
+          "hash": "ltlSFqZWOc8e0TpUsChKWQ=="
         }
       },
       "is_incremental": false,
@@ -654,7 +654,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.CrossJoin.html",
-          "hash": "1SVmakRVAG/uo/aIlljK7A=="
+          "hash": "2s1zIjx4FniaVDrfIcoALg=="
         }
       },
       "is_incremental": false,
@@ -666,7 +666,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.DataFilter.html",
-          "hash": "Uk9nrXNq7d2qkB6eRgAjUg=="
+          "hash": "5U/Mchs7cw5bia2GoC9s6Q=="
         }
       },
       "is_incremental": false,
@@ -678,7 +678,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.DataHandler.html",
-          "hash": "DoYEP/9/u2zy/N0VxZNbZQ=="
+          "hash": "ohR6ttcv2mhZyZqbfdLa3Q=="
         }
       },
       "is_incremental": false,
@@ -966,7 +966,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.DataSink.html",
-          "hash": "jhLEPNFyq23Pb6x7IBJfZA=="
+          "hash": "d474Lf5/d00WJJaHKAbCTg=="
         }
       },
       "is_incremental": false,
@@ -978,7 +978,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.DataSource.html",
-          "hash": "zS+9XEUTb4Od/6sK1FVEhw=="
+          "hash": "8FQRgmA3ZCkMZJRUc68ilw=="
         }
       },
       "is_incremental": false,
@@ -990,7 +990,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.DeleteSink.html",
-          "hash": "r/CKXcWZNEqhxIHFyu/Rig=="
+          "hash": "88zmzgxin5UW7mEKEhjfjw=="
         }
       },
       "is_incremental": false,
@@ -1002,7 +1002,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.Distinct.html",
-          "hash": "ZdCCWwLihX+irNvID05Bmw=="
+          "hash": "NdHBxFF8e/qu5p2Bq6mg9g=="
         }
       },
       "is_incremental": false,
@@ -1014,7 +1014,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.ExecuteSink.html",
-          "hash": "MpKtZXaYHTCHNfTaSi7wrw=="
+          "hash": "r6UzrVuQjBOo35J36cQKPg=="
         }
       },
       "is_incremental": false,
@@ -1434,7 +1434,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.FullJoin.html",
-          "hash": "AZXSAb4PtX3YP4sTwNCeLg=="
+          "hash": "OpvmUsVXqSsgMR8i1l0A/g=="
         }
       },
       "is_incremental": false,
@@ -1446,7 +1446,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.Having.html",
-          "hash": "RAReqEDEUR5edLerc6uFeg=="
+          "hash": "L4jTR931xgAG+BpXOU79fA=="
         }
       },
       "is_incremental": false,
@@ -1458,7 +1458,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.InnerJoin.html",
-          "hash": "2hU8iFT6cMc+3D66GKqPZA=="
+          "hash": "Wz/qE4Ny5xotBVZzOIrVGA=="
         }
       },
       "is_incremental": false,
@@ -1470,7 +1470,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.InsertSink.html",
-          "hash": "oHNS0AKuoGRZBzDDDWLs3Q=="
+          "hash": "7VLt2inChKj2xbp1mffFbA=="
         }
       },
       "is_incremental": false,
@@ -1482,7 +1482,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.Interfaces.IDataHandler.html",
-          "hash": "pQvPzPEZMW4LjJEdUMFIYQ=="
+          "hash": "toC3lCkwIUec28FagK9fXQ=="
         }
       },
       "is_incremental": false,
@@ -1518,7 +1518,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.Join.html",
-          "hash": "1HSYRZimyUfmPQZV53WwKg=="
+          "hash": "C81rZ2tjZ7Ahc1TDMwfNXg=="
         }
       },
       "is_incremental": false,
@@ -1530,7 +1530,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.LeftJoin.html",
-          "hash": "o52nA9P7gKD/F4P+pmPyaQ=="
+          "hash": "tQCF1Vm1tXh+SNXf5Pc2Fw=="
         }
       },
       "is_incremental": false,
@@ -1542,7 +1542,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.Limit.html",
-          "hash": "pUONbl9LCEx7XNIUAZDYJw=="
+          "hash": "h9TD/e5k67ewBjsp6Awg7g=="
         }
       },
       "is_incremental": false,
@@ -1554,7 +1554,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.OrderBy.html",
-          "hash": "WKURqfgSrnwHLylXV7c6vA=="
+          "hash": "M5O+3oD+Ay84l+u6gAX0vA=="
         }
       },
       "is_incremental": false,
@@ -1566,7 +1566,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.RightJoin.html",
-          "hash": "9eRCWSPbVbrs47bs34C7LQ=="
+          "hash": "CJu4rRq3AxRJpGsSmKcqgA=="
         }
       },
       "is_incremental": false,
@@ -1578,7 +1578,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.SelectSink.html",
-          "hash": "3z+y2q+O/QeOk+dHMG2rDw=="
+          "hash": "pK5qPbvq8WbH2HqEc1FO5A=="
         }
       },
       "is_incremental": false,
@@ -1590,7 +1590,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.SubQuery.html",
-          "hash": "P9k+Zvgmlvv6WvnCf+3yYg=="
+          "hash": "A1L/vYky8lSXV5SgiF+p7w=="
         }
       },
       "is_incremental": false,
@@ -1602,7 +1602,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.TableFunctionSource.html",
-          "hash": "EqeF9ivVQBMqVJXYM5SnpQ=="
+          "hash": "CB3xJwg2l27hCqrqkX8QAQ=="
         }
       },
       "is_incremental": false,
@@ -1614,7 +1614,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.TableSource.html",
-          "hash": "YkAwrcJMYKjKRC9wd629fg=="
+          "hash": "iHj+8MD2uQZFI6foWpO8oQ=="
         }
       },
       "is_incremental": false,
@@ -1626,7 +1626,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.UpdateSink.html",
-          "hash": "u5SsqcwIa1rqS/dz1lJQeA=="
+          "hash": "/ZGXAVkSmTydWznGt/182A=="
         }
       },
       "is_incremental": false,
@@ -1638,7 +1638,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CB.Connector.Command.DataHandler.Where.html",
-          "hash": "ULZ8hGXs7kYL5hHi3pqjjg=="
+          "hash": "v8NBeXo97kSUfoD5q5B72A=="
         }
       },
       "is_incremental": false,
@@ -3167,7 +3167,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "6NOnfVYqgfVCNXVqNeFPFg=="
+          "hash": "7mT9PnMygBKzrnG0JiAGBw=="
         }
       },
       "is_incremental": false,

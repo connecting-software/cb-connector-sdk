@@ -133,33 +133,6 @@
   </h3>
   
   
-  <a id="CB_Connector_Command_DataHandler_DataHandler_AllColumns_" data-uid="CB.Connector.Command.DataHandler.DataHandler.AllColumns*"></a>
-  <h4 id="CB_Connector_Command_DataHandler_DataHandler_AllColumns" data-uid="CB.Connector.Command.DataHandler.DataHandler.AllColumns">AllColumns</h4>
-  <div class="markdown level1 summary"><p>Gets the collection of columns that are used by <code>next</code> handlers.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual ICollection&lt;IColumnArgument&gt; AllColumns { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="CB.Connector.Command.DataHandler.Argument.IColumnArgument.html">IColumnArgument</a>&gt;</td>
-        <td><p>The collection of columns that are used by <code>next</code> handlers.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="CB_Connector_Command_DataHandler_DataHandler_Elements_" data-uid="CB.Connector.Command.DataHandler.DataHandler.Elements*"></a>
   <h4 id="CB_Connector_Command_DataHandler_DataHandler_Elements" data-uid="CB.Connector.Command.DataHandler.DataHandler.Elements">Elements</h4>
   <div class="markdown level1 summary"><p>Gets the collection of elements defined in the metadata.</p>
@@ -319,6 +292,50 @@
   <h5 id="CB_Connector_Command_DataHandler_DataHandler_Execute_CB_Connector_Metadata_DataModel_IResultSetLoader_CB_Connector_Command_Interfaces_IExecutionContext__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Executes the query and builds an <a class="xref" href="CB.Connector.Metadata.DataModel.IResultSetLoader.html">IResultSetLoader</a>.</p>
 </div>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_DataHandler_GetAllColumns_" data-uid="CB.Connector.Command.DataHandler.DataHandler.GetAllColumns*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_DataHandler_GetAllColumns_System_String_" data-uid="CB.Connector.Command.DataHandler.DataHandler.GetAllColumns(System.String)">GetAllColumns(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the collection of columns that are used by <code>next</code> handlers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ICollection&lt;IColumnArgument&gt; GetAllColumns(string nameFilter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">nameFilter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<a class="xref" href="CB.Connector.Command.DataHandler.Argument.IColumnArgument.html">IColumnArgument</a>&gt;</td>
+        <td><p>The collection of columns that are used by <code>next</code> handlers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="CB_Connector_Command_DataHandler_DataHandler_Init_" data-uid="CB.Connector.Command.DataHandler.DataHandler.Init*"></a>

@@ -87,23 +87,27 @@ using CB.Connector.Exceptions;
 </code></pre>
 <h2 id="implementing-the-testconnection-method">Implementing the TestConnection method</h2>
 <p>First implement the <em><a href="../api/CB.Connector.Classes.BaseConnector-2.html">TestConnection(TProperty) method</a></em>. This method is called by CB Server to test the connection against your specific data source and to retrieve the configuration properties, as shown in the following example:</p>
-<pre><code class="lang-cs">public override Properties TestConnection(Properties properties)
+<pre><code class="lang-cs">public override Properties TestConnection(Properties properties, bool fullTestForce)
 {
-    try
-    {
-        //Perform an operation against your specific data source
-        using (var conn = new SqlConnection(properties.ConnectionString))
-        {
-            var database = new Server(new ServerConnection(conn)).Databases[conn.Database];
-            database.AutoClose = true;
-            return properties;
-        }
-    }
-    catch (Exception e)
-    {
-        //Use custom exception for additional information
-        throw ConnectorExceptionFactory.Create(ConnectorExceptionType.TestConnectionException, e);
-    }
+	if(fullTestForce)
+	{//tests the connection against the data provider with an API operation.
+		try
+		{
+			//Perform an operation against your specific data source
+			using (var conn = new SqlConnection(properties.ConnectionString))
+			{
+				var database = new Server(new ServerConnection(conn)).Databases[conn.Database];
+				database.AutoClose = true;
+				return properties;
+			}
+		}
+		catch (Exception e)
+		{
+			//Use custom exception for additional information
+			throw ConnectorExceptionFactory.Create(ConnectorExceptionType.TestConnectionException, e);
+		}
+	}
+	return properties;
 }
 </code></pre>
 <h2 id="implementing-the-dispose-method">Implementing the Dispose() method</h2>
@@ -148,22 +152,27 @@ protected virtual void Dispose(bool disposing)
     public override string Description { get; } = &quot;SQL Database Connector&quot;;
     public override string Author { get; } = &quot;Connecting Software&quot;;
     
-    public override Properties TestConnection(Properties properties)
-    {
-        try
-        {
-            using (var conn = new SqlConnection(properties.ConnectionString))
-            {
-
-                var database = new Server(new ServerConnection(conn)).Databases[conn.Database];
-                database.AutoClose = true;
-                return ConnectorProperties;
-            }
-        }
-        catch (Exception e)
-        {
-            throw ConnectorExceptionFactory.Create(ConnectorExceptionType.TestConnectionException, e);
-        }
+    public override Properties TestConnection(Properties properties, bool fullTestForce)
+    {        
+		if(fullTestForce)
+		{
+			try
+			{
+				//Perform an operation against your specific data source
+				using (var conn = new SqlConnection(properties.ConnectionString))
+				{
+					var database = new Server(new ServerConnection(conn)).Databases[conn.Database];
+					database.AutoClose = true;
+					return properties;
+				}
+			}
+			catch (Exception e)
+			{
+				//Use custom exception for additional information
+				throw ConnectorExceptionFactory.Create(ConnectorExceptionType.TestConnectionException, e);
+			}
+		}
+		return properties;
     }
     
     #region IDisposable

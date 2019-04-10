@@ -99,9 +99,14 @@
     <h5>Implements</h5>
     <div><a class="xref" href="CB.Connector.Command.DataHandler.Interfaces.IDataHandler.html">IDataHandler</a></div>
     <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="CB.Connector.Metadata.MetaModel.INamedElement.html">INamedElement</a></div>
+    <div><a class="xref" href="CB.Connector.Metadata.MetaModel.IElement.html">IElement</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_OnInitError">DataHandler.OnInitError</a>
+    </div>
     <div>
       <a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_Previous">DataHandler.Previous</a>
     </div>
@@ -149,7 +154,7 @@
   <h6><strong>Assembly</strong>: CB.Connector.dll</h6>
   <h5 id="CB_Connector_Command_DataHandler_BaseDataSink_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class BaseDataSink : DataSink, IDataHandler, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class BaseDataSink : DataSink, IDataHandler, IDisposable, INamedElement, IElement</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -166,6 +171,33 @@
   </div>
   <h3 id="properties">Properties
   </h3>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_BaseDataSink_Description_" data-uid="CB.Connector.Command.DataHandler.BaseDataSink.Description*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_BaseDataSink_Description" data-uid="CB.Connector.Command.DataHandler.BaseDataSink.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the description defined for <a class="xref" href="CB.Connector.Metadata.MetaModel.IElement.html">IElement</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IDescriptor Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.IDescriptor.html">IDescriptor</a></td>
+        <td><p>The description.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="CB_Connector_Command_DataHandler_BaseDataSink_Elements_" data-uid="CB.Connector.Command.DataHandler.BaseDataSink.Elements*"></a>
@@ -195,6 +227,94 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_Elements">DataHandler.Elements</a></div>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_BaseDataSink_Name_" data-uid="CB.Connector.Command.DataHandler.BaseDataSink.Name*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_BaseDataSink_Name" data-uid="CB.Connector.Command.DataHandler.BaseDataSink.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the named element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Name { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name of the named element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CB_Connector_Command_DataHandler_BaseDataSink_Name_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Must not exceed 128 characters</p>
+</div>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_BaseDataSink_Owner_" data-uid="CB.Connector.Command.DataHandler.BaseDataSink.Owner*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_BaseDataSink_Owner" data-uid="CB.Connector.Command.DataHandler.BaseDataSink.Owner">Owner</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the owner of the named element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual INamedElement Owner { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Metadata.MetaModel.INamedElement.html">INamedElement</a></td>
+        <td><p>A <span class="xref">System.String</span> value that specifies the owner of the named element.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="CB_Connector_Command_DataHandler_BaseDataSink_QualifiedName_" data-uid="CB.Connector.Command.DataHandler.BaseDataSink.QualifiedName*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_BaseDataSink_QualifiedName" data-uid="CB.Connector.Command.DataHandler.BaseDataSink.QualifiedName">QualifiedName</h4>
+  <div class="markdown level1 summary"><p>Gets the name that allows the named element to be identified within a hierarchy of nested namespaces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string QualifiedName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The qualified name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CB_Connector_Command_DataHandler_BaseDataSink_QualifiedName_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It is constructed from the names of the containing namespaces starting at the root of the hierarchy and ending with the
+name of the named element itself.</p>
+</div>
   
   
   <a id="CB_Connector_Command_DataHandler_BaseDataSink_ResultColumns_" data-uid="CB.Connector.Command.DataHandler.BaseDataSink.ResultColumns*"></a>
@@ -279,6 +399,12 @@
   <div>
       <span class="xref">System.IDisposable</span>
   </div>
+  <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.INamedElement.html">INamedElement</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.IElement.html">IElement</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="CB.Connector.Property.Extensions.ConnectorPropertiesExtensions.html#CB_Connector_Property_Extensions_ConnectorPropertiesExtensions_TryParse_System_Object_System_Type_System_Object__">ConnectorPropertiesExtensions.TryParse(Object, Type, out Object)</a>
@@ -294,6 +420,12 @@
   </div>
   <div>
       <a class="xref" href="CB.Connector.Property.Extensions.ConnectorPropertiesExtensions.html#CB_Connector_Property_Extensions_ConnectorPropertiesExtensions_IsEncrypted_System_Object_System_String_System_Text_Encoding_">ConnectorPropertiesExtensions.IsEncrypted(Object, String, Encoding)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.Extensions.NamedElement.html#CB_Connector_Metadata_MetaModel_Extensions_NamedElement_GetQualifiedName_CB_Connector_Metadata_MetaModel_INamedElement_">NamedElement.GetQualifiedName(INamedElement)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.Extensions.NamedElement.html#CB_Connector_Metadata_MetaModel_Extensions_NamedElement_GetDepth_CB_Connector_Metadata_MetaModel_INamedElement_">NamedElement.GetDepth(INamedElement)</a>
   </div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">

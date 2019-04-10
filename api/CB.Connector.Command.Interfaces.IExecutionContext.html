@@ -153,6 +153,32 @@
   </table>
   
   
+  <a id="CB_Connector_Command_Interfaces_IExecutionContext_DefaultDatabaseName_" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.DefaultDatabaseName*"></a>
+  <h4 id="CB_Connector_Command_Interfaces_IExecutionContext_DefaultDatabaseName" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.DefaultDatabaseName">DefaultDatabaseName</h4>
+  <div class="markdown level1 summary"><p>Default Database Name (default Account name)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DefaultDatabaseName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="CB_Connector_Command_Interfaces_IExecutionContext_Id_" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.Id*"></a>
   <h4 id="CB_Connector_Command_Interfaces_IExecutionContext_Id" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.Id">Id</h4>
   <div class="markdown level1 summary"><p>Gets the identifier.</p>
@@ -209,7 +235,7 @@
   
   <a id="CB_Connector_Command_Interfaces_IExecutionContext_AddAdditionalCurrentHandler_" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.AddAdditionalCurrentHandler*"></a>
   <h4 id="CB_Connector_Command_Interfaces_IExecutionContext_AddAdditionalCurrentHandler_CB_Connector_Command_DataHandler_Interfaces_IDataHandler_" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.AddAdditionalCurrentHandler(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)">AddAdditionalCurrentHandler(IDataHandler)</h4>
-  <div class="markdown level1 summary"><p>Adds additional current handler in case of join statement ///</p>
+  <div class="markdown level1 summary"><p>Adds new data handler.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -229,20 +255,75 @@
       <tr>
         <td><a class="xref" href="CB.Connector.Command.DataHandler.Interfaces.IDataHandler.html">IDataHandler</a></td>
         <td><span class="parametername">handler</span></td>
-        <td></td>
+        <td><p>The handler to be added.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CB_Connector_Command_Interfaces_IExecutionContext_AddAdditionalCurrentHandler_CB_Connector_Command_DataHandler_Interfaces_IDataHandler__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is intended for <code>join</code> clause.</p>
+</div>
+  
+  
+  <a id="CB_Connector_Command_Interfaces_IExecutionContext_AddVariable_" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.AddVariable*"></a>
+  <h4 id="CB_Connector_Command_Interfaces_IExecutionContext_AddVariable_CB_Connector_Command_DataHandler_Argument_Classes_Variable_System_Boolean_" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.AddVariable(CB.Connector.Command.DataHandler.Argument.Classes.Variable,System.Boolean)">AddVariable(Variable, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Adds new variable (e.g. Variables declared with the DECLARE statement)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AddVariable(Variable variable, bool declared = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Command.DataHandler.Argument.Classes.Variable.html">Variable</a></td>
+        <td><span class="parametername">variable</span></td>
+        <td><p>The variable to be added.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">declared</span></td>
+        <td><p>if set to <code>true</code> the variable was declared with DECLARE statement.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the element is successfully added; otherwise, <code>false</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="CB_Connector_Command_Interfaces_IExecutionContext_GetAllVariables_" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.GetAllVariables*"></a>
-  <h4 id="CB_Connector_Command_Interfaces_IExecutionContext_GetAllVariables" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.GetAllVariables">GetAllVariables()</h4>
-  <div class="markdown level1 summary"><p>Retrieves a list of the <a class="xref" href="CB.Connector.Command.DataHandler.Argument.Classes.Variable.html">Variable</a>s.</p>
+  <a id="CB_Connector_Command_Interfaces_IExecutionContext_GetAllStatementParameters_" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.GetAllStatementParameters*"></a>
+  <h4 id="CB_Connector_Command_Interfaces_IExecutionContext_GetAllStatementParameters" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.GetAllStatementParameters">GetAllStatementParameters()</h4>
+  <div class="markdown level1 summary"><p>Gets a list of all statement' parameters used by the execution context.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IList&lt;Variable&gt; GetAllVariables()</code></pre>
+    <pre><code class="lang-csharp hljs">List&lt;Variable&gt; GetAllStatementParameters()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -254,8 +335,82 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="CB.Connector.Command.DataHandler.Argument.Classes.Variable.html">Variable</a>&gt;</td>
-        <td></td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="CB.Connector.Command.DataHandler.Argument.Classes.Variable.html">Variable</a>&gt;</td>
+        <td><p>A list of all statement' parameters used by the execution context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="CB_Connector_Command_Interfaces_IExecutionContext_GetAllVariables_" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.GetAllVariables*"></a>
+  <h4 id="CB_Connector_Command_Interfaces_IExecutionContext_GetAllVariables" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.GetAllVariables">GetAllVariables()</h4>
+  <div class="markdown level1 summary"><p>Retrieves a list of all variables used by the execution context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;Variable&gt; GetAllVariables()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="CB.Connector.Command.DataHandler.Argument.Classes.Variable.html">Variable</a>&gt;</td>
+        <td><p>A list of all variables used by the execution context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="CB_Connector_Command_Interfaces_IExecutionContext_GetVariable_" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.GetVariable*"></a>
+  <h4 id="CB_Connector_Command_Interfaces_IExecutionContext_GetVariable_System_String_" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.GetVariable(System.String)">GetVariable(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a specified variable by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Variable GetVariable(string variableName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">variableName</span></td>
+        <td><p>The name of the variable to get.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Command.DataHandler.Argument.Classes.Variable.html">Variable</a></td>
+        <td><p>Returns the first variable with the same <code>Name</code> as the specified value, or <code>null</code> if the Name cannot
+be found.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -263,7 +418,7 @@
   
   <a id="CB_Connector_Command_Interfaces_IExecutionContext_GetVariableValue_" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.GetVariableValue*"></a>
   <h4 id="CB_Connector_Command_Interfaces_IExecutionContext_GetVariableValue_CB_Connector_Command_DataHandler_Argument_Classes_Variable_" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.GetVariableValue(CB.Connector.Command.DataHandler.Argument.Classes.Variable)">GetVariableValue(Variable)</h4>
-  <div class="markdown level1 summary"><p>Returns the value of a specified <a class="xref" href="CB.Connector.Command.DataHandler.Argument.Classes.Variable.html">Variable</a>.</p>
+  <div class="markdown level1 summary"><p>Gets the value of the variable used by the execution context.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -299,7 +454,53 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Object</span></td>
-        <td></td>
+        <td><p>The value of the variable used by the execution context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="CB_Connector_Command_Interfaces_IExecutionContext_IsValidParameter_" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.IsValidParameter*"></a>
+  <h4 id="CB_Connector_Command_Interfaces_IExecutionContext_IsValidParameter_System_String_" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.IsValidParameter(System.String)">IsValidParameter(String)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified parameter name is valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsValidParameter(string parameterName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">parameterName</span></td>
+        <td><p>The name of the parameter to validate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the specified parameter name is valid; otherwise, <code>false</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -349,8 +550,44 @@
     </tbody>
   </table>
   <h5 id="CB_Connector_Command_Interfaces_IExecutionContext_OpenScopeIdentityLoader_CB_Connector_Command_DataHandler_Argument_IColumnArgument____remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The scope_identity() function returns the last identity value(s) inserted into one or multiple column(s) in the same scope.</p>
+  <div class="markdown level1 remarks"><p>The scope_identity() function returns the last identity value(s) inserted into one or multiple column(s) in
+the same scope.</p>
 </div>
+  
+  
+  <a id="CB_Connector_Command_Interfaces_IExecutionContext_SetVariableValue_" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.SetVariableValue*"></a>
+  <h4 id="CB_Connector_Command_Interfaces_IExecutionContext_SetVariableValue_CB_Connector_Command_DataHandler_Argument_Classes_Variable_System_Object_" data-uid="CB.Connector.Command.Interfaces.IExecutionContext.SetVariableValue(CB.Connector.Command.DataHandler.Argument.Classes.Variable,System.Object)">SetVariableValue(Variable, Object)</h4>
+  <div class="markdown level1 summary"><p>Sets the variable value for a specified variable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetVariableValue(Variable variable, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Command.DataHandler.Argument.Classes.Variable.html">Variable</a></td>
+        <td><span class="parametername">variable</span></td>
+        <td><p>The variable whose property value will be set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The new property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="CB.Connector.Property.Extensions.ConnectorPropertiesExtensions.html#CB_Connector_Property_Extensions_ConnectorPropertiesExtensions_TryParse_System_Object_System_Type_System_Object__">ConnectorPropertiesExtensions.TryParse(Object, Type, out Object)</a>

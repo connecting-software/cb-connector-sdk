@@ -83,7 +83,7 @@
   
   <h1 id="CB_Connector_Collections_Classes_ColumnArgumentCollection" data-uid="CB.Connector.Collections.Classes.ColumnArgumentCollection" class="text-break">Class ColumnArgumentCollection
   </h1>
-  <div class="markdown level0 summary"><p>Provides class for lazy loadable collection of IColumnArguments</p>
+  <div class="markdown level0 summary"><p>Provides class for <code>Lazy Loading</code> <a class="xref" href="CB.Connector.Command.DataHandler.Argument.IColumnArgument.html">IColumnArgument</a>s.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -103,10 +103,10 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html#CB_Connector_Collections_Classes_LoadableCollection_1_Loader">LoadableCollection&lt;IColumnArgument&gt;.Loader</a>
+      <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html#CB_Connector_Collections_Classes_LoadableCollection_1_Ghost">LoadableCollection&lt;IColumnArgument&gt;.Ghost</a>
     </div>
     <div>
-      <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html#CB_Connector_Collections_Classes_LoadableCollection_1_Ghost">LoadableCollection&lt;IColumnArgument&gt;.Ghost</a>
+      <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html#CB_Connector_Collections_Classes_LoadableCollection_1_Loader">LoadableCollection&lt;IColumnArgument&gt;.Loader</a>
     </div>
     <div>
       <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html#CB_Connector_Collections_Classes_LoadableCollection_1_Elements">LoadableCollection&lt;IColumnArgument&gt;.Elements</a>
@@ -122,9 +122,6 @@
     </div>
     <div>
       <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html#CB_Connector_Collections_Classes_LoadableCollection_1_System_Collections_IEnumerable_GetEnumerator">LoadableCollection&lt;IColumnArgument&gt;.IEnumerable.GetEnumerator()</a>
-    </div>
-    <div>
-      <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html#CB_Connector_Collections_Classes_LoadableCollection_1_Add__0_">LoadableCollection&lt;IColumnArgument&gt;.Add(IColumnArgument)</a>
     </div>
     <div>
       <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html#CB_Connector_Collections_Classes_LoadableCollection_1_Clear">LoadableCollection&lt;IColumnArgument&gt;.Clear()</a>
@@ -190,7 +187,7 @@
   
   <a id="CB_Connector_Collections_Classes_ColumnArgumentCollection__ctor_" data-uid="CB.Connector.Collections.Classes.ColumnArgumentCollection.#ctor*"></a>
   <h4 id="CB_Connector_Collections_Classes_ColumnArgumentCollection__ctor_CB_Connector_Metadata_MetaModel_ILoader_CB_Connector_Metadata_MetaModel_INamedElement_System_Func_CB_Connector_Command_DataHandler_Argument_IColumnArgument_System_String__" data-uid="CB.Connector.Collections.Classes.ColumnArgumentCollection.#ctor(CB.Connector.Metadata.MetaModel.ILoader,CB.Connector.Metadata.MetaModel.INamedElement,System.Func{CB.Connector.Command.DataHandler.Argument.IColumnArgument,System.String})">ColumnArgumentCollection(ILoader, INamedElement, Func&lt;IColumnArgument, String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Constructor</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="CB.Connector.Collections.Classes.ColumnArgumentCollection.html">ColumnArgumentCollection</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -210,17 +207,22 @@
       <tr>
         <td><a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a></td>
         <td><span class="parametername">loader</span></td>
-        <td></td>
+        <td><p>An <a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a> object that enables loading an element (or a set of elements).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="CB.Connector.Metadata.MetaModel.INamedElement.html">INamedElement</a></td>
         <td><span class="parametername">ghost</span></td>
-        <td></td>
+        <td><p>Corresponds to the real object, but not in its full state. It may be empty, or it may contain just
+some fields (such as the Name, QualifiedName, etc,). When the user tries to access some fields that haven't been
+loaded yet, the ghost object fully initializes itself.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;<a class="xref" href="CB.Connector.Command.DataHandler.Argument.IColumnArgument.html">IColumnArgument</a>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">keySelector</span></td>
-        <td></td>
+        <td><p>A function to extract a key from an element.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -228,7 +230,7 @@
   
   <a id="CB_Connector_Collections_Classes_ColumnArgumentCollection__ctor_" data-uid="CB.Connector.Collections.Classes.ColumnArgumentCollection.#ctor*"></a>
   <h4 id="CB_Connector_Collections_Classes_ColumnArgumentCollection__ctor_CB_Connector_Metadata_MetaModel_ILoader_System_Func_CB_Connector_Command_DataHandler_Argument_IColumnArgument_System_String__" data-uid="CB.Connector.Collections.Classes.ColumnArgumentCollection.#ctor(CB.Connector.Metadata.MetaModel.ILoader,System.Func{CB.Connector.Command.DataHandler.Argument.IColumnArgument,System.String})">ColumnArgumentCollection(ILoader, Func&lt;IColumnArgument, String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Constructor</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="CB.Connector.Collections.Classes.ColumnArgumentCollection.html">ColumnArgumentCollection</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -248,17 +250,48 @@
       <tr>
         <td><a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a></td>
         <td><span class="parametername">loader</span></td>
-        <td></td>
+        <td><p>An <a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a> object that enable loading an element (or a set of elements).</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;<a class="xref" href="CB.Connector.Command.DataHandler.Argument.IColumnArgument.html">IColumnArgument</a>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">keySelector</span></td>
-        <td></td>
+        <td><p>A function to extract a key from an element.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="CB_Connector_Collections_Classes_ColumnArgumentCollection_Add_" data-uid="CB.Connector.Collections.Classes.ColumnArgumentCollection.Add*"></a>
+  <h4 id="CB_Connector_Collections_Classes_ColumnArgumentCollection_Add_CB_Connector_Command_DataHandler_Argument_IColumnArgument_" data-uid="CB.Connector.Collections.Classes.ColumnArgumentCollection.Add(CB.Connector.Command.DataHandler.Argument.IColumnArgument)">Add(IColumnArgument)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Add(IColumnArgument item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Command.DataHandler.Argument.IColumnArgument.html">IColumnArgument</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">CB.Connector.Collections.Classes.LoadableCollection&lt;CB.Connector.Command.DataHandler.Argument.IColumnArgument&gt;.Add(CB.Connector.Command.DataHandler.Argument.IColumnArgument)</span></div>
   
   
   <a id="CB_Connector_Collections_Classes_ColumnArgumentCollection_Contains_" data-uid="CB.Connector.Collections.Classes.ColumnArgumentCollection.Contains*"></a>

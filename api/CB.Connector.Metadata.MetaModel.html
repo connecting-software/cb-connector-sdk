@@ -95,11 +95,13 @@ It encapsulates the information needed to build and return a meta model instance
       <section><p>Provides a base interface for defining a <code>SQL column</code>.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.IComplexType.html">IComplexType</a></h4>
-      <section><p>Provides a base interface for defining a <code>SQL structured type</code> that are a template for defining structured data in the form of one or more properties,
+      <section><p>Provides a base interface for defining a <code>SQL structured type</code> that are a template for defining structured data in
+the form of one or more properties,
 each of which has a data type and describes an instance of a data type.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.IConstraint.html">IConstraint</a></h4>
-      <section><p>Provides a base interface for defining a <code>SQL constraint</code> that is an assertion that indicates a restriction that must be satisfied
+      <section><p>Provides a base interface for defining a <code>SQL constraint</code> that is an assertion that indicates a restriction that
+must be satisfied
 by any valid realization of the model containing the constraint (that is, rules).</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.IDataType.html">IDataType</a></h4>
@@ -112,10 +114,12 @@ by any valid realization of the model containing the constraint (that is, rules)
       <section><p>The foundation for all other modeling concepts in the meta model.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.IForeignKey.html">IForeignKey</a></h4>
-      <section><p>Provides a base interface for defining a <code>SQL FOREIGN KEY</code> constraint that enforces data integrity and establishes a link between two Named Elements.</p>
+      <section><p>Provides a base interface for defining a <code>SQL FOREIGN KEY</code> constraint that enforces data integrity and establishes
+a link between two Named Elements.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.IFunction.html">IFunction</a></h4>
-      <section><p>Provides a base interface for defining a <code>SQL Function</code> that accepts input parameters and must return one or more values.</p>
+      <section><p>Provides a base interface for defining a <code>SQL Function</code> that accepts input parameters and must return one or more
+values.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.IJsonType.html">IJsonType</a></h4>
       <section><p>Provides a base interface for representing the definition of a JavaScript Object Notation (JSON) document.</p>
@@ -124,21 +128,25 @@ by any valid realization of the model containing the constraint (that is, rules)
       <section><p>Represents the type that implements <code>lazy loading</code> for loading related data.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.IMetaModel.html">IMetaModel</a></h4>
-      <section><p>Provides a base interface for a view of a physical system (data source). It is an abstraction of the physical system (data source).</p>
+      <section><p>Provides a base interface for a view of a physical system (data source). It is an abstraction of the physical system
+(data source).</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.INamedElement.html">INamedElement</a></h4>
       <section><p>Provides a base interface for an element in the model that has a name.
-The name is used for identification of the <a class="xref" href="CB.Connector.Metadata.MetaModel.INamedElement.html">INamedElement</a> within the <a class="xref" href="CB.Connector.Metadata.MetaModel.INamespace.html">INamespace</a>s wherein it is defined or accessible.</p>
+The name is used for identification of the <a class="xref" href="CB.Connector.Metadata.MetaModel.INamedElement.html">INamedElement</a> within the <a class="xref" href="CB.Connector.Metadata.MetaModel.INamespace.html">INamespace</a>s wherein
+it is defined or accessible.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.INamespace.html">INamespace</a></h4>
-      <section><p>Provides a base interface for an element in the model that contains a set of elements that can be identified by name within the Namespace.</p>
+      <section><p>Provides a base interface for an element in the model that contains a set of elements that can be identified by name
+within the Namespace.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.INotNull.html">INotNull</a></h4>
       <section><p>Provides a base interface for defining a <code>SQL NOT NULL</code> constraint.
 It ensures that a constrained element has no NULL value.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.IOrdinalElement.html">IOrdinalElement</a></h4>
-      <section><p>Provides a base interface for defining an element that has an ordinal position specified for it, which stipulates where an element is in an order.</p>
+      <section><p>Provides a base interface for defining an element that has an ordinal position specified for it, which stipulates where
+an element is in an order.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.IParameter.html">IParameter</a></h4>
       <section><p>Provides a base interface for defining a <code>SQL Parameter</code> that is a property owned by a function or procedure.</p>
@@ -147,13 +155,16 @@ It ensures that a constrained element has no NULL value.</p>
       <section><p>Provides a base interface for a data type – parametrized over type – that is determined at runtime.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.IPrimaryKey.html">IPrimaryKey</a></h4>
-      <section><p>Provides a base interface for defining a <code>SQL PRIMARY KEY</code> constraint. It enforces data integrity and ensures unique identification.</p>
+      <section><p>Provides a base interface for defining a <code>SQL PRIMARY KEY</code> constraint. It enforces data integrity and ensures
+unique identification.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.IPrimitiveType.html">IPrimitiveType</a></h4>
-      <section><p>Provides a base interface for defining a <code>SQL Primitive Type</code> that is a predefined data type without any substructure.</p>
+      <section><p>Provides a base interface for defining a <code>SQL Primitive Type</code> that is a predefined data type without any
+substructure.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.IProcedure.html">IProcedure</a></h4>
-      <section><p>Provides a base interface for defining a <code>SQL Stored Procedure</code> that accepts input parameters and possibly will return one or more values.
+      <section><p>Provides a base interface for defining a <code>SQL Stored Procedure</code> that accepts input parameters and possibly will
+return one or more values.
 A procedure is mainly used to perform an action.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.IProperty.html">IProperty</a></h4>
@@ -167,7 +178,8 @@ A procedure is mainly used to perform an action.</p>
 It is the conceptual organization of the relational database.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.ITable.html">ITable</a></h4>
-      <section><p>Provides a base interface for defining a <code>SQL Table</code> that is a logical structure identifiable within the schema. A table may own columns and constraints.</p>
+      <section><p>Provides a base interface for defining a <code>SQL Table</code> that is a logical structure identifiable within the schema. A
+table may own columns and constraints.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.ITableType.html">ITableType</a></h4>
       <section><p>Provides a base interface for representing the definition of a table structure.</p>
@@ -176,10 +188,12 @@ It is the conceptual organization of the relational database.</p>
       <section><p>Provides a base interface for defining a named element that has a type specified for it.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.IUniqueKey.html">IUniqueKey</a></h4>
-      <section><p>Provides a base interface for defining a <code>SQL UNIQUE KEY</code> constraint that ensures that all values of a constrained element are dissimilar.</p>
+      <section><p>Provides a base interface for defining a <code>SQL UNIQUE KEY</code> constraint that ensures that all values of a constrained
+element are dissimilar.</p>
 </section>
       <h4><a class="xref" href="CB.Connector.Metadata.MetaModel.IView.html">IView</a></h4>
-      <section><p>Provides a base interface for defining a <code>SQL View</code> that is a virtual table who provides an alternative way of looking at the data in one or more tables.
+      <section><p>Provides a base interface for defining a <code>SQL View</code> that is a virtual table who provides an alternative way of
+looking at the data in one or more tables.
 A view can be used to perform joins and simplify multiple tables into a single virtual table and hide complexity.</p>
 </section>
     <h3 id="enums">Enums

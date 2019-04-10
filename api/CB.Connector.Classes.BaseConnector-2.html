@@ -381,7 +381,8 @@
     </tbody>
   </table>
   <h5 id="CB_Connector_Classes_BaseConnector_2_CreateSession__0__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>CB command session is an occurrence of a user interacting with a relational database, where the occurrence is a single command.</p>
+  <div class="markdown level1 remarks"><p>CB command session is an occurrence of a user interacting with a relational database, where the occurrence is
+a single command.</p>
 </div>
   
   
@@ -397,13 +398,13 @@
   
   
   <a id="CB_Connector_Classes_BaseConnector_2_TestConnection_" data-uid="CB.Connector.Classes.BaseConnector`2.TestConnection*"></a>
-  <h4 id="CB_Connector_Classes_BaseConnector_2_TestConnection__0_" data-uid="CB.Connector.Classes.BaseConnector`2.TestConnection(`0)">TestConnection(TProperty)</h4>
+  <h4 id="CB_Connector_Classes_BaseConnector_2_TestConnection__0_System_Boolean_" data-uid="CB.Connector.Classes.BaseConnector`2.TestConnection(`0,System.Boolean)">TestConnection(TProperty, Boolean)</h4>
   <div class="markdown level1 summary"><p>Tests the connection against the data provider.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract TProperty TestConnection(TProperty properties)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract TProperty TestConnection(TProperty properties, bool fullTestForce)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -419,6 +420,12 @@
         <td><span class="xref">TProperty</span></td>
         <td><span class="parametername">properties</span></td>
         <td><p>The properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fullTestForce</span></td>
+        <td><p>if set to <code>true</code> tests the connection against the data provider.</p>
 </td>
       </tr>
     </tbody>
@@ -511,12 +518,12 @@
   
   
   <a id="CB_Connector_Classes_BaseConnector_2_CB_Connector_IConnector_TestConnection_" data-uid="CB.Connector.Classes.BaseConnector`2.CB#Connector#IConnector#TestConnection*"></a>
-  <h4 id="CB_Connector_Classes_BaseConnector_2_CB_Connector_IConnector_TestConnection_CB_Connector_Property_IConnectorProperties_" data-uid="CB.Connector.Classes.BaseConnector`2.CB#Connector#IConnector#TestConnection(CB.Connector.Property.IConnectorProperties)">IConnector.TestConnection(IConnectorProperties)</h4>
+  <h4 id="CB_Connector_Classes_BaseConnector_2_CB_Connector_IConnector_TestConnection_CB_Connector_Property_IConnectorProperties_System_Boolean_" data-uid="CB.Connector.Classes.BaseConnector`2.CB#Connector#IConnector#TestConnection(CB.Connector.Property.IConnectorProperties,System.Boolean)">IConnector.TestConnection(IConnectorProperties, Boolean)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IConnectorProperties IConnector.TestConnection(IConnectorProperties properties)</code></pre>
+    <pre><code class="lang-csharp hljs">IConnectorProperties IConnector.TestConnection(IConnectorProperties properties, bool fullTestForce)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -531,6 +538,11 @@
       <tr>
         <td><a class="xref" href="CB.Connector.Property.IConnectorProperties.html">IConnectorProperties</a></td>
         <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fullTestForce</span></td>
         <td></td>
       </tr>
     </tbody>

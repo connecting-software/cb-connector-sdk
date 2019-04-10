@@ -144,7 +144,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected const string DefaultName = &quot;(NoName)&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string DefaultName = &quot;(NoName)&quot;</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -162,7 +162,8 @@
     </tbody>
   </table>
   <h5 id="CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgument_DefaultName_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>When a column-reference is used in an aggregate function, the column of the SQL statement results in a calculated column
+  <div class="markdown level1 remarks"><p>When a column-reference is used in an aggregate function, the column of the SQL statement results in a calculated
+column
 and hence has no column name to be used for the specification.</p>
 </div>
   
@@ -276,7 +277,8 @@ and hence has no column name to be used for the specification.</p>
   
   <a id="CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgument_IsAutoincrementable_" data-uid="CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgument.IsAutoincrementable*"></a>
   <h4 id="CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgument_IsAutoincrementable" data-uid="CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgument.IsAutoincrementable">IsAutoincrementable</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is auto-incremented, meaning that a unique number is generated automatically when a new record is inserted.</p>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is auto-incremented, meaning that a unique number is generated
+automatically when a new record is inserted.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -384,7 +386,8 @@ and hence has no column name to be used for the specification.</p>
   
   <a id="CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgument_IsReadOnly_" data-uid="CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgument.IsReadOnly*"></a>
   <h4 id="CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgument_IsReadOnly" data-uid="CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgument.IsReadOnly">IsReadOnly</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance is read-only, meaning that the column may not be written to after initialization.</p>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance is read-only, meaning that the column may not be written to after
+initialization.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -411,7 +414,7 @@ and hence has no column name to be used for the specification.</p>
   
   <a id="CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgument_IsRequired_" data-uid="CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgument.IsRequired*"></a>
   <h4 id="CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgument_IsRequired" data-uid="CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgument.IsRequired">IsRequired</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is required.</p>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is required in the <code>where</code> clause.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -429,7 +432,8 @@ and hence has no column name to be used for the specification.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><code>true</code> if this instance is required; otherwise, <code>false</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -437,7 +441,8 @@ and hence has no column name to be used for the specification.</p>
   
   <a id="CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgument_IsSearchable_" data-uid="CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgument.IsSearchable*"></a>
   <h4 id="CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgument_IsSearchable" data-uid="CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgument.IsSearchable">IsSearchable</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance is capable of being computationally searched, meaning that the column can be called in <code>where</code> clause.</p>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance is capable of being computationally searched, meaning that the
+column can be called in <code>where</code> clause.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -464,12 +469,13 @@ and hence has no column name to be used for the specification.</p>
   
   <a id="CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgument_IsSortable_" data-uid="CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgument.IsSortable*"></a>
   <h4 id="CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgument_IsSortable" data-uid="CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgument.IsSortable">IsSortable</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance is sortable, meaning that the column can be called in <code>order by</code> clause</p>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance is sortable, meaning that the column can be called in
+<code>order by</code> clause</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsSortable { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsSortable { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -491,7 +497,8 @@ and hence has no column name to be used for the specification.</p>
   
   <a id="CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgument_IsSourceColumn_" data-uid="CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgument.IsSourceColumn*"></a>
   <h4 id="CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgument_IsSourceColumn" data-uid="CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgument.IsSourceColumn">IsSourceColumn</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is a column-reference whose values come directly from the database.</p>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this instance is a column-reference whose values come directly from the
+database.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -678,7 +685,8 @@ and hence has no column name to be used for the specification.</p>
     </tbody>
   </table>
   <h5 id="CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgument_QualifiedName_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>It is constructed from the names of the containing namespaces starting at the root of the hierarchy and ending with the name of the named element itself.</p>
+  <div class="markdown level1 remarks"><p>It is constructed from the names of the containing namespaces starting at the root of the hierarchy and ending with the
+name of the named element itself.</p>
 </div>
   
   
@@ -756,6 +764,18 @@ and hence has no column name to be used for the specification.</p>
   </div>
   <div>
       <a class="xref" href="CB.Connector.Metadata.MetaModel.Extensions.NamedElement.html#CB_Connector_Metadata_MetaModel_Extensions_NamedElement_GetDepth_CB_Connector_Metadata_MetaModel_INamedElement_">NamedElement.GetDepth(INamedElement)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.html#CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgumentExtensions_IsDuplicated_CB_Connector_Command_DataHandler_Argument_IColumnArgument_System_String__System_Int32__">ColumnArgumentExtensions.IsDuplicated(IColumnArgument, out String, out Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.html#CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgumentExtensions_IsDuplicated_CB_Connector_Command_DataHandler_Argument_IColumnArgument_System_String__">ColumnArgumentExtensions.IsDuplicated(IColumnArgument, out String)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.html#CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgumentExtensions_IsAliasUsed_CB_Connector_Command_DataHandler_Argument_IColumnArgument_">ColumnArgumentExtensions.IsAliasUsed(IColumnArgument)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.html#CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgumentExtensions_GetColumnSource_CB_Connector_Command_DataHandler_Argument_IColumnArgument_">ColumnArgumentExtensions.GetColumnSource(IColumnArgument)</a>
   </div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">

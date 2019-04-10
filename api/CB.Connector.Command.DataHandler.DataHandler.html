@@ -160,6 +160,33 @@
   </table>
   
   
+  <a id="CB_Connector_Command_DataHandler_DataHandler_OnInitError_" data-uid="CB.Connector.Command.DataHandler.DataHandler.OnInitError*"></a>
+  <h4 id="CB_Connector_Command_DataHandler_DataHandler_OnInitError" data-uid="CB.Connector.Command.DataHandler.DataHandler.OnInitError">OnInitError</h4>
+  <div class="markdown level1 summary"><p>This contains error of initialization.
+NOTE: it is optional and can be null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Exception OnInitError { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="CB_Connector_Command_DataHandler_DataHandler_Previous_" data-uid="CB.Connector.Command.DataHandler.DataHandler.Previous*"></a>
   <h4 id="CB_Connector_Command_DataHandler_DataHandler_Previous" data-uid="CB.Connector.Command.DataHandler.DataHandler.Previous">Previous</h4>
   <div class="markdown level1 summary"><p>Gets the previous handler in the pipeline.</p>
@@ -180,7 +207,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="CB.Connector.Command.DataHandler.Interfaces.IDataHandler.html">IDataHandler</a></td>
-        <td><p>A reference to the previous handler in the pipeline, or <code>null</code> if the current handler is the first of the pipeline.</p>
+        <td><p>A reference to the previous handler in the pipeline, or <code>null</code> if the current handler is the first of the
+pipeline.</p>
 </td>
       </tr>
     </tbody>
@@ -249,7 +277,8 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">disposing</span></td>
-        <td><p><code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only unmanaged resources.</p>
+        <td><p><code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only
+unmanaged resources.</p>
 </td>
       </tr>
     </tbody>
@@ -340,7 +369,8 @@
   
   <a id="CB_Connector_Command_DataHandler_DataHandler_Init_" data-uid="CB.Connector.Command.DataHandler.DataHandler.Init*"></a>
   <h4 id="CB_Connector_Command_DataHandler_DataHandler_Init_CB_Connector_Command_DataHandler_Interfaces_IDataHandlerArguments_" data-uid="CB.Connector.Command.DataHandler.DataHandler.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandlerArguments)">Init(IDataHandlerArguments)</h4>
-  <div class="markdown level1 summary"><p>Initializes an object’s data at the time the server creates it without explicitly using a constructor for the object.</p>
+  <div class="markdown level1 summary"><p>Initializes an object’s data at the time the server creates it without explicitly using a constructor for the
+object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

@@ -971,15 +971,15 @@ references:
   fullName.vb: CB.Connector.Classes.BaseConnector(Of TProperty, TSession).CB.Connector.IConnector.CreateSession
   nameWithType: BaseConnector<TProperty, TSession>.IConnector.CreateSession
   nameWithType.vb: BaseConnector(Of TProperty, TSession).CB.Connector.IConnector.CreateSession
-- uid: CB.Connector.Classes.BaseConnector`2.CB#Connector#IConnector#TestConnection(CB.Connector.Property.IConnectorProperties)
-  name: IConnector.TestConnection(IConnectorProperties)
-  href: api/CB.Connector.Classes.BaseConnector-2.html#CB_Connector_Classes_BaseConnector_2_CB_Connector_IConnector_TestConnection_CB_Connector_Property_IConnectorProperties_
-  commentId: M:CB.Connector.Classes.BaseConnector`2.CB#Connector#IConnector#TestConnection(CB.Connector.Property.IConnectorProperties)
-  name.vb: CB.Connector.IConnector.TestConnection(IConnectorProperties)
-  fullName: CB.Connector.Classes.BaseConnector<TProperty, TSession>.CB.Connector.IConnector.TestConnection(CB.Connector.Property.IConnectorProperties)
-  fullName.vb: CB.Connector.Classes.BaseConnector(Of TProperty, TSession).CB.Connector.IConnector.TestConnection(CB.Connector.Property.IConnectorProperties)
-  nameWithType: BaseConnector<TProperty, TSession>.IConnector.TestConnection(IConnectorProperties)
-  nameWithType.vb: BaseConnector(Of TProperty, TSession).CB.Connector.IConnector.TestConnection(IConnectorProperties)
+- uid: CB.Connector.Classes.BaseConnector`2.CB#Connector#IConnector#TestConnection(CB.Connector.Property.IConnectorProperties,System.Boolean)
+  name: IConnector.TestConnection(IConnectorProperties, Boolean)
+  href: api/CB.Connector.Classes.BaseConnector-2.html#CB_Connector_Classes_BaseConnector_2_CB_Connector_IConnector_TestConnection_CB_Connector_Property_IConnectorProperties_System_Boolean_
+  commentId: M:CB.Connector.Classes.BaseConnector`2.CB#Connector#IConnector#TestConnection(CB.Connector.Property.IConnectorProperties,System.Boolean)
+  name.vb: CB.Connector.IConnector.TestConnection(IConnectorProperties, Boolean)
+  fullName: CB.Connector.Classes.BaseConnector<TProperty, TSession>.CB.Connector.IConnector.TestConnection(CB.Connector.Property.IConnectorProperties, System.Boolean)
+  fullName.vb: CB.Connector.Classes.BaseConnector(Of TProperty, TSession).CB.Connector.IConnector.TestConnection(CB.Connector.Property.IConnectorProperties, System.Boolean)
+  nameWithType: BaseConnector<TProperty, TSession>.IConnector.TestConnection(IConnectorProperties, Boolean)
+  nameWithType.vb: BaseConnector(Of TProperty, TSession).CB.Connector.IConnector.TestConnection(IConnectorProperties, Boolean)
 - uid: CB.Connector.Classes.BaseConnector`2.CB#Connector#IConnector#TestConnection*
   name: IConnector.TestConnection
   href: api/CB.Connector.Classes.BaseConnector-2.html#CB_Connector_Classes_BaseConnector_2_CB_Connector_IConnector_TestConnection_
@@ -1092,14 +1092,14 @@ references:
   fullName.vb: CB.Connector.Classes.BaseConnector(Of TProperty, TSession).Sessions
   nameWithType: BaseConnector<TProperty, TSession>.Sessions
   nameWithType.vb: BaseConnector(Of TProperty, TSession).Sessions
-- uid: CB.Connector.Classes.BaseConnector`2.TestConnection(`0)
-  name: TestConnection(TProperty)
-  href: api/CB.Connector.Classes.BaseConnector-2.html#CB_Connector_Classes_BaseConnector_2_TestConnection__0_
-  commentId: M:CB.Connector.Classes.BaseConnector`2.TestConnection(`0)
-  fullName: CB.Connector.Classes.BaseConnector<TProperty, TSession>.TestConnection(TProperty)
-  fullName.vb: CB.Connector.Classes.BaseConnector(Of TProperty, TSession).TestConnection(TProperty)
-  nameWithType: BaseConnector<TProperty, TSession>.TestConnection(TProperty)
-  nameWithType.vb: BaseConnector(Of TProperty, TSession).TestConnection(TProperty)
+- uid: CB.Connector.Classes.BaseConnector`2.TestConnection(`0,System.Boolean)
+  name: TestConnection(TProperty, Boolean)
+  href: api/CB.Connector.Classes.BaseConnector-2.html#CB_Connector_Classes_BaseConnector_2_TestConnection__0_System_Boolean_
+  commentId: M:CB.Connector.Classes.BaseConnector`2.TestConnection(`0,System.Boolean)
+  fullName: CB.Connector.Classes.BaseConnector<TProperty, TSession>.TestConnection(TProperty, System.Boolean)
+  fullName.vb: CB.Connector.Classes.BaseConnector(Of TProperty, TSession).TestConnection(TProperty, System.Boolean)
+  nameWithType: BaseConnector<TProperty, TSession>.TestConnection(TProperty, Boolean)
+  nameWithType.vb: BaseConnector(Of TProperty, TSession).TestConnection(TProperty, Boolean)
 - uid: CB.Connector.Classes.BaseConnector`2.TestConnection*
   name: TestConnection
   href: api/CB.Connector.Classes.BaseConnector-2.html#CB_Connector_Classes_BaseConnector_2_TestConnection_
@@ -1487,6 +1487,19 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Collections.Classes.ColumnArgumentCollection.ColumnArgumentCollection
   nameWithType: ColumnArgumentCollection.ColumnArgumentCollection
+- uid: CB.Connector.Collections.Classes.ColumnArgumentCollection.Add(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  name: Add(IColumnArgument)
+  href: api/CB.Connector.Collections.Classes.ColumnArgumentCollection.html#CB_Connector_Collections_Classes_ColumnArgumentCollection_Add_CB_Connector_Command_DataHandler_Argument_IColumnArgument_
+  commentId: M:CB.Connector.Collections.Classes.ColumnArgumentCollection.Add(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  fullName: CB.Connector.Collections.Classes.ColumnArgumentCollection.Add(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  nameWithType: ColumnArgumentCollection.Add(IColumnArgument)
+- uid: CB.Connector.Collections.Classes.ColumnArgumentCollection.Add*
+  name: Add
+  href: api/CB.Connector.Collections.Classes.ColumnArgumentCollection.html#CB_Connector_Collections_Classes_ColumnArgumentCollection_Add_
+  commentId: Overload:CB.Connector.Collections.Classes.ColumnArgumentCollection.Add
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.ColumnArgumentCollection.Add
+  nameWithType: ColumnArgumentCollection.Add
 - uid: CB.Connector.Collections.Classes.ColumnArgumentCollection.Contains(System.String)
   name: Contains(String)
   href: api/CB.Connector.Collections.Classes.ColumnArgumentCollection.html#CB_Connector_Collections_Classes_ColumnArgumentCollection_Contains_System_String_
@@ -2473,6 +2486,254 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Collections.Classes.RequestedElementCollection.Values
   nameWithType: RequestedElementCollection.Values
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1
+  name: RequestedElementCollection1
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html
+  commentId: T:CB.Connector.Collections.Classes.RequestedElementCollection1
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1
+  nameWithType: RequestedElementCollection1
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.#ctor(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
+  name: RequestedElementCollection1(IDataHandler)
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1__ctor_CB_Connector_Command_DataHandler_Interfaces_IDataHandler_
+  commentId: M:CB.Connector.Collections.Classes.RequestedElementCollection1.#ctor(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.RequestedElementCollection1(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
+  nameWithType: RequestedElementCollection1.RequestedElementCollection1(IDataHandler)
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.#ctor*
+  name: RequestedElementCollection1
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1__ctor_
+  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection1.#ctor
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.RequestedElementCollection1
+  nameWithType: RequestedElementCollection1.RequestedElementCollection1
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.Add(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  name: Add(IColumnArgument)
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_Add_CB_Connector_Command_DataHandler_Argument_IColumnArgument_
+  commentId: M:CB.Connector.Collections.Classes.RequestedElementCollection1.Add(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.Add(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  nameWithType: RequestedElementCollection1.Add(IColumnArgument)
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.Add*
+  name: Add
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_Add_
+  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection1.Add
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.Add
+  nameWithType: RequestedElementCollection1.Add
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.Clear
+  name: Clear()
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_Clear
+  commentId: M:CB.Connector.Collections.Classes.RequestedElementCollection1.Clear
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.Clear()
+  nameWithType: RequestedElementCollection1.Clear()
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.Clear*
+  name: Clear
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_Clear_
+  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection1.Clear
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.Clear
+  nameWithType: RequestedElementCollection1.Clear
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.Contains(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  name: Contains(IColumnArgument)
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_Contains_CB_Connector_Command_DataHandler_Argument_IColumnArgument_
+  commentId: M:CB.Connector.Collections.Classes.RequestedElementCollection1.Contains(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.Contains(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  nameWithType: RequestedElementCollection1.Contains(IColumnArgument)
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.Contains(System.String)
+  name: Contains(String)
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_Contains_System_String_
+  commentId: M:CB.Connector.Collections.Classes.RequestedElementCollection1.Contains(System.String)
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.Contains(System.String)
+  nameWithType: RequestedElementCollection1.Contains(String)
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.Contains*
+  name: Contains
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_Contains_
+  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection1.Contains
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.Contains
+  nameWithType: RequestedElementCollection1.Contains
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.CopyTo(CB.Connector.Command.DataHandler.Argument.IColumnArgument[],System.Int32)
+  name: CopyTo(IColumnArgument[], Int32)
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_CopyTo_CB_Connector_Command_DataHandler_Argument_IColumnArgument___System_Int32_
+  commentId: M:CB.Connector.Collections.Classes.RequestedElementCollection1.CopyTo(CB.Connector.Command.DataHandler.Argument.IColumnArgument[],System.Int32)
+  name.vb: CopyTo(IColumnArgument(), Int32)
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.CopyTo(CB.Connector.Command.DataHandler.Argument.IColumnArgument[], System.Int32)
+  fullName.vb: CB.Connector.Collections.Classes.RequestedElementCollection1.CopyTo(CB.Connector.Command.DataHandler.Argument.IColumnArgument(), System.Int32)
+  nameWithType: RequestedElementCollection1.CopyTo(IColumnArgument[], Int32)
+  nameWithType.vb: RequestedElementCollection1.CopyTo(IColumnArgument(), Int32)
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.CopyTo*
+  name: CopyTo
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_CopyTo_
+  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection1.CopyTo
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.CopyTo
+  nameWithType: RequestedElementCollection1.CopyTo
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.Count
+  name: Count
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_Count
+  commentId: P:CB.Connector.Collections.Classes.RequestedElementCollection1.Count
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.Count
+  nameWithType: RequestedElementCollection1.Count
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.Count*
+  name: Count
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_Count_
+  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection1.Count
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.Count
+  nameWithType: RequestedElementCollection1.Count
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.EmptyCollection
+  name: EmptyCollection
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_EmptyCollection
+  commentId: F:CB.Connector.Collections.Classes.RequestedElementCollection1.EmptyCollection
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.EmptyCollection
+  nameWithType: RequestedElementCollection1.EmptyCollection
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.GetAllElements(System.String)
+  name: GetAllElements(String)
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_GetAllElements_System_String_
+  commentId: M:CB.Connector.Collections.Classes.RequestedElementCollection1.GetAllElements(System.String)
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.GetAllElements(System.String)
+  nameWithType: RequestedElementCollection1.GetAllElements(String)
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.GetAllElements*
+  name: GetAllElements
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_GetAllElements_
+  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection1.GetAllElements
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.GetAllElements
+  nameWithType: RequestedElementCollection1.GetAllElements
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.GetEnumerator
+  name: GetEnumerator()
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_GetEnumerator
+  commentId: M:CB.Connector.Collections.Classes.RequestedElementCollection1.GetEnumerator
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.GetEnumerator()
+  nameWithType: RequestedElementCollection1.GetEnumerator()
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.GetEnumerator*
+  name: GetEnumerator
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_GetEnumerator_
+  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection1.GetEnumerator
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.GetEnumerator
+  nameWithType: RequestedElementCollection1.GetEnumerator
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.GetKeyForItem(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  name: GetKeyForItem(IColumnArgument)
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_GetKeyForItem_CB_Connector_Command_DataHandler_Argument_IColumnArgument_
+  commentId: M:CB.Connector.Collections.Classes.RequestedElementCollection1.GetKeyForItem(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.GetKeyForItem(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  nameWithType: RequestedElementCollection1.GetKeyForItem(IColumnArgument)
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.GetKeyForItem*
+  name: GetKeyForItem
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_GetKeyForItem_
+  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection1.GetKeyForItem
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.GetKeyForItem
+  nameWithType: RequestedElementCollection1.GetKeyForItem
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.IsReadOnly
+  name: IsReadOnly
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_IsReadOnly
+  commentId: P:CB.Connector.Collections.Classes.RequestedElementCollection1.IsReadOnly
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.IsReadOnly
+  nameWithType: RequestedElementCollection1.IsReadOnly
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.IsReadOnly*
+  name: IsReadOnly
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_IsReadOnly_
+  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection1.IsReadOnly
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.IsReadOnly
+  nameWithType: RequestedElementCollection1.IsReadOnly
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.Item(System.Int32)
+  name: Item[Int32]
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_Item_System_Int32_
+  commentId: P:CB.Connector.Collections.Classes.RequestedElementCollection1.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.Item[System.Int32]
+  fullName.vb: CB.Connector.Collections.Classes.RequestedElementCollection1.Item(System.Int32)
+  nameWithType: RequestedElementCollection1.Item[Int32]
+  nameWithType.vb: RequestedElementCollection1.Item(Int32)
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.Item(System.String)
+  name: Item[String]
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_Item_System_String_
+  commentId: P:CB.Connector.Collections.Classes.RequestedElementCollection1.Item(System.String)
+  name.vb: Item(String)
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.Item[System.String]
+  fullName.vb: CB.Connector.Collections.Classes.RequestedElementCollection1.Item(System.String)
+  nameWithType: RequestedElementCollection1.Item[String]
+  nameWithType.vb: RequestedElementCollection1.Item(String)
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.Item*
+  name: Item
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_Item_
+  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection1.Item
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.Item
+  nameWithType: RequestedElementCollection1.Item
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.OwnerIsSource
+  name: OwnerIsSource
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_OwnerIsSource
+  commentId: P:CB.Connector.Collections.Classes.RequestedElementCollection1.OwnerIsSource
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.OwnerIsSource
+  nameWithType: RequestedElementCollection1.OwnerIsSource
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.OwnerIsSource*
+  name: OwnerIsSource
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_OwnerIsSource_
+  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection1.OwnerIsSource
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.OwnerIsSource
+  nameWithType: RequestedElementCollection1.OwnerIsSource
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.Remove(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  name: Remove(IColumnArgument)
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_Remove_CB_Connector_Command_DataHandler_Argument_IColumnArgument_
+  commentId: M:CB.Connector.Collections.Classes.RequestedElementCollection1.Remove(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.Remove(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  nameWithType: RequestedElementCollection1.Remove(IColumnArgument)
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.Remove*
+  name: Remove
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_Remove_
+  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection1.Remove
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.Remove
+  nameWithType: RequestedElementCollection1.Remove
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:CB.Connector.Collections.Classes.RequestedElementCollection1.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: RequestedElementCollection1.IEnumerable.GetEnumerator()
+  nameWithType.vb: RequestedElementCollection1.System.Collections.IEnumerable.GetEnumerator()
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection1.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.System.Collections.IEnumerable.GetEnumerator
+  nameWithType: RequestedElementCollection1.IEnumerable.GetEnumerator
+  nameWithType.vb: RequestedElementCollection1.System.Collections.IEnumerable.GetEnumerator
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.TryGetValue*
+  name: TryGetValue
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_TryGetValue_
+  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection1.TryGetValue
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.TryGetValue
+  nameWithType: RequestedElementCollection1.TryGetValue
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.TryGetValue``1(System.String,``0@)
+  name: TryGetValue<TValue>(String, out TValue)
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_TryGetValue__1_System_String___0__
+  commentId: M:CB.Connector.Collections.Classes.RequestedElementCollection1.TryGetValue``1(System.String,``0@)
+  name.vb: TryGetValue(Of TValue)(String, ByRef TValue)
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.TryGetValue<TValue>(System.String, out TValue)
+  fullName.vb: CB.Connector.Collections.Classes.RequestedElementCollection1.TryGetValue(Of TValue)(System.String, ByRef TValue)
+  nameWithType: RequestedElementCollection1.TryGetValue<TValue>(String, out TValue)
+  nameWithType.vb: RequestedElementCollection1.TryGetValue(Of TValue)(String, ByRef TValue)
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.Values
+  name: Values
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_Values
+  commentId: P:CB.Connector.Collections.Classes.RequestedElementCollection1.Values
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.Values
+  nameWithType: RequestedElementCollection1.Values
+- uid: CB.Connector.Collections.Classes.RequestedElementCollection1.Values*
+  name: Values
+  href: api/CB.Connector.Collections.Classes.RequestedElementCollection1.html#CB_Connector_Collections_Classes_RequestedElementCollection1_Values_
+  commentId: Overload:CB.Connector.Collections.Classes.RequestedElementCollection1.Values
+  isSpec: "True"
+  fullName: CB.Connector.Collections.Classes.RequestedElementCollection1.Values
+  nameWithType: RequestedElementCollection1.Values
 - uid: CB.Connector.Collections.Classes.SubCollection`2
   name: SubCollection<TRoot, T>
   href: api/CB.Connector.Collections.Classes.SubCollection-2.html
@@ -2909,12 +3170,12 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.Command.Execute
   nameWithType: Command.Execute
-- uid: CB.Connector.Command.Command.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
-  name: Init(IDataHandler)
-  href: api/CB.Connector.Command.Command.html#CB_Connector_Command_Command_Init_CB_Connector_Command_DataHandler_Interfaces_IDataHandler_
-  commentId: M:CB.Connector.Command.Command.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
-  fullName: CB.Connector.Command.Command.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
-  nameWithType: Command.Init(IDataHandler)
+- uid: CB.Connector.Command.Command.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  name: Init(ICommandArguments)
+  href: api/CB.Connector.Command.Command.html#CB_Connector_Command_Command_Init_CB_Connector_Command_Interfaces_ICommandArguments_
+  commentId: M:CB.Connector.Command.Command.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  fullName: CB.Connector.Command.Command.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  nameWithType: Command.Init(ICommandArguments)
 - uid: CB.Connector.Command.Command.Init*
   name: Init
   href: api/CB.Connector.Command.Command.html#CB_Connector_Command_Command_Init_
@@ -2922,6 +3183,272 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.Command.Init
   nameWithType: Command.Init
+- uid: CB.Connector.Command.CommandArguments
+  name: CB.Connector.Command.CommandArguments
+  href: api/CB.Connector.Command.CommandArguments.html
+  commentId: N:CB.Connector.Command.CommandArguments
+  fullName: CB.Connector.Command.CommandArguments
+  nameWithType: CB.Connector.Command.CommandArguments
+- uid: CB.Connector.Command.CommandArguments.DeclareStatementArguments
+  name: DeclareStatementArguments
+  href: api/CB.Connector.Command.CommandArguments.DeclareStatementArguments.html
+  commentId: T:CB.Connector.Command.CommandArguments.DeclareStatementArguments
+  fullName: CB.Connector.Command.CommandArguments.DeclareStatementArguments
+  nameWithType: DeclareStatementArguments
+- uid: CB.Connector.Command.CommandArguments.DeclareStatementArguments.#ctor(CB.Connector.Command.DataHandler.Argument.Classes.Set,CB.Connector.Command.Interfaces.IExecutionContext)
+  name: DeclareStatementArguments(Set, IExecutionContext)
+  href: api/CB.Connector.Command.CommandArguments.DeclareStatementArguments.html#CB_Connector_Command_CommandArguments_DeclareStatementArguments__ctor_CB_Connector_Command_DataHandler_Argument_Classes_Set_CB_Connector_Command_Interfaces_IExecutionContext_
+  commentId: M:CB.Connector.Command.CommandArguments.DeclareStatementArguments.#ctor(CB.Connector.Command.DataHandler.Argument.Classes.Set,CB.Connector.Command.Interfaces.IExecutionContext)
+  fullName: CB.Connector.Command.CommandArguments.DeclareStatementArguments.DeclareStatementArguments(CB.Connector.Command.DataHandler.Argument.Classes.Set, CB.Connector.Command.Interfaces.IExecutionContext)
+  nameWithType: DeclareStatementArguments.DeclareStatementArguments(Set, IExecutionContext)
+- uid: CB.Connector.Command.CommandArguments.DeclareStatementArguments.#ctor*
+  name: DeclareStatementArguments
+  href: api/CB.Connector.Command.CommandArguments.DeclareStatementArguments.html#CB_Connector_Command_CommandArguments_DeclareStatementArguments__ctor_
+  commentId: Overload:CB.Connector.Command.CommandArguments.DeclareStatementArguments.#ctor
+  isSpec: "True"
+  fullName: CB.Connector.Command.CommandArguments.DeclareStatementArguments.DeclareStatementArguments
+  nameWithType: DeclareStatementArguments.DeclareStatementArguments
+- uid: CB.Connector.Command.CommandArguments.DeclareStatementArguments.Context
+  name: Context
+  href: api/CB.Connector.Command.CommandArguments.DeclareStatementArguments.html#CB_Connector_Command_CommandArguments_DeclareStatementArguments_Context
+  commentId: P:CB.Connector.Command.CommandArguments.DeclareStatementArguments.Context
+  fullName: CB.Connector.Command.CommandArguments.DeclareStatementArguments.Context
+  nameWithType: DeclareStatementArguments.Context
+- uid: CB.Connector.Command.CommandArguments.DeclareStatementArguments.Context*
+  name: Context
+  href: api/CB.Connector.Command.CommandArguments.DeclareStatementArguments.html#CB_Connector_Command_CommandArguments_DeclareStatementArguments_Context_
+  commentId: Overload:CB.Connector.Command.CommandArguments.DeclareStatementArguments.Context
+  isSpec: "True"
+  fullName: CB.Connector.Command.CommandArguments.DeclareStatementArguments.Context
+  nameWithType: DeclareStatementArguments.Context
+- uid: CB.Connector.Command.CommandArguments.DeclareStatementArguments.VariableSet
+  name: VariableSet
+  href: api/CB.Connector.Command.CommandArguments.DeclareStatementArguments.html#CB_Connector_Command_CommandArguments_DeclareStatementArguments_VariableSet
+  commentId: P:CB.Connector.Command.CommandArguments.DeclareStatementArguments.VariableSet
+  fullName: CB.Connector.Command.CommandArguments.DeclareStatementArguments.VariableSet
+  nameWithType: DeclareStatementArguments.VariableSet
+- uid: CB.Connector.Command.CommandArguments.DeclareStatementArguments.VariableSet*
+  name: VariableSet
+  href: api/CB.Connector.Command.CommandArguments.DeclareStatementArguments.html#CB_Connector_Command_CommandArguments_DeclareStatementArguments_VariableSet_
+  commentId: Overload:CB.Connector.Command.CommandArguments.DeclareStatementArguments.VariableSet
+  isSpec: "True"
+  fullName: CB.Connector.Command.CommandArguments.DeclareStatementArguments.VariableSet
+  nameWithType: DeclareStatementArguments.VariableSet
+- uid: CB.Connector.Command.CommandArguments.IfStatementArguments
+  name: IfStatementArguments
+  href: api/CB.Connector.Command.CommandArguments.IfStatementArguments.html
+  commentId: T:CB.Connector.Command.CommandArguments.IfStatementArguments
+  fullName: CB.Connector.Command.CommandArguments.IfStatementArguments
+  nameWithType: IfStatementArguments
+- uid: CB.Connector.Command.CommandArguments.IfStatementArguments.#ctor(CB.Connector.Command.DataHandler.FilterCriteria.Interfaces.IFilterCriteria,System.Collections.Generic.List{CB.Connector.Command.Interfaces.ICommand},System.Collections.Generic.List{CB.Connector.Command.Interfaces.ICommand})
+  name: IfStatementArguments(IFilterCriteria, List<ICommand>, List<ICommand>)
+  href: api/CB.Connector.Command.CommandArguments.IfStatementArguments.html#CB_Connector_Command_CommandArguments_IfStatementArguments__ctor_CB_Connector_Command_DataHandler_FilterCriteria_Interfaces_IFilterCriteria_System_Collections_Generic_List_CB_Connector_Command_Interfaces_ICommand__System_Collections_Generic_List_CB_Connector_Command_Interfaces_ICommand__
+  commentId: M:CB.Connector.Command.CommandArguments.IfStatementArguments.#ctor(CB.Connector.Command.DataHandler.FilterCriteria.Interfaces.IFilterCriteria,System.Collections.Generic.List{CB.Connector.Command.Interfaces.ICommand},System.Collections.Generic.List{CB.Connector.Command.Interfaces.ICommand})
+  name.vb: IfStatementArguments(IFilterCriteria, List(Of ICommand), List(Of ICommand))
+  fullName: CB.Connector.Command.CommandArguments.IfStatementArguments.IfStatementArguments(CB.Connector.Command.DataHandler.FilterCriteria.Interfaces.IFilterCriteria, System.Collections.Generic.List<CB.Connector.Command.Interfaces.ICommand>, System.Collections.Generic.List<CB.Connector.Command.Interfaces.ICommand>)
+  fullName.vb: CB.Connector.Command.CommandArguments.IfStatementArguments.IfStatementArguments(CB.Connector.Command.DataHandler.FilterCriteria.Interfaces.IFilterCriteria, System.Collections.Generic.List(Of CB.Connector.Command.Interfaces.ICommand), System.Collections.Generic.List(Of CB.Connector.Command.Interfaces.ICommand))
+  nameWithType: IfStatementArguments.IfStatementArguments(IFilterCriteria, List<ICommand>, List<ICommand>)
+  nameWithType.vb: IfStatementArguments.IfStatementArguments(IFilterCriteria, List(Of ICommand), List(Of ICommand))
+- uid: CB.Connector.Command.CommandArguments.IfStatementArguments.#ctor*
+  name: IfStatementArguments
+  href: api/CB.Connector.Command.CommandArguments.IfStatementArguments.html#CB_Connector_Command_CommandArguments_IfStatementArguments__ctor_
+  commentId: Overload:CB.Connector.Command.CommandArguments.IfStatementArguments.#ctor
+  isSpec: "True"
+  fullName: CB.Connector.Command.CommandArguments.IfStatementArguments.IfStatementArguments
+  nameWithType: IfStatementArguments.IfStatementArguments
+- uid: CB.Connector.Command.CommandArguments.IfStatementArguments.Condition
+  name: Condition
+  href: api/CB.Connector.Command.CommandArguments.IfStatementArguments.html#CB_Connector_Command_CommandArguments_IfStatementArguments_Condition
+  commentId: P:CB.Connector.Command.CommandArguments.IfStatementArguments.Condition
+  fullName: CB.Connector.Command.CommandArguments.IfStatementArguments.Condition
+  nameWithType: IfStatementArguments.Condition
+- uid: CB.Connector.Command.CommandArguments.IfStatementArguments.Condition*
+  name: Condition
+  href: api/CB.Connector.Command.CommandArguments.IfStatementArguments.html#CB_Connector_Command_CommandArguments_IfStatementArguments_Condition_
+  commentId: Overload:CB.Connector.Command.CommandArguments.IfStatementArguments.Condition
+  isSpec: "True"
+  fullName: CB.Connector.Command.CommandArguments.IfStatementArguments.Condition
+  nameWithType: IfStatementArguments.Condition
+- uid: CB.Connector.Command.CommandArguments.IfStatementArguments.ElseBlock
+  name: ElseBlock
+  href: api/CB.Connector.Command.CommandArguments.IfStatementArguments.html#CB_Connector_Command_CommandArguments_IfStatementArguments_ElseBlock
+  commentId: P:CB.Connector.Command.CommandArguments.IfStatementArguments.ElseBlock
+  fullName: CB.Connector.Command.CommandArguments.IfStatementArguments.ElseBlock
+  nameWithType: IfStatementArguments.ElseBlock
+- uid: CB.Connector.Command.CommandArguments.IfStatementArguments.ElseBlock*
+  name: ElseBlock
+  href: api/CB.Connector.Command.CommandArguments.IfStatementArguments.html#CB_Connector_Command_CommandArguments_IfStatementArguments_ElseBlock_
+  commentId: Overload:CB.Connector.Command.CommandArguments.IfStatementArguments.ElseBlock
+  isSpec: "True"
+  fullName: CB.Connector.Command.CommandArguments.IfStatementArguments.ElseBlock
+  nameWithType: IfStatementArguments.ElseBlock
+- uid: CB.Connector.Command.CommandArguments.IfStatementArguments.TrueBlock
+  name: TrueBlock
+  href: api/CB.Connector.Command.CommandArguments.IfStatementArguments.html#CB_Connector_Command_CommandArguments_IfStatementArguments_TrueBlock
+  commentId: P:CB.Connector.Command.CommandArguments.IfStatementArguments.TrueBlock
+  fullName: CB.Connector.Command.CommandArguments.IfStatementArguments.TrueBlock
+  nameWithType: IfStatementArguments.TrueBlock
+- uid: CB.Connector.Command.CommandArguments.IfStatementArguments.TrueBlock*
+  name: TrueBlock
+  href: api/CB.Connector.Command.CommandArguments.IfStatementArguments.html#CB_Connector_Command_CommandArguments_IfStatementArguments_TrueBlock_
+  commentId: Overload:CB.Connector.Command.CommandArguments.IfStatementArguments.TrueBlock
+  isSpec: "True"
+  fullName: CB.Connector.Command.CommandArguments.IfStatementArguments.TrueBlock
+  nameWithType: IfStatementArguments.TrueBlock
+- uid: CB.Connector.Command.CommandArguments.PrintStatementArguments
+  name: PrintStatementArguments
+  href: api/CB.Connector.Command.CommandArguments.PrintStatementArguments.html
+  commentId: T:CB.Connector.Command.CommandArguments.PrintStatementArguments
+  fullName: CB.Connector.Command.CommandArguments.PrintStatementArguments
+  nameWithType: PrintStatementArguments
+- uid: CB.Connector.Command.CommandArguments.PrintStatementArguments.#ctor(CB.Connector.Command.DataHandler.Argument.IArgument)
+  name: PrintStatementArguments(IArgument)
+  href: api/CB.Connector.Command.CommandArguments.PrintStatementArguments.html#CB_Connector_Command_CommandArguments_PrintStatementArguments__ctor_CB_Connector_Command_DataHandler_Argument_IArgument_
+  commentId: M:CB.Connector.Command.CommandArguments.PrintStatementArguments.#ctor(CB.Connector.Command.DataHandler.Argument.IArgument)
+  fullName: CB.Connector.Command.CommandArguments.PrintStatementArguments.PrintStatementArguments(CB.Connector.Command.DataHandler.Argument.IArgument)
+  nameWithType: PrintStatementArguments.PrintStatementArguments(IArgument)
+- uid: CB.Connector.Command.CommandArguments.PrintStatementArguments.#ctor*
+  name: PrintStatementArguments
+  href: api/CB.Connector.Command.CommandArguments.PrintStatementArguments.html#CB_Connector_Command_CommandArguments_PrintStatementArguments__ctor_
+  commentId: Overload:CB.Connector.Command.CommandArguments.PrintStatementArguments.#ctor
+  isSpec: "True"
+  fullName: CB.Connector.Command.CommandArguments.PrintStatementArguments.PrintStatementArguments
+  nameWithType: PrintStatementArguments.PrintStatementArguments
+- uid: CB.Connector.Command.CommandArguments.PrintStatementArguments.Argument
+  name: Argument
+  href: api/CB.Connector.Command.CommandArguments.PrintStatementArguments.html#CB_Connector_Command_CommandArguments_PrintStatementArguments_Argument
+  commentId: P:CB.Connector.Command.CommandArguments.PrintStatementArguments.Argument
+  fullName: CB.Connector.Command.CommandArguments.PrintStatementArguments.Argument
+  nameWithType: PrintStatementArguments.Argument
+- uid: CB.Connector.Command.CommandArguments.PrintStatementArguments.Argument*
+  name: Argument
+  href: api/CB.Connector.Command.CommandArguments.PrintStatementArguments.html#CB_Connector_Command_CommandArguments_PrintStatementArguments_Argument_
+  commentId: Overload:CB.Connector.Command.CommandArguments.PrintStatementArguments.Argument
+  isSpec: "True"
+  fullName: CB.Connector.Command.CommandArguments.PrintStatementArguments.Argument
+  nameWithType: PrintStatementArguments.Argument
+- uid: CB.Connector.Command.CommandArguments.SetVariableStatementArguments
+  name: SetVariableStatementArguments
+  href: api/CB.Connector.Command.CommandArguments.SetVariableStatementArguments.html
+  commentId: T:CB.Connector.Command.CommandArguments.SetVariableStatementArguments
+  fullName: CB.Connector.Command.CommandArguments.SetVariableStatementArguments
+  nameWithType: SetVariableStatementArguments
+- uid: CB.Connector.Command.CommandArguments.SetVariableStatementArguments.#ctor(System.String,CB.Connector.Command.DataHandler.Argument.IArgument)
+  name: SetVariableStatementArguments(String, IArgument)
+  href: api/CB.Connector.Command.CommandArguments.SetVariableStatementArguments.html#CB_Connector_Command_CommandArguments_SetVariableStatementArguments__ctor_System_String_CB_Connector_Command_DataHandler_Argument_IArgument_
+  commentId: M:CB.Connector.Command.CommandArguments.SetVariableStatementArguments.#ctor(System.String,CB.Connector.Command.DataHandler.Argument.IArgument)
+  fullName: CB.Connector.Command.CommandArguments.SetVariableStatementArguments.SetVariableStatementArguments(System.String, CB.Connector.Command.DataHandler.Argument.IArgument)
+  nameWithType: SetVariableStatementArguments.SetVariableStatementArguments(String, IArgument)
+- uid: CB.Connector.Command.CommandArguments.SetVariableStatementArguments.#ctor*
+  name: SetVariableStatementArguments
+  href: api/CB.Connector.Command.CommandArguments.SetVariableStatementArguments.html#CB_Connector_Command_CommandArguments_SetVariableStatementArguments__ctor_
+  commentId: Overload:CB.Connector.Command.CommandArguments.SetVariableStatementArguments.#ctor
+  isSpec: "True"
+  fullName: CB.Connector.Command.CommandArguments.SetVariableStatementArguments.SetVariableStatementArguments
+  nameWithType: SetVariableStatementArguments.SetVariableStatementArguments
+- uid: CB.Connector.Command.CommandArguments.SetVariableStatementArguments.Argument
+  name: Argument
+  href: api/CB.Connector.Command.CommandArguments.SetVariableStatementArguments.html#CB_Connector_Command_CommandArguments_SetVariableStatementArguments_Argument
+  commentId: P:CB.Connector.Command.CommandArguments.SetVariableStatementArguments.Argument
+  fullName: CB.Connector.Command.CommandArguments.SetVariableStatementArguments.Argument
+  nameWithType: SetVariableStatementArguments.Argument
+- uid: CB.Connector.Command.CommandArguments.SetVariableStatementArguments.Argument*
+  name: Argument
+  href: api/CB.Connector.Command.CommandArguments.SetVariableStatementArguments.html#CB_Connector_Command_CommandArguments_SetVariableStatementArguments_Argument_
+  commentId: Overload:CB.Connector.Command.CommandArguments.SetVariableStatementArguments.Argument
+  isSpec: "True"
+  fullName: CB.Connector.Command.CommandArguments.SetVariableStatementArguments.Argument
+  nameWithType: SetVariableStatementArguments.Argument
+- uid: CB.Connector.Command.CommandArguments.SetVariableStatementArguments.Name
+  name: Name
+  href: api/CB.Connector.Command.CommandArguments.SetVariableStatementArguments.html#CB_Connector_Command_CommandArguments_SetVariableStatementArguments_Name
+  commentId: P:CB.Connector.Command.CommandArguments.SetVariableStatementArguments.Name
+  fullName: CB.Connector.Command.CommandArguments.SetVariableStatementArguments.Name
+  nameWithType: SetVariableStatementArguments.Name
+- uid: CB.Connector.Command.CommandArguments.SetVariableStatementArguments.Name*
+  name: Name
+  href: api/CB.Connector.Command.CommandArguments.SetVariableStatementArguments.html#CB_Connector_Command_CommandArguments_SetVariableStatementArguments_Name_
+  commentId: Overload:CB.Connector.Command.CommandArguments.SetVariableStatementArguments.Name
+  isSpec: "True"
+  fullName: CB.Connector.Command.CommandArguments.SetVariableStatementArguments.Name
+  nameWithType: SetVariableStatementArguments.Name
+- uid: CB.Connector.Command.CommandArguments.StatementArguments
+  name: StatementArguments
+  href: api/CB.Connector.Command.CommandArguments.StatementArguments.html
+  commentId: T:CB.Connector.Command.CommandArguments.StatementArguments
+  fullName: CB.Connector.Command.CommandArguments.StatementArguments
+  nameWithType: StatementArguments
+- uid: CB.Connector.Command.CommandArguments.StatementArguments.#ctor(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
+  name: StatementArguments(IDataHandler)
+  href: api/CB.Connector.Command.CommandArguments.StatementArguments.html#CB_Connector_Command_CommandArguments_StatementArguments__ctor_CB_Connector_Command_DataHandler_Interfaces_IDataHandler_
+  commentId: M:CB.Connector.Command.CommandArguments.StatementArguments.#ctor(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
+  fullName: CB.Connector.Command.CommandArguments.StatementArguments.StatementArguments(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
+  nameWithType: StatementArguments.StatementArguments(IDataHandler)
+- uid: CB.Connector.Command.CommandArguments.StatementArguments.#ctor*
+  name: StatementArguments
+  href: api/CB.Connector.Command.CommandArguments.StatementArguments.html#CB_Connector_Command_CommandArguments_StatementArguments__ctor_
+  commentId: Overload:CB.Connector.Command.CommandArguments.StatementArguments.#ctor
+  isSpec: "True"
+  fullName: CB.Connector.Command.CommandArguments.StatementArguments.StatementArguments
+  nameWithType: StatementArguments.StatementArguments
+- uid: CB.Connector.Command.CommandArguments.StatementArguments.DataHandler
+  name: DataHandler
+  href: api/CB.Connector.Command.CommandArguments.StatementArguments.html#CB_Connector_Command_CommandArguments_StatementArguments_DataHandler
+  commentId: P:CB.Connector.Command.CommandArguments.StatementArguments.DataHandler
+  fullName: CB.Connector.Command.CommandArguments.StatementArguments.DataHandler
+  nameWithType: StatementArguments.DataHandler
+- uid: CB.Connector.Command.CommandArguments.StatementArguments.DataHandler*
+  name: DataHandler
+  href: api/CB.Connector.Command.CommandArguments.StatementArguments.html#CB_Connector_Command_CommandArguments_StatementArguments_DataHandler_
+  commentId: Overload:CB.Connector.Command.CommandArguments.StatementArguments.DataHandler
+  isSpec: "True"
+  fullName: CB.Connector.Command.CommandArguments.StatementArguments.DataHandler
+  nameWithType: StatementArguments.DataHandler
+- uid: CB.Connector.Command.CommandArguments.UseStatementArguments
+  name: UseStatementArguments
+  href: api/CB.Connector.Command.CommandArguments.UseStatementArguments.html
+  commentId: T:CB.Connector.Command.CommandArguments.UseStatementArguments
+  fullName: CB.Connector.Command.CommandArguments.UseStatementArguments
+  nameWithType: UseStatementArguments
+- uid: CB.Connector.Command.CommandArguments.UseStatementArguments.#ctor(System.String,CB.Connector.Command.Interfaces.IExecutionContext)
+  name: UseStatementArguments(String, IExecutionContext)
+  href: api/CB.Connector.Command.CommandArguments.UseStatementArguments.html#CB_Connector_Command_CommandArguments_UseStatementArguments__ctor_System_String_CB_Connector_Command_Interfaces_IExecutionContext_
+  commentId: M:CB.Connector.Command.CommandArguments.UseStatementArguments.#ctor(System.String,CB.Connector.Command.Interfaces.IExecutionContext)
+  fullName: CB.Connector.Command.CommandArguments.UseStatementArguments.UseStatementArguments(System.String, CB.Connector.Command.Interfaces.IExecutionContext)
+  nameWithType: UseStatementArguments.UseStatementArguments(String, IExecutionContext)
+- uid: CB.Connector.Command.CommandArguments.UseStatementArguments.#ctor*
+  name: UseStatementArguments
+  href: api/CB.Connector.Command.CommandArguments.UseStatementArguments.html#CB_Connector_Command_CommandArguments_UseStatementArguments__ctor_
+  commentId: Overload:CB.Connector.Command.CommandArguments.UseStatementArguments.#ctor
+  isSpec: "True"
+  fullName: CB.Connector.Command.CommandArguments.UseStatementArguments.UseStatementArguments
+  nameWithType: UseStatementArguments.UseStatementArguments
+- uid: CB.Connector.Command.CommandArguments.UseStatementArguments.Context
+  name: Context
+  href: api/CB.Connector.Command.CommandArguments.UseStatementArguments.html#CB_Connector_Command_CommandArguments_UseStatementArguments_Context
+  commentId: P:CB.Connector.Command.CommandArguments.UseStatementArguments.Context
+  fullName: CB.Connector.Command.CommandArguments.UseStatementArguments.Context
+  nameWithType: UseStatementArguments.Context
+- uid: CB.Connector.Command.CommandArguments.UseStatementArguments.Context*
+  name: Context
+  href: api/CB.Connector.Command.CommandArguments.UseStatementArguments.html#CB_Connector_Command_CommandArguments_UseStatementArguments_Context_
+  commentId: Overload:CB.Connector.Command.CommandArguments.UseStatementArguments.Context
+  isSpec: "True"
+  fullName: CB.Connector.Command.CommandArguments.UseStatementArguments.Context
+  nameWithType: UseStatementArguments.Context
+- uid: CB.Connector.Command.CommandArguments.UseStatementArguments.DatabaseName
+  name: DatabaseName
+  href: api/CB.Connector.Command.CommandArguments.UseStatementArguments.html#CB_Connector_Command_CommandArguments_UseStatementArguments_DatabaseName
+  commentId: P:CB.Connector.Command.CommandArguments.UseStatementArguments.DatabaseName
+  fullName: CB.Connector.Command.CommandArguments.UseStatementArguments.DatabaseName
+  nameWithType: UseStatementArguments.DatabaseName
+- uid: CB.Connector.Command.CommandArguments.UseStatementArguments.DatabaseName*
+  name: DatabaseName
+  href: api/CB.Connector.Command.CommandArguments.UseStatementArguments.html#CB_Connector_Command_CommandArguments_UseStatementArguments_DatabaseName_
+  commentId: Overload:CB.Connector.Command.CommandArguments.UseStatementArguments.DatabaseName
+  isSpec: "True"
+  fullName: CB.Connector.Command.CommandArguments.UseStatementArguments.DatabaseName
+  nameWithType: UseStatementArguments.DatabaseName
 - uid: CB.Connector.Command.DataHandler
   name: CB.Connector.Command.DataHandler
   href: api/CB.Connector.Command.DataHandler.html
@@ -3185,6 +3712,32 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.Argument.Classes.Block.Block
   nameWithType: Block.Block
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.Block.Equals(System.Object)
+  name: Equals(Object)
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.Block.html#CB_Connector_Command_DataHandler_Argument_Classes_Block_Equals_System_Object_
+  commentId: M:CB.Connector.Command.DataHandler.Argument.Classes.Block.Equals(System.Object)
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.Block.Equals(System.Object)
+  nameWithType: Block.Equals(Object)
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.Block.Equals*
+  name: Equals
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.Block.html#CB_Connector_Command_DataHandler_Argument_Classes_Block_Equals_
+  commentId: Overload:CB.Connector.Command.DataHandler.Argument.Classes.Block.Equals
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.Block.Equals
+  nameWithType: Block.Equals
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.Block.GetHashCode
+  name: GetHashCode()
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.Block.html#CB_Connector_Command_DataHandler_Argument_Classes_Block_GetHashCode
+  commentId: M:CB.Connector.Command.DataHandler.Argument.Classes.Block.GetHashCode
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.Block.GetHashCode()
+  nameWithType: Block.GetHashCode()
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.Block.GetHashCode*
+  name: GetHashCode
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.Block.html#CB_Connector_Command_DataHandler_Argument_Classes_Block_GetHashCode_
+  commentId: Overload:CB.Connector.Command.DataHandler.Argument.Classes.Block.GetHashCode
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.Block.GetHashCode
+  nameWithType: Block.GetHashCode
 - uid: CB.Connector.Command.DataHandler.Argument.Classes.CbIdentifier
   name: CbIdentifier
   href: api/CB.Connector.Command.DataHandler.Argument.Classes.CbIdentifier.html
@@ -3644,6 +4197,63 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgument.Type
   nameWithType: ColumnArgument.Type
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions
+  name: ColumnArgumentExtensions
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.html
+  commentId: T:CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions
+  nameWithType: ColumnArgumentExtensions
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.GetColumnSource(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  name: GetColumnSource(IColumnArgument)
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.html#CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgumentExtensions_GetColumnSource_CB_Connector_Command_DataHandler_Argument_IColumnArgument_
+  commentId: M:CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.GetColumnSource(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.GetColumnSource(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  nameWithType: ColumnArgumentExtensions.GetColumnSource(IColumnArgument)
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.GetColumnSource*
+  name: GetColumnSource
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.html#CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgumentExtensions_GetColumnSource_
+  commentId: Overload:CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.GetColumnSource
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.GetColumnSource
+  nameWithType: ColumnArgumentExtensions.GetColumnSource
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.IsAliasUsed(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  name: IsAliasUsed(IColumnArgument)
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.html#CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgumentExtensions_IsAliasUsed_CB_Connector_Command_DataHandler_Argument_IColumnArgument_
+  commentId: M:CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.IsAliasUsed(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.IsAliasUsed(CB.Connector.Command.DataHandler.Argument.IColumnArgument)
+  nameWithType: ColumnArgumentExtensions.IsAliasUsed(IColumnArgument)
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.IsAliasUsed*
+  name: IsAliasUsed
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.html#CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgumentExtensions_IsAliasUsed_
+  commentId: Overload:CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.IsAliasUsed
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.IsAliasUsed
+  nameWithType: ColumnArgumentExtensions.IsAliasUsed
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.IsDuplicated(CB.Connector.Command.DataHandler.Argument.IColumnArgument,System.String@)
+  name: IsDuplicated(IColumnArgument, out String)
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.html#CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgumentExtensions_IsDuplicated_CB_Connector_Command_DataHandler_Argument_IColumnArgument_System_String__
+  commentId: M:CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.IsDuplicated(CB.Connector.Command.DataHandler.Argument.IColumnArgument,System.String@)
+  name.vb: IsDuplicated(IColumnArgument, ByRef String)
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.IsDuplicated(CB.Connector.Command.DataHandler.Argument.IColumnArgument, out System.String)
+  fullName.vb: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.IsDuplicated(CB.Connector.Command.DataHandler.Argument.IColumnArgument, ByRef System.String)
+  nameWithType: ColumnArgumentExtensions.IsDuplicated(IColumnArgument, out String)
+  nameWithType.vb: ColumnArgumentExtensions.IsDuplicated(IColumnArgument, ByRef String)
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.IsDuplicated(CB.Connector.Command.DataHandler.Argument.IColumnArgument,System.String@,System.Int32@)
+  name: IsDuplicated(IColumnArgument, out String, out Int32)
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.html#CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgumentExtensions_IsDuplicated_CB_Connector_Command_DataHandler_Argument_IColumnArgument_System_String__System_Int32__
+  commentId: M:CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.IsDuplicated(CB.Connector.Command.DataHandler.Argument.IColumnArgument,System.String@,System.Int32@)
+  name.vb: IsDuplicated(IColumnArgument, ByRef String, ByRef Int32)
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.IsDuplicated(CB.Connector.Command.DataHandler.Argument.IColumnArgument, out System.String, out System.Int32)
+  fullName.vb: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.IsDuplicated(CB.Connector.Command.DataHandler.Argument.IColumnArgument, ByRef System.String, ByRef System.Int32)
+  nameWithType: ColumnArgumentExtensions.IsDuplicated(IColumnArgument, out String, out Int32)
+  nameWithType.vb: ColumnArgumentExtensions.IsDuplicated(IColumnArgument, ByRef String, ByRef Int32)
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.IsDuplicated*
+  name: IsDuplicated
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.html#CB_Connector_Command_DataHandler_Argument_Classes_ColumnArgumentExtensions_IsDuplicated_
+  commentId: Overload:CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.IsDuplicated
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.ColumnArgumentExtensions.IsDuplicated
+  nameWithType: ColumnArgumentExtensions.IsDuplicated
 - uid: CB.Connector.Command.DataHandler.Argument.Classes.ColumnSource
   name: ColumnSource
   href: api/CB.Connector.Command.DataHandler.Argument.Classes.ColumnSource.html
@@ -3907,6 +4517,32 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.Argument.Classes.Constant.Description
   nameWithType: Constant.Description
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.Constant.Equals(System.Object)
+  name: Equals(Object)
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.Constant.html#CB_Connector_Command_DataHandler_Argument_Classes_Constant_Equals_System_Object_
+  commentId: M:CB.Connector.Command.DataHandler.Argument.Classes.Constant.Equals(System.Object)
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.Constant.Equals(System.Object)
+  nameWithType: Constant.Equals(Object)
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.Constant.Equals*
+  name: Equals
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.Constant.html#CB_Connector_Command_DataHandler_Argument_Classes_Constant_Equals_
+  commentId: Overload:CB.Connector.Command.DataHandler.Argument.Classes.Constant.Equals
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.Constant.Equals
+  nameWithType: Constant.Equals
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.Constant.GetHashCode
+  name: GetHashCode()
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.Constant.html#CB_Connector_Command_DataHandler_Argument_Classes_Constant_GetHashCode
+  commentId: M:CB.Connector.Command.DataHandler.Argument.Classes.Constant.GetHashCode
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.Constant.GetHashCode()
+  nameWithType: Constant.GetHashCode()
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.Constant.GetHashCode*
+  name: GetHashCode
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.Constant.html#CB_Connector_Command_DataHandler_Argument_Classes_Constant_GetHashCode_
+  commentId: Overload:CB.Connector.Command.DataHandler.Argument.Classes.Constant.GetHashCode
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.Constant.GetHashCode
+  nameWithType: Constant.GetHashCode
 - uid: CB.Connector.Command.DataHandler.Argument.Classes.Constant.IsNullable
   name: IsNullable
   href: api/CB.Connector.Command.DataHandler.Argument.Classes.Constant.html#CB_Connector_Command_DataHandler_Argument_Classes_Constant_IsNullable
@@ -4023,6 +4659,32 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.Description
   nameWithType: ScalarValuedFunction.Description
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.Equals(System.Object)
+  name: Equals(Object)
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.html#CB_Connector_Command_DataHandler_Argument_Classes_ScalarValuedFunction_Equals_System_Object_
+  commentId: M:CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.Equals(System.Object)
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.Equals(System.Object)
+  nameWithType: ScalarValuedFunction.Equals(Object)
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.Equals*
+  name: Equals
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.html#CB_Connector_Command_DataHandler_Argument_Classes_ScalarValuedFunction_Equals_
+  commentId: Overload:CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.Equals
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.Equals
+  nameWithType: ScalarValuedFunction.Equals
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.GetHashCode
+  name: GetHashCode()
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.html#CB_Connector_Command_DataHandler_Argument_Classes_ScalarValuedFunction_GetHashCode
+  commentId: M:CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.GetHashCode
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.GetHashCode()
+  nameWithType: ScalarValuedFunction.GetHashCode()
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.GetHashCode*
+  name: GetHashCode
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.html#CB_Connector_Command_DataHandler_Argument_Classes_ScalarValuedFunction_GetHashCode_
+  commentId: Overload:CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.GetHashCode
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.GetHashCode
+  nameWithType: ScalarValuedFunction.GetHashCode
 - uid: CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.IsNullable
   name: IsNullable
   href: api/CB.Connector.Command.DataHandler.Argument.Classes.ScalarValuedFunction.html#CB_Connector_Command_DataHandler_Argument_Classes_ScalarValuedFunction_IsNullable
@@ -4476,12 +5138,12 @@ references:
   commentId: T:CB.Connector.Command.DataHandler.Argument.Classes.Variable
   fullName: CB.Connector.Command.DataHandler.Argument.Classes.Variable
   nameWithType: Variable
-- uid: CB.Connector.Command.DataHandler.Argument.Classes.Variable.#ctor(System.String,CB.Connector.Metadata.MetaModel.IDataType)
-  name: Variable(String, IDataType)
-  href: api/CB.Connector.Command.DataHandler.Argument.Classes.Variable.html#CB_Connector_Command_DataHandler_Argument_Classes_Variable__ctor_System_String_CB_Connector_Metadata_MetaModel_IDataType_
-  commentId: M:CB.Connector.Command.DataHandler.Argument.Classes.Variable.#ctor(System.String,CB.Connector.Metadata.MetaModel.IDataType)
-  fullName: CB.Connector.Command.DataHandler.Argument.Classes.Variable.Variable(System.String, CB.Connector.Metadata.MetaModel.IDataType)
-  nameWithType: Variable.Variable(String, IDataType)
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.Variable.#ctor(System.String,CB.Connector.Metadata.MetaModel.IDataType,System.Object)
+  name: Variable(String, IDataType, Object)
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.Variable.html#CB_Connector_Command_DataHandler_Argument_Classes_Variable__ctor_System_String_CB_Connector_Metadata_MetaModel_IDataType_System_Object_
+  commentId: M:CB.Connector.Command.DataHandler.Argument.Classes.Variable.#ctor(System.String,CB.Connector.Metadata.MetaModel.IDataType,System.Object)
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.Variable.Variable(System.String, CB.Connector.Metadata.MetaModel.IDataType, System.Object)
+  nameWithType: Variable.Variable(String, IDataType, Object)
 - uid: CB.Connector.Command.DataHandler.Argument.Classes.Variable.#ctor*
   name: Variable
   href: api/CB.Connector.Command.DataHandler.Argument.Classes.Variable.html#CB_Connector_Command_DataHandler_Argument_Classes_Variable__ctor_
@@ -4532,6 +5194,32 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.Argument.Classes.Variable.Description
   nameWithType: Variable.Description
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.Variable.Equals(System.Object)
+  name: Equals(Object)
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.Variable.html#CB_Connector_Command_DataHandler_Argument_Classes_Variable_Equals_System_Object_
+  commentId: M:CB.Connector.Command.DataHandler.Argument.Classes.Variable.Equals(System.Object)
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.Variable.Equals(System.Object)
+  nameWithType: Variable.Equals(Object)
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.Variable.Equals*
+  name: Equals
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.Variable.html#CB_Connector_Command_DataHandler_Argument_Classes_Variable_Equals_
+  commentId: Overload:CB.Connector.Command.DataHandler.Argument.Classes.Variable.Equals
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.Variable.Equals
+  nameWithType: Variable.Equals
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.Variable.GetHashCode
+  name: GetHashCode()
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.Variable.html#CB_Connector_Command_DataHandler_Argument_Classes_Variable_GetHashCode
+  commentId: M:CB.Connector.Command.DataHandler.Argument.Classes.Variable.GetHashCode
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.Variable.GetHashCode()
+  nameWithType: Variable.GetHashCode()
+- uid: CB.Connector.Command.DataHandler.Argument.Classes.Variable.GetHashCode*
+  name: GetHashCode
+  href: api/CB.Connector.Command.DataHandler.Argument.Classes.Variable.html#CB_Connector_Command_DataHandler_Argument_Classes_Variable_GetHashCode_
+  commentId: Overload:CB.Connector.Command.DataHandler.Argument.Classes.Variable.GetHashCode
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.Argument.Classes.Variable.GetHashCode
+  nameWithType: Variable.GetHashCode
 - uid: CB.Connector.Command.DataHandler.Argument.Classes.Variable.IsNullable
   name: IsNullable
   href: api/CB.Connector.Command.DataHandler.Argument.Classes.Variable.html#CB_Connector_Command_DataHandler_Argument_Classes_Variable_IsNullable
@@ -4609,19 +5297,6 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.Argument.IColumnArgument.ArgumentColumn
   nameWithType: IColumnArgument.ArgumentColumn
-- uid: CB.Connector.Command.DataHandler.Argument.IColumnArgument.IsRequired
-  name: IsRequired
-  href: api/CB.Connector.Command.DataHandler.Argument.IColumnArgument.html#CB_Connector_Command_DataHandler_Argument_IColumnArgument_IsRequired
-  commentId: P:CB.Connector.Command.DataHandler.Argument.IColumnArgument.IsRequired
-  fullName: CB.Connector.Command.DataHandler.Argument.IColumnArgument.IsRequired
-  nameWithType: IColumnArgument.IsRequired
-- uid: CB.Connector.Command.DataHandler.Argument.IColumnArgument.IsRequired*
-  name: IsRequired
-  href: api/CB.Connector.Command.DataHandler.Argument.IColumnArgument.html#CB_Connector_Command_DataHandler_Argument_IColumnArgument_IsRequired_
-  commentId: Overload:CB.Connector.Command.DataHandler.Argument.IColumnArgument.IsRequired
-  isSpec: "True"
-  fullName: CB.Connector.Command.DataHandler.Argument.IColumnArgument.IsRequired
-  nameWithType: IColumnArgument.IsRequired
 - uid: CB.Connector.Command.DataHandler.Argument.IColumnArgument.IsSourceColumn
   name: IsSourceColumn
   href: api/CB.Connector.Command.DataHandler.Argument.IColumnArgument.html#CB_Connector_Command_DataHandler_Argument_IColumnArgument_IsSourceColumn
@@ -4705,6 +5380,19 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.BaseDataSink.BaseDataSink
   nameWithType: BaseDataSink.BaseDataSink
+- uid: CB.Connector.Command.DataHandler.BaseDataSink.Description
+  name: Description
+  href: api/CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_Description
+  commentId: P:CB.Connector.Command.DataHandler.BaseDataSink.Description
+  fullName: CB.Connector.Command.DataHandler.BaseDataSink.Description
+  nameWithType: BaseDataSink.Description
+- uid: CB.Connector.Command.DataHandler.BaseDataSink.Description*
+  name: Description
+  href: api/CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_Description_
+  commentId: Overload:CB.Connector.Command.DataHandler.BaseDataSink.Description
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.BaseDataSink.Description
+  nameWithType: BaseDataSink.Description
 - uid: CB.Connector.Command.DataHandler.BaseDataSink.Elements
   name: Elements
   href: api/CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_Elements
@@ -4731,6 +5419,45 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.BaseDataSink.GetAllColumns
   nameWithType: BaseDataSink.GetAllColumns
+- uid: CB.Connector.Command.DataHandler.BaseDataSink.Name
+  name: Name
+  href: api/CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_Name
+  commentId: P:CB.Connector.Command.DataHandler.BaseDataSink.Name
+  fullName: CB.Connector.Command.DataHandler.BaseDataSink.Name
+  nameWithType: BaseDataSink.Name
+- uid: CB.Connector.Command.DataHandler.BaseDataSink.Name*
+  name: Name
+  href: api/CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_Name_
+  commentId: Overload:CB.Connector.Command.DataHandler.BaseDataSink.Name
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.BaseDataSink.Name
+  nameWithType: BaseDataSink.Name
+- uid: CB.Connector.Command.DataHandler.BaseDataSink.Owner
+  name: Owner
+  href: api/CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_Owner
+  commentId: P:CB.Connector.Command.DataHandler.BaseDataSink.Owner
+  fullName: CB.Connector.Command.DataHandler.BaseDataSink.Owner
+  nameWithType: BaseDataSink.Owner
+- uid: CB.Connector.Command.DataHandler.BaseDataSink.Owner*
+  name: Owner
+  href: api/CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_Owner_
+  commentId: Overload:CB.Connector.Command.DataHandler.BaseDataSink.Owner
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.BaseDataSink.Owner
+  nameWithType: BaseDataSink.Owner
+- uid: CB.Connector.Command.DataHandler.BaseDataSink.QualifiedName
+  name: QualifiedName
+  href: api/CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_QualifiedName
+  commentId: P:CB.Connector.Command.DataHandler.BaseDataSink.QualifiedName
+  fullName: CB.Connector.Command.DataHandler.BaseDataSink.QualifiedName
+  nameWithType: BaseDataSink.QualifiedName
+- uid: CB.Connector.Command.DataHandler.BaseDataSink.QualifiedName*
+  name: QualifiedName
+  href: api/CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_QualifiedName_
+  commentId: Overload:CB.Connector.Command.DataHandler.BaseDataSink.QualifiedName
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.BaseDataSink.QualifiedName
+  nameWithType: BaseDataSink.QualifiedName
 - uid: CB.Connector.Command.DataHandler.BaseDataSink.ResultColumns
   name: ResultColumns
   href: api/CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_ResultColumns
@@ -4846,6 +5573,19 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.DataHandler.OnInit
   nameWithType: DataHandler.OnInit
+- uid: CB.Connector.Command.DataHandler.DataHandler.OnInitError
+  name: OnInitError
+  href: api/CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_OnInitError
+  commentId: P:CB.Connector.Command.DataHandler.DataHandler.OnInitError
+  fullName: CB.Connector.Command.DataHandler.DataHandler.OnInitError
+  nameWithType: DataHandler.OnInitError
+- uid: CB.Connector.Command.DataHandler.DataHandler.OnInitError*
+  name: OnInitError
+  href: api/CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_OnInitError_
+  commentId: Overload:CB.Connector.Command.DataHandler.DataHandler.OnInitError
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.DataHandler.OnInitError
+  nameWithType: DataHandler.OnInitError
 - uid: CB.Connector.Command.DataHandler.DataHandler.Previous
   name: Previous
   href: api/CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_Previous
@@ -5513,12 +6253,12 @@ references:
   commentId: T:CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments
   fullName: CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments
   nameWithType: SubQueryArguments
-- uid: CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.#ctor(CB.Connector.Command.Statement)
-  name: SubQueryArguments(Statement)
-  href: api/CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.html#CB_Connector_Command_DataHandler_DataHandlerArguments_SubQueryArguments__ctor_CB_Connector_Command_Statement_
-  commentId: M:CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.#ctor(CB.Connector.Command.Statement)
-  fullName: CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.SubQueryArguments(CB.Connector.Command.Statement)
-  nameWithType: SubQueryArguments.SubQueryArguments(Statement)
+- uid: CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.#ctor(CB.Connector.Command.Statement,System.String)
+  name: SubQueryArguments(Statement, String)
+  href: api/CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.html#CB_Connector_Command_DataHandler_DataHandlerArguments_SubQueryArguments__ctor_CB_Connector_Command_Statement_System_String_
+  commentId: M:CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.#ctor(CB.Connector.Command.Statement,System.String)
+  fullName: CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.SubQueryArguments(CB.Connector.Command.Statement, System.String)
+  nameWithType: SubQueryArguments.SubQueryArguments(Statement, String)
 - uid: CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.#ctor*
   name: SubQueryArguments
   href: api/CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.html#CB_Connector_Command_DataHandler_DataHandlerArguments_SubQueryArguments__ctor_
@@ -5526,6 +6266,19 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.SubQueryArguments
   nameWithType: SubQueryArguments.SubQueryArguments
+- uid: CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.AliasName
+  name: AliasName
+  href: api/CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.html#CB_Connector_Command_DataHandler_DataHandlerArguments_SubQueryArguments_AliasName
+  commentId: P:CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.AliasName
+  fullName: CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.AliasName
+  nameWithType: SubQueryArguments.AliasName
+- uid: CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.AliasName*
+  name: AliasName
+  href: api/CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.html#CB_Connector_Command_DataHandler_DataHandlerArguments_SubQueryArguments_AliasName_
+  commentId: Overload:CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.AliasName
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.AliasName
+  nameWithType: SubQueryArguments.AliasName
 - uid: CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.Statement
   name: Statement
   href: api/CB.Connector.Command.DataHandler.DataHandlerArguments.SubQueryArguments.html#CB_Connector_Command_DataHandler_DataHandlerArguments_SubQueryArguments_Statement
@@ -7666,6 +8419,19 @@ references:
   commentId: T:CB.Connector.Command.DataHandler.SubQuery
   fullName: CB.Connector.Command.DataHandler.SubQuery
   nameWithType: SubQuery
+- uid: CB.Connector.Command.DataHandler.SubQuery.#ctor
+  name: SubQuery()
+  href: api/CB.Connector.Command.DataHandler.SubQuery.html#CB_Connector_Command_DataHandler_SubQuery__ctor
+  commentId: M:CB.Connector.Command.DataHandler.SubQuery.#ctor
+  fullName: CB.Connector.Command.DataHandler.SubQuery.SubQuery()
+  nameWithType: SubQuery.SubQuery()
+- uid: CB.Connector.Command.DataHandler.SubQuery.#ctor*
+  name: SubQuery
+  href: api/CB.Connector.Command.DataHandler.SubQuery.html#CB_Connector_Command_DataHandler_SubQuery__ctor_
+  commentId: Overload:CB.Connector.Command.DataHandler.SubQuery.#ctor
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.SubQuery.SubQuery
+  nameWithType: SubQuery.SubQuery
 - uid: CB.Connector.Command.DataHandler.SubQuery.Arguments
   name: Arguments
   href: api/CB.Connector.Command.DataHandler.SubQuery.html#CB_Connector_Command_DataHandler_SubQuery_Arguments
@@ -7679,6 +8445,32 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.SubQuery.Arguments
   nameWithType: SubQuery.Arguments
+- uid: CB.Connector.Command.DataHandler.SubQuery.Elements
+  name: Elements
+  href: api/CB.Connector.Command.DataHandler.SubQuery.html#CB_Connector_Command_DataHandler_SubQuery_Elements
+  commentId: P:CB.Connector.Command.DataHandler.SubQuery.Elements
+  fullName: CB.Connector.Command.DataHandler.SubQuery.Elements
+  nameWithType: SubQuery.Elements
+- uid: CB.Connector.Command.DataHandler.SubQuery.Elements*
+  name: Elements
+  href: api/CB.Connector.Command.DataHandler.SubQuery.html#CB_Connector_Command_DataHandler_SubQuery_Elements_
+  commentId: Overload:CB.Connector.Command.DataHandler.SubQuery.Elements
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.SubQuery.Elements
+  nameWithType: SubQuery.Elements
+- uid: CB.Connector.Command.DataHandler.SubQuery.GetAllColumns(System.String)
+  name: GetAllColumns(String)
+  href: api/CB.Connector.Command.DataHandler.SubQuery.html#CB_Connector_Command_DataHandler_SubQuery_GetAllColumns_System_String_
+  commentId: M:CB.Connector.Command.DataHandler.SubQuery.GetAllColumns(System.String)
+  fullName: CB.Connector.Command.DataHandler.SubQuery.GetAllColumns(System.String)
+  nameWithType: SubQuery.GetAllColumns(String)
+- uid: CB.Connector.Command.DataHandler.SubQuery.GetAllColumns*
+  name: GetAllColumns
+  href: api/CB.Connector.Command.DataHandler.SubQuery.html#CB_Connector_Command_DataHandler_SubQuery_GetAllColumns_
+  commentId: Overload:CB.Connector.Command.DataHandler.SubQuery.GetAllColumns
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.SubQuery.GetAllColumns
+  nameWithType: SubQuery.GetAllColumns
 - uid: CB.Connector.Command.DataHandler.SubQuery.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandlerArguments)
   name: Init(IDataHandlerArguments)
   href: api/CB.Connector.Command.DataHandler.SubQuery.html#CB_Connector_Command_DataHandler_SubQuery_Init_CB_Connector_Command_DataHandler_Interfaces_IDataHandlerArguments_
@@ -7692,6 +8484,19 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.SubQuery.Init
   nameWithType: SubQuery.Init
+- uid: CB.Connector.Command.DataHandler.SubQuery.ResultColumns
+  name: ResultColumns
+  href: api/CB.Connector.Command.DataHandler.SubQuery.html#CB_Connector_Command_DataHandler_SubQuery_ResultColumns
+  commentId: P:CB.Connector.Command.DataHandler.SubQuery.ResultColumns
+  fullName: CB.Connector.Command.DataHandler.SubQuery.ResultColumns
+  nameWithType: SubQuery.ResultColumns
+- uid: CB.Connector.Command.DataHandler.SubQuery.ResultColumns*
+  name: ResultColumns
+  href: api/CB.Connector.Command.DataHandler.SubQuery.html#CB_Connector_Command_DataHandler_SubQuery_ResultColumns_
+  commentId: Overload:CB.Connector.Command.DataHandler.SubQuery.ResultColumns
+  isSpec: "True"
+  fullName: CB.Connector.Command.DataHandler.SubQuery.ResultColumns
+  nameWithType: SubQuery.ResultColumns
 - uid: CB.Connector.Command.DataHandler.TableFunctionSource
   name: TableFunctionSource
   href: api/CB.Connector.Command.DataHandler.TableFunctionSource.html
@@ -8015,6 +8820,109 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.DataHandler.Where.Init
   nameWithType: Where.Init
+- uid: CB.Connector.Command.DeclareStatement
+  name: DeclareStatement
+  href: api/CB.Connector.Command.DeclareStatement.html
+  commentId: T:CB.Connector.Command.DeclareStatement
+  fullName: CB.Connector.Command.DeclareStatement
+  nameWithType: DeclareStatement
+- uid: CB.Connector.Command.DeclareStatement.Context
+  name: Context
+  href: api/CB.Connector.Command.DeclareStatement.html#CB_Connector_Command_DeclareStatement_Context
+  commentId: P:CB.Connector.Command.DeclareStatement.Context
+  fullName: CB.Connector.Command.DeclareStatement.Context
+  nameWithType: DeclareStatement.Context
+- uid: CB.Connector.Command.DeclareStatement.Context*
+  name: Context
+  href: api/CB.Connector.Command.DeclareStatement.html#CB_Connector_Command_DeclareStatement_Context_
+  commentId: Overload:CB.Connector.Command.DeclareStatement.Context
+  isSpec: "True"
+  fullName: CB.Connector.Command.DeclareStatement.Context
+  nameWithType: DeclareStatement.Context
+- uid: CB.Connector.Command.DeclareStatement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  name: Init(ICommandArguments)
+  href: api/CB.Connector.Command.DeclareStatement.html#CB_Connector_Command_DeclareStatement_Init_CB_Connector_Command_Interfaces_ICommandArguments_
+  commentId: M:CB.Connector.Command.DeclareStatement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  fullName: CB.Connector.Command.DeclareStatement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  nameWithType: DeclareStatement.Init(ICommandArguments)
+- uid: CB.Connector.Command.DeclareStatement.Init*
+  name: Init
+  href: api/CB.Connector.Command.DeclareStatement.html#CB_Connector_Command_DeclareStatement_Init_
+  commentId: Overload:CB.Connector.Command.DeclareStatement.Init
+  isSpec: "True"
+  fullName: CB.Connector.Command.DeclareStatement.Init
+  nameWithType: DeclareStatement.Init
+- uid: CB.Connector.Command.DeclareStatement.VariableSet
+  name: VariableSet
+  href: api/CB.Connector.Command.DeclareStatement.html#CB_Connector_Command_DeclareStatement_VariableSet
+  commentId: P:CB.Connector.Command.DeclareStatement.VariableSet
+  fullName: CB.Connector.Command.DeclareStatement.VariableSet
+  nameWithType: DeclareStatement.VariableSet
+- uid: CB.Connector.Command.DeclareStatement.VariableSet*
+  name: VariableSet
+  href: api/CB.Connector.Command.DeclareStatement.html#CB_Connector_Command_DeclareStatement_VariableSet_
+  commentId: Overload:CB.Connector.Command.DeclareStatement.VariableSet
+  isSpec: "True"
+  fullName: CB.Connector.Command.DeclareStatement.VariableSet
+  nameWithType: DeclareStatement.VariableSet
+- uid: CB.Connector.Command.IfStatement
+  name: IfStatement
+  href: api/CB.Connector.Command.IfStatement.html
+  commentId: T:CB.Connector.Command.IfStatement
+  fullName: CB.Connector.Command.IfStatement
+  nameWithType: IfStatement
+- uid: CB.Connector.Command.IfStatement.Condition
+  name: Condition
+  href: api/CB.Connector.Command.IfStatement.html#CB_Connector_Command_IfStatement_Condition
+  commentId: P:CB.Connector.Command.IfStatement.Condition
+  fullName: CB.Connector.Command.IfStatement.Condition
+  nameWithType: IfStatement.Condition
+- uid: CB.Connector.Command.IfStatement.Condition*
+  name: Condition
+  href: api/CB.Connector.Command.IfStatement.html#CB_Connector_Command_IfStatement_Condition_
+  commentId: Overload:CB.Connector.Command.IfStatement.Condition
+  isSpec: "True"
+  fullName: CB.Connector.Command.IfStatement.Condition
+  nameWithType: IfStatement.Condition
+- uid: CB.Connector.Command.IfStatement.ElseBlock
+  name: ElseBlock
+  href: api/CB.Connector.Command.IfStatement.html#CB_Connector_Command_IfStatement_ElseBlock
+  commentId: P:CB.Connector.Command.IfStatement.ElseBlock
+  fullName: CB.Connector.Command.IfStatement.ElseBlock
+  nameWithType: IfStatement.ElseBlock
+- uid: CB.Connector.Command.IfStatement.ElseBlock*
+  name: ElseBlock
+  href: api/CB.Connector.Command.IfStatement.html#CB_Connector_Command_IfStatement_ElseBlock_
+  commentId: Overload:CB.Connector.Command.IfStatement.ElseBlock
+  isSpec: "True"
+  fullName: CB.Connector.Command.IfStatement.ElseBlock
+  nameWithType: IfStatement.ElseBlock
+- uid: CB.Connector.Command.IfStatement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  name: Init(ICommandArguments)
+  href: api/CB.Connector.Command.IfStatement.html#CB_Connector_Command_IfStatement_Init_CB_Connector_Command_Interfaces_ICommandArguments_
+  commentId: M:CB.Connector.Command.IfStatement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  fullName: CB.Connector.Command.IfStatement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  nameWithType: IfStatement.Init(ICommandArguments)
+- uid: CB.Connector.Command.IfStatement.Init*
+  name: Init
+  href: api/CB.Connector.Command.IfStatement.html#CB_Connector_Command_IfStatement_Init_
+  commentId: Overload:CB.Connector.Command.IfStatement.Init
+  isSpec: "True"
+  fullName: CB.Connector.Command.IfStatement.Init
+  nameWithType: IfStatement.Init
+- uid: CB.Connector.Command.IfStatement.TrueBlock
+  name: TrueBlock
+  href: api/CB.Connector.Command.IfStatement.html#CB_Connector_Command_IfStatement_TrueBlock
+  commentId: P:CB.Connector.Command.IfStatement.TrueBlock
+  fullName: CB.Connector.Command.IfStatement.TrueBlock
+  nameWithType: IfStatement.TrueBlock
+- uid: CB.Connector.Command.IfStatement.TrueBlock*
+  name: TrueBlock
+  href: api/CB.Connector.Command.IfStatement.html#CB_Connector_Command_IfStatement_TrueBlock_
+  commentId: Overload:CB.Connector.Command.IfStatement.TrueBlock
+  isSpec: "True"
+  fullName: CB.Connector.Command.IfStatement.TrueBlock
+  nameWithType: IfStatement.TrueBlock
 - uid: CB.Connector.Command.Interfaces
   name: CB.Connector.Command.Interfaces
   href: api/CB.Connector.Command.Interfaces.html
@@ -8040,12 +8948,12 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.Interfaces.ICommand.Execute
   nameWithType: ICommand.Execute
-- uid: CB.Connector.Command.Interfaces.ICommand.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
-  name: Init(IDataHandler)
-  href: api/CB.Connector.Command.Interfaces.ICommand.html#CB_Connector_Command_Interfaces_ICommand_Init_CB_Connector_Command_DataHandler_Interfaces_IDataHandler_
-  commentId: M:CB.Connector.Command.Interfaces.ICommand.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
-  fullName: CB.Connector.Command.Interfaces.ICommand.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
-  nameWithType: ICommand.Init(IDataHandler)
+- uid: CB.Connector.Command.Interfaces.ICommand.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  name: Init(ICommandArguments)
+  href: api/CB.Connector.Command.Interfaces.ICommand.html#CB_Connector_Command_Interfaces_ICommand_Init_CB_Connector_Command_Interfaces_ICommandArguments_
+  commentId: M:CB.Connector.Command.Interfaces.ICommand.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  fullName: CB.Connector.Command.Interfaces.ICommand.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  nameWithType: ICommand.Init(ICommandArguments)
 - uid: CB.Connector.Command.Interfaces.ICommand.Init*
   name: Init
   href: api/CB.Connector.Command.Interfaces.ICommand.html#CB_Connector_Command_Interfaces_ICommand_Init_
@@ -8053,6 +8961,12 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.Interfaces.ICommand.Init
   nameWithType: ICommand.Init
+- uid: CB.Connector.Command.Interfaces.ICommandArguments
+  name: ICommandArguments
+  href: api/CB.Connector.Command.Interfaces.ICommandArguments.html
+  commentId: T:CB.Connector.Command.Interfaces.ICommandArguments
+  fullName: CB.Connector.Command.Interfaces.ICommandArguments
+  nameWithType: ICommandArguments
 - uid: CB.Connector.Command.Interfaces.IExecutionContext
   name: IExecutionContext
   href: api/CB.Connector.Command.Interfaces.IExecutionContext.html
@@ -8072,6 +8986,19 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.Interfaces.IExecutionContext.AddAdditionalCurrentHandler
   nameWithType: IExecutionContext.AddAdditionalCurrentHandler
+- uid: CB.Connector.Command.Interfaces.IExecutionContext.AddVariable(CB.Connector.Command.DataHandler.Argument.Classes.Variable,System.Boolean)
+  name: AddVariable(Variable, Boolean)
+  href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_AddVariable_CB_Connector_Command_DataHandler_Argument_Classes_Variable_System_Boolean_
+  commentId: M:CB.Connector.Command.Interfaces.IExecutionContext.AddVariable(CB.Connector.Command.DataHandler.Argument.Classes.Variable,System.Boolean)
+  fullName: CB.Connector.Command.Interfaces.IExecutionContext.AddVariable(CB.Connector.Command.DataHandler.Argument.Classes.Variable, System.Boolean)
+  nameWithType: IExecutionContext.AddVariable(Variable, Boolean)
+- uid: CB.Connector.Command.Interfaces.IExecutionContext.AddVariable*
+  name: AddVariable
+  href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_AddVariable_
+  commentId: Overload:CB.Connector.Command.Interfaces.IExecutionContext.AddVariable
+  isSpec: "True"
+  fullName: CB.Connector.Command.Interfaces.IExecutionContext.AddVariable
+  nameWithType: IExecutionContext.AddVariable
 - uid: CB.Connector.Command.Interfaces.IExecutionContext.CancellationToken
   name: CancellationToken
   href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_CancellationToken
@@ -8098,6 +9025,32 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.Interfaces.IExecutionContext.CurrentHandler
   nameWithType: IExecutionContext.CurrentHandler
+- uid: CB.Connector.Command.Interfaces.IExecutionContext.DefaultDatabaseName
+  name: DefaultDatabaseName
+  href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_DefaultDatabaseName
+  commentId: P:CB.Connector.Command.Interfaces.IExecutionContext.DefaultDatabaseName
+  fullName: CB.Connector.Command.Interfaces.IExecutionContext.DefaultDatabaseName
+  nameWithType: IExecutionContext.DefaultDatabaseName
+- uid: CB.Connector.Command.Interfaces.IExecutionContext.DefaultDatabaseName*
+  name: DefaultDatabaseName
+  href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_DefaultDatabaseName_
+  commentId: Overload:CB.Connector.Command.Interfaces.IExecutionContext.DefaultDatabaseName
+  isSpec: "True"
+  fullName: CB.Connector.Command.Interfaces.IExecutionContext.DefaultDatabaseName
+  nameWithType: IExecutionContext.DefaultDatabaseName
+- uid: CB.Connector.Command.Interfaces.IExecutionContext.GetAllStatementParameters
+  name: GetAllStatementParameters()
+  href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_GetAllStatementParameters
+  commentId: M:CB.Connector.Command.Interfaces.IExecutionContext.GetAllStatementParameters
+  fullName: CB.Connector.Command.Interfaces.IExecutionContext.GetAllStatementParameters()
+  nameWithType: IExecutionContext.GetAllStatementParameters()
+- uid: CB.Connector.Command.Interfaces.IExecutionContext.GetAllStatementParameters*
+  name: GetAllStatementParameters
+  href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_GetAllStatementParameters_
+  commentId: Overload:CB.Connector.Command.Interfaces.IExecutionContext.GetAllStatementParameters
+  isSpec: "True"
+  fullName: CB.Connector.Command.Interfaces.IExecutionContext.GetAllStatementParameters
+  nameWithType: IExecutionContext.GetAllStatementParameters
 - uid: CB.Connector.Command.Interfaces.IExecutionContext.GetAllVariables
   name: GetAllVariables()
   href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_GetAllVariables
@@ -8111,6 +9064,19 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.Interfaces.IExecutionContext.GetAllVariables
   nameWithType: IExecutionContext.GetAllVariables
+- uid: CB.Connector.Command.Interfaces.IExecutionContext.GetVariable(System.String)
+  name: GetVariable(String)
+  href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_GetVariable_System_String_
+  commentId: M:CB.Connector.Command.Interfaces.IExecutionContext.GetVariable(System.String)
+  fullName: CB.Connector.Command.Interfaces.IExecutionContext.GetVariable(System.String)
+  nameWithType: IExecutionContext.GetVariable(String)
+- uid: CB.Connector.Command.Interfaces.IExecutionContext.GetVariable*
+  name: GetVariable
+  href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_GetVariable_
+  commentId: Overload:CB.Connector.Command.Interfaces.IExecutionContext.GetVariable
+  isSpec: "True"
+  fullName: CB.Connector.Command.Interfaces.IExecutionContext.GetVariable
+  nameWithType: IExecutionContext.GetVariable
 - uid: CB.Connector.Command.Interfaces.IExecutionContext.GetVariableValue(CB.Connector.Command.DataHandler.Argument.Classes.Variable)
   name: GetVariableValue(Variable)
   href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_GetVariableValue_CB_Connector_Command_DataHandler_Argument_Classes_Variable_
@@ -8137,6 +9103,19 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.Interfaces.IExecutionContext.Id
   nameWithType: IExecutionContext.Id
+- uid: CB.Connector.Command.Interfaces.IExecutionContext.IsValidParameter(System.String)
+  name: IsValidParameter(String)
+  href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_IsValidParameter_System_String_
+  commentId: M:CB.Connector.Command.Interfaces.IExecutionContext.IsValidParameter(System.String)
+  fullName: CB.Connector.Command.Interfaces.IExecutionContext.IsValidParameter(System.String)
+  nameWithType: IExecutionContext.IsValidParameter(String)
+- uid: CB.Connector.Command.Interfaces.IExecutionContext.IsValidParameter*
+  name: IsValidParameter
+  href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_IsValidParameter_
+  commentId: Overload:CB.Connector.Command.Interfaces.IExecutionContext.IsValidParameter
+  isSpec: "True"
+  fullName: CB.Connector.Command.Interfaces.IExecutionContext.IsValidParameter
+  nameWithType: IExecutionContext.IsValidParameter
 - uid: CB.Connector.Command.Interfaces.IExecutionContext.OpenScopeIdentityLoader(CB.Connector.Command.DataHandler.Argument.IColumnArgument[])
   name: OpenScopeIdentityLoader(IColumnArgument[])
   href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_OpenScopeIdentityLoader_CB_Connector_Command_DataHandler_Argument_IColumnArgument___
@@ -8166,6 +9145,96 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.Interfaces.IExecutionContext.ResultFormatter
   nameWithType: IExecutionContext.ResultFormatter
+- uid: CB.Connector.Command.Interfaces.IExecutionContext.SetVariableValue(CB.Connector.Command.DataHandler.Argument.Classes.Variable,System.Object)
+  name: SetVariableValue(Variable, Object)
+  href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_SetVariableValue_CB_Connector_Command_DataHandler_Argument_Classes_Variable_System_Object_
+  commentId: M:CB.Connector.Command.Interfaces.IExecutionContext.SetVariableValue(CB.Connector.Command.DataHandler.Argument.Classes.Variable,System.Object)
+  fullName: CB.Connector.Command.Interfaces.IExecutionContext.SetVariableValue(CB.Connector.Command.DataHandler.Argument.Classes.Variable, System.Object)
+  nameWithType: IExecutionContext.SetVariableValue(Variable, Object)
+- uid: CB.Connector.Command.Interfaces.IExecutionContext.SetVariableValue*
+  name: SetVariableValue
+  href: api/CB.Connector.Command.Interfaces.IExecutionContext.html#CB_Connector_Command_Interfaces_IExecutionContext_SetVariableValue_
+  commentId: Overload:CB.Connector.Command.Interfaces.IExecutionContext.SetVariableValue
+  isSpec: "True"
+  fullName: CB.Connector.Command.Interfaces.IExecutionContext.SetVariableValue
+  nameWithType: IExecutionContext.SetVariableValue
+- uid: CB.Connector.Command.PrintStatement
+  name: PrintStatement
+  href: api/CB.Connector.Command.PrintStatement.html
+  commentId: T:CB.Connector.Command.PrintStatement
+  fullName: CB.Connector.Command.PrintStatement
+  nameWithType: PrintStatement
+- uid: CB.Connector.Command.PrintStatement.Argument
+  name: Argument
+  href: api/CB.Connector.Command.PrintStatement.html#CB_Connector_Command_PrintStatement_Argument
+  commentId: P:CB.Connector.Command.PrintStatement.Argument
+  fullName: CB.Connector.Command.PrintStatement.Argument
+  nameWithType: PrintStatement.Argument
+- uid: CB.Connector.Command.PrintStatement.Argument*
+  name: Argument
+  href: api/CB.Connector.Command.PrintStatement.html#CB_Connector_Command_PrintStatement_Argument_
+  commentId: Overload:CB.Connector.Command.PrintStatement.Argument
+  isSpec: "True"
+  fullName: CB.Connector.Command.PrintStatement.Argument
+  nameWithType: PrintStatement.Argument
+- uid: CB.Connector.Command.PrintStatement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  name: Init(ICommandArguments)
+  href: api/CB.Connector.Command.PrintStatement.html#CB_Connector_Command_PrintStatement_Init_CB_Connector_Command_Interfaces_ICommandArguments_
+  commentId: M:CB.Connector.Command.PrintStatement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  fullName: CB.Connector.Command.PrintStatement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  nameWithType: PrintStatement.Init(ICommandArguments)
+- uid: CB.Connector.Command.PrintStatement.Init*
+  name: Init
+  href: api/CB.Connector.Command.PrintStatement.html#CB_Connector_Command_PrintStatement_Init_
+  commentId: Overload:CB.Connector.Command.PrintStatement.Init
+  isSpec: "True"
+  fullName: CB.Connector.Command.PrintStatement.Init
+  nameWithType: PrintStatement.Init
+- uid: CB.Connector.Command.SetVariableStatement
+  name: SetVariableStatement
+  href: api/CB.Connector.Command.SetVariableStatement.html
+  commentId: T:CB.Connector.Command.SetVariableStatement
+  fullName: CB.Connector.Command.SetVariableStatement
+  nameWithType: SetVariableStatement
+- uid: CB.Connector.Command.SetVariableStatement.Argument
+  name: Argument
+  href: api/CB.Connector.Command.SetVariableStatement.html#CB_Connector_Command_SetVariableStatement_Argument
+  commentId: P:CB.Connector.Command.SetVariableStatement.Argument
+  fullName: CB.Connector.Command.SetVariableStatement.Argument
+  nameWithType: SetVariableStatement.Argument
+- uid: CB.Connector.Command.SetVariableStatement.Argument*
+  name: Argument
+  href: api/CB.Connector.Command.SetVariableStatement.html#CB_Connector_Command_SetVariableStatement_Argument_
+  commentId: Overload:CB.Connector.Command.SetVariableStatement.Argument
+  isSpec: "True"
+  fullName: CB.Connector.Command.SetVariableStatement.Argument
+  nameWithType: SetVariableStatement.Argument
+- uid: CB.Connector.Command.SetVariableStatement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  name: Init(ICommandArguments)
+  href: api/CB.Connector.Command.SetVariableStatement.html#CB_Connector_Command_SetVariableStatement_Init_CB_Connector_Command_Interfaces_ICommandArguments_
+  commentId: M:CB.Connector.Command.SetVariableStatement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  fullName: CB.Connector.Command.SetVariableStatement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  nameWithType: SetVariableStatement.Init(ICommandArguments)
+- uid: CB.Connector.Command.SetVariableStatement.Init*
+  name: Init
+  href: api/CB.Connector.Command.SetVariableStatement.html#CB_Connector_Command_SetVariableStatement_Init_
+  commentId: Overload:CB.Connector.Command.SetVariableStatement.Init
+  isSpec: "True"
+  fullName: CB.Connector.Command.SetVariableStatement.Init
+  nameWithType: SetVariableStatement.Init
+- uid: CB.Connector.Command.SetVariableStatement.Name
+  name: Name
+  href: api/CB.Connector.Command.SetVariableStatement.html#CB_Connector_Command_SetVariableStatement_Name
+  commentId: P:CB.Connector.Command.SetVariableStatement.Name
+  fullName: CB.Connector.Command.SetVariableStatement.Name
+  nameWithType: SetVariableStatement.Name
+- uid: CB.Connector.Command.SetVariableStatement.Name*
+  name: Name
+  href: api/CB.Connector.Command.SetVariableStatement.html#CB_Connector_Command_SetVariableStatement_Name_
+  commentId: Overload:CB.Connector.Command.SetVariableStatement.Name
+  isSpec: "True"
+  fullName: CB.Connector.Command.SetVariableStatement.Name
+  nameWithType: SetVariableStatement.Name
 - uid: CB.Connector.Command.Statement
   name: Statement
   href: api/CB.Connector.Command.Statement.html
@@ -8198,12 +9267,12 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Command.Statement.Execute
   nameWithType: Statement.Execute
-- uid: CB.Connector.Command.Statement.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
-  name: Init(IDataHandler)
-  href: api/CB.Connector.Command.Statement.html#CB_Connector_Command_Statement_Init_CB_Connector_Command_DataHandler_Interfaces_IDataHandler_
-  commentId: M:CB.Connector.Command.Statement.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
-  fullName: CB.Connector.Command.Statement.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandler)
-  nameWithType: Statement.Init(IDataHandler)
+- uid: CB.Connector.Command.Statement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  name: Init(ICommandArguments)
+  href: api/CB.Connector.Command.Statement.html#CB_Connector_Command_Statement_Init_CB_Connector_Command_Interfaces_ICommandArguments_
+  commentId: M:CB.Connector.Command.Statement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  fullName: CB.Connector.Command.Statement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  nameWithType: Statement.Init(ICommandArguments)
 - uid: CB.Connector.Command.Statement.Init*
   name: Init
   href: api/CB.Connector.Command.Statement.html#CB_Connector_Command_Statement_Init_
@@ -8410,6 +9479,14 @@ references:
   fullName.vb: CB.Connector.Command.Translator.Translator(Of TOutput, TContext).Translate(CB.Connector.Command.DataHandler.FilterCriteria.ComparisonCriteria.LikeCriteria, TContext)
   nameWithType: Translator<TOutput, TContext>.Translate(LikeCriteria, TContext)
   nameWithType.vb: Translator(Of TOutput, TContext).Translate(LikeCriteria, TContext)
+- uid: CB.Connector.Command.Translator.Translator`2.Translate(CB.Connector.Command.DataHandler.FilterCriteria.ComparisonCriteria.NotBetweenCriteria,`1)
+  name: Translate(NotBetweenCriteria, TContext)
+  href: api/CB.Connector.Command.Translator.Translator-2.html#CB_Connector_Command_Translator_Translator_2_Translate_CB_Connector_Command_DataHandler_FilterCriteria_ComparisonCriteria_NotBetweenCriteria__1_
+  commentId: M:CB.Connector.Command.Translator.Translator`2.Translate(CB.Connector.Command.DataHandler.FilterCriteria.ComparisonCriteria.NotBetweenCriteria,`1)
+  fullName: CB.Connector.Command.Translator.Translator<TOutput, TContext>.Translate(CB.Connector.Command.DataHandler.FilterCriteria.ComparisonCriteria.NotBetweenCriteria, TContext)
+  fullName.vb: CB.Connector.Command.Translator.Translator(Of TOutput, TContext).Translate(CB.Connector.Command.DataHandler.FilterCriteria.ComparisonCriteria.NotBetweenCriteria, TContext)
+  nameWithType: Translator<TOutput, TContext>.Translate(NotBetweenCriteria, TContext)
+  nameWithType.vb: Translator(Of TOutput, TContext).Translate(NotBetweenCriteria, TContext)
 - uid: CB.Connector.Command.Translator.Translator`2.Translate(CB.Connector.Command.DataHandler.FilterCriteria.ComparisonCriteria.NotEqualCriteria,`1)
   name: Translate(NotEqualCriteria, TContext)
   href: api/CB.Connector.Command.Translator.Translator-2.html#CB_Connector_Command_Translator_Translator_2_Translate_CB_Connector_Command_DataHandler_FilterCriteria_ComparisonCriteria_NotEqualCriteria__1_
@@ -8483,6 +9560,51 @@ references:
   fullName.vb: CB.Connector.Command.Translator.Translator(Of TOutput, TContext).Translate
   nameWithType: Translator<TOutput, TContext>.Translate
   nameWithType.vb: Translator(Of TOutput, TContext).Translate
+- uid: CB.Connector.Command.UseStatement
+  name: UseStatement
+  href: api/CB.Connector.Command.UseStatement.html
+  commentId: T:CB.Connector.Command.UseStatement
+  fullName: CB.Connector.Command.UseStatement
+  nameWithType: UseStatement
+- uid: CB.Connector.Command.UseStatement.Context
+  name: Context
+  href: api/CB.Connector.Command.UseStatement.html#CB_Connector_Command_UseStatement_Context
+  commentId: P:CB.Connector.Command.UseStatement.Context
+  fullName: CB.Connector.Command.UseStatement.Context
+  nameWithType: UseStatement.Context
+- uid: CB.Connector.Command.UseStatement.Context*
+  name: Context
+  href: api/CB.Connector.Command.UseStatement.html#CB_Connector_Command_UseStatement_Context_
+  commentId: Overload:CB.Connector.Command.UseStatement.Context
+  isSpec: "True"
+  fullName: CB.Connector.Command.UseStatement.Context
+  nameWithType: UseStatement.Context
+- uid: CB.Connector.Command.UseStatement.DatabaseName
+  name: DatabaseName
+  href: api/CB.Connector.Command.UseStatement.html#CB_Connector_Command_UseStatement_DatabaseName
+  commentId: P:CB.Connector.Command.UseStatement.DatabaseName
+  fullName: CB.Connector.Command.UseStatement.DatabaseName
+  nameWithType: UseStatement.DatabaseName
+- uid: CB.Connector.Command.UseStatement.DatabaseName*
+  name: DatabaseName
+  href: api/CB.Connector.Command.UseStatement.html#CB_Connector_Command_UseStatement_DatabaseName_
+  commentId: Overload:CB.Connector.Command.UseStatement.DatabaseName
+  isSpec: "True"
+  fullName: CB.Connector.Command.UseStatement.DatabaseName
+  nameWithType: UseStatement.DatabaseName
+- uid: CB.Connector.Command.UseStatement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  name: Init(ICommandArguments)
+  href: api/CB.Connector.Command.UseStatement.html#CB_Connector_Command_UseStatement_Init_CB_Connector_Command_Interfaces_ICommandArguments_
+  commentId: M:CB.Connector.Command.UseStatement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  fullName: CB.Connector.Command.UseStatement.Init(CB.Connector.Command.Interfaces.ICommandArguments)
+  nameWithType: UseStatement.Init(ICommandArguments)
+- uid: CB.Connector.Command.UseStatement.Init*
+  name: Init
+  href: api/CB.Connector.Command.UseStatement.html#CB_Connector_Command_UseStatement_Init_
+  commentId: Overload:CB.Connector.Command.UseStatement.Init
+  isSpec: "True"
+  fullName: CB.Connector.Command.UseStatement.Init
+  nameWithType: UseStatement.Init
 - uid: CB.Connector.Exceptions
   name: CB.Connector.Exceptions
   href: api/CB.Connector.Exceptions.html
@@ -8575,6 +9697,12 @@ references:
   commentId: F:CB.Connector.Exceptions.ConnectorExceptionType.ExecutionException
   fullName: CB.Connector.Exceptions.ConnectorExceptionType.ExecutionException
   nameWithType: ConnectorExceptionType.ExecutionException
+- uid: CB.Connector.Exceptions.ConnectorExceptionType.InitializationException
+  name: InitializationException
+  href: api/CB.Connector.Exceptions.ConnectorExceptionType.html#CB_Connector_Exceptions_ConnectorExceptionType_InitializationException
+  commentId: F:CB.Connector.Exceptions.ConnectorExceptionType.InitializationException
+  fullName: CB.Connector.Exceptions.ConnectorExceptionType.InitializationException
+  nameWithType: ConnectorExceptionType.InitializationException
 - uid: CB.Connector.Exceptions.ConnectorExceptionType.ModelBuildException
   name: ModelBuildException
   href: api/CB.Connector.Exceptions.ConnectorExceptionType.html#CB_Connector_Exceptions_ConnectorExceptionType_ModelBuildException
@@ -8731,12 +9859,12 @@ references:
   isSpec: "True"
   fullName: CB.Connector.IConnector.Sessions
   nameWithType: IConnector.Sessions
-- uid: CB.Connector.IConnector.TestConnection(CB.Connector.Property.IConnectorProperties)
-  name: TestConnection(IConnectorProperties)
-  href: api/CB.Connector.IConnector.html#CB_Connector_IConnector_TestConnection_CB_Connector_Property_IConnectorProperties_
-  commentId: M:CB.Connector.IConnector.TestConnection(CB.Connector.Property.IConnectorProperties)
-  fullName: CB.Connector.IConnector.TestConnection(CB.Connector.Property.IConnectorProperties)
-  nameWithType: IConnector.TestConnection(IConnectorProperties)
+- uid: CB.Connector.IConnector.TestConnection(CB.Connector.Property.IConnectorProperties,System.Boolean)
+  name: TestConnection(IConnectorProperties, Boolean)
+  href: api/CB.Connector.IConnector.html#CB_Connector_IConnector_TestConnection_CB_Connector_Property_IConnectorProperties_System_Boolean_
+  commentId: M:CB.Connector.IConnector.TestConnection(CB.Connector.Property.IConnectorProperties,System.Boolean)
+  fullName: CB.Connector.IConnector.TestConnection(CB.Connector.Property.IConnectorProperties, System.Boolean)
+  nameWithType: IConnector.TestConnection(IConnectorProperties, Boolean)
 - uid: CB.Connector.IConnector.TestConnection*
   name: TestConnection
   href: api/CB.Connector.IConnector.html#CB_Connector_IConnector_TestConnection_
@@ -8787,14 +9915,14 @@ references:
   fullName.vb: CB.Connector.IConnector(Of TProperty, TSession).CreateSession
   nameWithType: IConnector<TProperty, TSession>.CreateSession
   nameWithType.vb: IConnector(Of TProperty, TSession).CreateSession
-- uid: CB.Connector.IConnector`2.TestConnection(`0)
-  name: TestConnection(TProperty)
-  href: api/CB.Connector.IConnector-2.html#CB_Connector_IConnector_2_TestConnection__0_
-  commentId: M:CB.Connector.IConnector`2.TestConnection(`0)
-  fullName: CB.Connector.IConnector<TProperty, TSession>.TestConnection(TProperty)
-  fullName.vb: CB.Connector.IConnector(Of TProperty, TSession).TestConnection(TProperty)
-  nameWithType: IConnector<TProperty, TSession>.TestConnection(TProperty)
-  nameWithType.vb: IConnector(Of TProperty, TSession).TestConnection(TProperty)
+- uid: CB.Connector.IConnector`2.TestConnection(`0,System.Boolean)
+  name: TestConnection(TProperty, Boolean)
+  href: api/CB.Connector.IConnector-2.html#CB_Connector_IConnector_2_TestConnection__0_System_Boolean_
+  commentId: M:CB.Connector.IConnector`2.TestConnection(`0,System.Boolean)
+  fullName: CB.Connector.IConnector<TProperty, TSession>.TestConnection(TProperty, System.Boolean)
+  fullName.vb: CB.Connector.IConnector(Of TProperty, TSession).TestConnection(TProperty, System.Boolean)
+  nameWithType: IConnector<TProperty, TSession>.TestConnection(TProperty, Boolean)
+  nameWithType.vb: IConnector(Of TProperty, TSession).TestConnection(TProperty, Boolean)
 - uid: CB.Connector.IConnector`2.TestConnection*
   name: TestConnection
   href: api/CB.Connector.IConnector-2.html#CB_Connector_IConnector_2_TestConnection_
@@ -9813,19 +10941,6 @@ references:
   commentId: E:CB.Connector.Metadata.DataModel.IResult.OnStateChanged
   fullName: CB.Connector.Metadata.DataModel.IResult.OnStateChanged
   nameWithType: IResult.OnStateChanged
-- uid: CB.Connector.Metadata.DataModel.IResult.OpenLoader
-  name: OpenLoader()
-  href: api/CB.Connector.Metadata.DataModel.IResult.html#CB_Connector_Metadata_DataModel_IResult_OpenLoader
-  commentId: M:CB.Connector.Metadata.DataModel.IResult.OpenLoader
-  fullName: CB.Connector.Metadata.DataModel.IResult.OpenLoader()
-  nameWithType: IResult.OpenLoader()
-- uid: CB.Connector.Metadata.DataModel.IResult.OpenLoader*
-  name: OpenLoader
-  href: api/CB.Connector.Metadata.DataModel.IResult.html#CB_Connector_Metadata_DataModel_IResult_OpenLoader_
-  commentId: Overload:CB.Connector.Metadata.DataModel.IResult.OpenLoader
-  isSpec: "True"
-  fullName: CB.Connector.Metadata.DataModel.IResult.OpenLoader
-  nameWithType: IResult.OpenLoader
 - uid: CB.Connector.Metadata.DataModel.IResult.ResultType
   name: ResultType
   href: api/CB.Connector.Metadata.DataModel.IResult.html#CB_Connector_Metadata_DataModel_IResult_ResultType
@@ -12074,12 +13189,27 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.CreateColumn
   nameWithType: MetaModelFactory.CreateColumn
+- uid: CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.CreateDescriptor(System.String)
+  name: CreateDescriptor(String)
+  href: api/CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.html#CB_Connector_Metadata_MetaModel_Factories_MetaModelFactory_CreateDescriptor_System_String_
+  commentId: M:CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.CreateDescriptor(System.String)
+  fullName: CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.CreateDescriptor(System.String)
+  nameWithType: MetaModelFactory.CreateDescriptor(String)
 - uid: CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.CreateDescriptor(System.String,System.String)
   name: CreateDescriptor(String, String)
   href: api/CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.html#CB_Connector_Metadata_MetaModel_Factories_MetaModelFactory_CreateDescriptor_System_String_System_String_
   commentId: M:CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.CreateDescriptor(System.String,System.String)
   fullName: CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.CreateDescriptor(System.String, System.String)
   nameWithType: MetaModelFactory.CreateDescriptor(String, String)
+- uid: CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.CreateDescriptor(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  name: CreateDescriptor(String, String, IEnumerable<KeyValuePair<String, String>>)
+  href: api/CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.html#CB_Connector_Metadata_MetaModel_Factories_MetaModelFactory_CreateDescriptor_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___
+  commentId: M:CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.CreateDescriptor(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  name.vb: CreateDescriptor(String, String, IEnumerable(Of KeyValuePair(Of String, String)))
+  fullName: CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.CreateDescriptor(System.String, System.String, System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, System.String>>)
+  fullName.vb: CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.CreateDescriptor(System.String, System.String, System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String)))
+  nameWithType: MetaModelFactory.CreateDescriptor(String, String, IEnumerable<KeyValuePair<String, String>>)
+  nameWithType.vb: MetaModelFactory.CreateDescriptor(String, String, IEnumerable(Of KeyValuePair(Of String, String)))
 - uid: CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.CreateDescriptor*
   name: CreateDescriptor
   href: api/CB.Connector.Metadata.MetaModel.Factories.MetaModelFactory.html#CB_Connector_Metadata_MetaModel_Factories_MetaModelFactory_CreateDescriptor_
@@ -12728,6 +13858,19 @@ references:
   isSpec: "True"
   fullName: CB.Connector.Metadata.MetaModel.IColumn.IsReadOnly
   nameWithType: IColumn.IsReadOnly
+- uid: CB.Connector.Metadata.MetaModel.IColumn.IsRequired
+  name: IsRequired
+  href: api/CB.Connector.Metadata.MetaModel.IColumn.html#CB_Connector_Metadata_MetaModel_IColumn_IsRequired
+  commentId: P:CB.Connector.Metadata.MetaModel.IColumn.IsRequired
+  fullName: CB.Connector.Metadata.MetaModel.IColumn.IsRequired
+  nameWithType: IColumn.IsRequired
+- uid: CB.Connector.Metadata.MetaModel.IColumn.IsRequired*
+  name: IsRequired
+  href: api/CB.Connector.Metadata.MetaModel.IColumn.html#CB_Connector_Metadata_MetaModel_IColumn_IsRequired_
+  commentId: Overload:CB.Connector.Metadata.MetaModel.IColumn.IsRequired
+  isSpec: "True"
+  fullName: CB.Connector.Metadata.MetaModel.IColumn.IsRequired
+  nameWithType: IColumn.IsRequired
 - uid: CB.Connector.Metadata.MetaModel.IColumn.IsSearchable
   name: IsSearchable
   href: api/CB.Connector.Metadata.MetaModel.IColumn.html#CB_Connector_Metadata_MetaModel_IColumn_IsSearchable
@@ -15353,3 +16496,106 @@ references:
   commentId: F:CB.Connector.SessionState.Preparing
   fullName: CB.Connector.SessionState.Preparing
   nameWithType: SessionState.Preparing
+- uid: CB.Connector.Statistics
+  name: CB.Connector.Statistics
+  href: api/CB.Connector.Statistics.html
+  commentId: N:CB.Connector.Statistics
+  fullName: CB.Connector.Statistics
+  nameWithType: CB.Connector.Statistics
+- uid: CB.Connector.Statistics.TaskStatistics
+  name: TaskStatistics
+  href: api/CB.Connector.Statistics.TaskStatistics.html
+  commentId: T:CB.Connector.Statistics.TaskStatistics
+  fullName: CB.Connector.Statistics.TaskStatistics
+  nameWithType: TaskStatistics
+- uid: CB.Connector.Statistics.TaskStatistics.ActiveTasksCount
+  name: ActiveTasksCount
+  href: api/CB.Connector.Statistics.TaskStatistics.html#CB_Connector_Statistics_TaskStatistics_ActiveTasksCount
+  commentId: P:CB.Connector.Statistics.TaskStatistics.ActiveTasksCount
+  fullName: CB.Connector.Statistics.TaskStatistics.ActiveTasksCount
+  nameWithType: TaskStatistics.ActiveTasksCount
+- uid: CB.Connector.Statistics.TaskStatistics.ActiveTasksCount*
+  name: ActiveTasksCount
+  href: api/CB.Connector.Statistics.TaskStatistics.html#CB_Connector_Statistics_TaskStatistics_ActiveTasksCount_
+  commentId: Overload:CB.Connector.Statistics.TaskStatistics.ActiveTasksCount
+  isSpec: "True"
+  fullName: CB.Connector.Statistics.TaskStatistics.ActiveTasksCount
+  nameWithType: TaskStatistics.ActiveTasksCount
+- uid: CB.Connector.Statistics.TaskStatistics.AddNewTask(System.Int32,System.String)
+  name: AddNewTask(Int32, String)
+  href: api/CB.Connector.Statistics.TaskStatistics.html#CB_Connector_Statistics_TaskStatistics_AddNewTask_System_Int32_System_String_
+  commentId: M:CB.Connector.Statistics.TaskStatistics.AddNewTask(System.Int32,System.String)
+  fullName: CB.Connector.Statistics.TaskStatistics.AddNewTask(System.Int32, System.String)
+  nameWithType: TaskStatistics.AddNewTask(Int32, String)
+- uid: CB.Connector.Statistics.TaskStatistics.AddNewTask*
+  name: AddNewTask
+  href: api/CB.Connector.Statistics.TaskStatistics.html#CB_Connector_Statistics_TaskStatistics_AddNewTask_
+  commentId: Overload:CB.Connector.Statistics.TaskStatistics.AddNewTask
+  isSpec: "True"
+  fullName: CB.Connector.Statistics.TaskStatistics.AddNewTask
+  nameWithType: TaskStatistics.AddNewTask
+- uid: CB.Connector.Statistics.TaskStatistics.AddNewThread(System.Int32,System.String)
+  name: AddNewThread(Int32, String)
+  href: api/CB.Connector.Statistics.TaskStatistics.html#CB_Connector_Statistics_TaskStatistics_AddNewThread_System_Int32_System_String_
+  commentId: M:CB.Connector.Statistics.TaskStatistics.AddNewThread(System.Int32,System.String)
+  fullName: CB.Connector.Statistics.TaskStatistics.AddNewThread(System.Int32, System.String)
+  nameWithType: TaskStatistics.AddNewThread(Int32, String)
+- uid: CB.Connector.Statistics.TaskStatistics.AddNewThread*
+  name: AddNewThread
+  href: api/CB.Connector.Statistics.TaskStatistics.html#CB_Connector_Statistics_TaskStatistics_AddNewThread_
+  commentId: Overload:CB.Connector.Statistics.TaskStatistics.AddNewThread
+  isSpec: "True"
+  fullName: CB.Connector.Statistics.TaskStatistics.AddNewThread
+  nameWithType: TaskStatistics.AddNewThread
+- uid: CB.Connector.Statistics.TaskStatistics.FinishTaskMonitoring(System.Int32)
+  name: FinishTaskMonitoring(Int32)
+  href: api/CB.Connector.Statistics.TaskStatistics.html#CB_Connector_Statistics_TaskStatistics_FinishTaskMonitoring_System_Int32_
+  commentId: M:CB.Connector.Statistics.TaskStatistics.FinishTaskMonitoring(System.Int32)
+  fullName: CB.Connector.Statistics.TaskStatistics.FinishTaskMonitoring(System.Int32)
+  nameWithType: TaskStatistics.FinishTaskMonitoring(Int32)
+- uid: CB.Connector.Statistics.TaskStatistics.FinishTaskMonitoring*
+  name: FinishTaskMonitoring
+  href: api/CB.Connector.Statistics.TaskStatistics.html#CB_Connector_Statistics_TaskStatistics_FinishTaskMonitoring_
+  commentId: Overload:CB.Connector.Statistics.TaskStatistics.FinishTaskMonitoring
+  isSpec: "True"
+  fullName: CB.Connector.Statistics.TaskStatistics.FinishTaskMonitoring
+  nameWithType: TaskStatistics.FinishTaskMonitoring
+- uid: CB.Connector.Statistics.TaskStatistics.FinishThreadMonitoring(System.Int32)
+  name: FinishThreadMonitoring(Int32)
+  href: api/CB.Connector.Statistics.TaskStatistics.html#CB_Connector_Statistics_TaskStatistics_FinishThreadMonitoring_System_Int32_
+  commentId: M:CB.Connector.Statistics.TaskStatistics.FinishThreadMonitoring(System.Int32)
+  fullName: CB.Connector.Statistics.TaskStatistics.FinishThreadMonitoring(System.Int32)
+  nameWithType: TaskStatistics.FinishThreadMonitoring(Int32)
+- uid: CB.Connector.Statistics.TaskStatistics.FinishThreadMonitoring*
+  name: FinishThreadMonitoring
+  href: api/CB.Connector.Statistics.TaskStatistics.html#CB_Connector_Statistics_TaskStatistics_FinishThreadMonitoring_
+  commentId: Overload:CB.Connector.Statistics.TaskStatistics.FinishThreadMonitoring
+  isSpec: "True"
+  fullName: CB.Connector.Statistics.TaskStatistics.FinishThreadMonitoring
+  nameWithType: TaskStatistics.FinishThreadMonitoring
+- uid: CB.Connector.Statistics.TaskStatistics.GetActiveTaskInfo
+  name: GetActiveTaskInfo()
+  href: api/CB.Connector.Statistics.TaskStatistics.html#CB_Connector_Statistics_TaskStatistics_GetActiveTaskInfo
+  commentId: M:CB.Connector.Statistics.TaskStatistics.GetActiveTaskInfo
+  fullName: CB.Connector.Statistics.TaskStatistics.GetActiveTaskInfo()
+  nameWithType: TaskStatistics.GetActiveTaskInfo()
+- uid: CB.Connector.Statistics.TaskStatistics.GetActiveTaskInfo*
+  name: GetActiveTaskInfo
+  href: api/CB.Connector.Statistics.TaskStatistics.html#CB_Connector_Statistics_TaskStatistics_GetActiveTaskInfo_
+  commentId: Overload:CB.Connector.Statistics.TaskStatistics.GetActiveTaskInfo
+  isSpec: "True"
+  fullName: CB.Connector.Statistics.TaskStatistics.GetActiveTaskInfo
+  nameWithType: TaskStatistics.GetActiveTaskInfo
+- uid: CB.Connector.Statistics.TaskStatistics.Instance
+  name: Instance
+  href: api/CB.Connector.Statistics.TaskStatistics.html#CB_Connector_Statistics_TaskStatistics_Instance
+  commentId: P:CB.Connector.Statistics.TaskStatistics.Instance
+  fullName: CB.Connector.Statistics.TaskStatistics.Instance
+  nameWithType: TaskStatistics.Instance
+- uid: CB.Connector.Statistics.TaskStatistics.Instance*
+  name: Instance
+  href: api/CB.Connector.Statistics.TaskStatistics.html#CB_Connector_Statistics_TaskStatistics_Instance_
+  commentId: Overload:CB.Connector.Statistics.TaskStatistics.Instance
+  isSpec: "True"
+  fullName: CB.Connector.Statistics.TaskStatistics.Instance
+  nameWithType: TaskStatistics.Instance

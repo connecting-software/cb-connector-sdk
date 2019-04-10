@@ -108,7 +108,9 @@
     <pre><code class="lang-csharp hljs">public interface ITableResultLoader : IResultLoader, IDisposable</code></pre>
   </div>
   <h5 id="CB_Connector_Metadata_DataModel_ITableResultLoader_examples"><strong>Examples</strong></h5>
-  <p>The following example creates an <a class="xref" href="CB.Connector.Metadata.DataModel.ITableResultLoader.html">ITableResultLoader</a> object. The example reads through the data, writing it to the <a class="xref" href="CB.Connector.Metadata.DataModel.ITableResultLoader.html">ITableResultLoader</a>. Finally, the example closes the <a class="xref" href="CB.Connector.Metadata.DataModel.ITableResultLoader.html">ITableResultLoader</a> as it exits the <code>Using</code> code block.</p>
+  <p>The following example creates an <a class="xref" href="CB.Connector.Metadata.DataModel.ITableResultLoader.html">ITableResultLoader</a> object. The example reads through the data, writing
+it to the <a class="xref" href="CB.Connector.Metadata.DataModel.ITableResultLoader.html">ITableResultLoader</a>. Finally, the example closes the <a class="xref" href="CB.Connector.Metadata.DataModel.ITableResultLoader.html">ITableResultLoader</a> as it
+exits the <code>Using</code> code block.</p>
 <pre><code class="cs" source="..\..\docfx_project\examples\ReadData.cs" region="Example">    public void ReadData(IResultSetLoader loader, IExecutionContext ctx, string connStr, string query)
     {
         using (var conn = new SqlConnection(connStr))

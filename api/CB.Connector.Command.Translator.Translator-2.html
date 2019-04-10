@@ -1320,6 +1320,57 @@
   
   
   <a id="CB_Connector_Command_Translator_Translator_2_Translate_" data-uid="CB.Connector.Command.Translator.Translator`2.Translate*"></a>
+  <h4 id="CB_Connector_Command_Translator_Translator_2_Translate_CB_Connector_Command_DataHandler_FilterCriteria_ComparisonCriteria_NotBetweenCriteria__1_" data-uid="CB.Connector.Command.Translator.Translator`2.Translate(CB.Connector.Command.DataHandler.FilterCriteria.ComparisonCriteria.NotBetweenCriteria,`1)">Translate(NotBetweenCriteria, TContext)</h4>
+  <div class="markdown level1 summary"><p>Translates the specified <a class="xref" href="CB.Connector.Command.DataHandler.FilterCriteria.ComparisonCriteria.NotBetweenCriteria.html">NotBetweenCriteria</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract TOutput Translate(NotBetweenCriteria criteria, TContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="CB.Connector.Command.DataHandler.FilterCriteria.ComparisonCriteria.NotBetweenCriteria.html">NotBetweenCriteria</a></td>
+        <td><span class="parametername">criteria</span></td>
+        <td><p>The <a class="xref" href="CB.Connector.Command.DataHandler.FilterCriteria.ComparisonCriteria.NotBetweenCriteria.html">NotBetweenCriteria</a> object to translate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The contextual information used to translate the object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TOutput</span></td>
+        <td><p>Defined by the implementer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="CB_Connector_Command_Translator_Translator_2_Translate_" data-uid="CB.Connector.Command.Translator.Translator`2.Translate*"></a>
   <h4 id="CB_Connector_Command_Translator_Translator_2_Translate_CB_Connector_Command_DataHandler_FilterCriteria_ComparisonCriteria_NotEqualCriteria__1_" data-uid="CB.Connector.Command.Translator.Translator`2.Translate(CB.Connector.Command.DataHandler.FilterCriteria.ComparisonCriteria.NotEqualCriteria,`1)">Translate(NotEqualCriteria, TContext)</h4>
   <div class="markdown level1 summary"><p>Translates the specified <a class="xref" href="CB.Connector.Command.DataHandler.FilterCriteria.ComparisonCriteria.NotEqualCriteria.html">NotEqualCriteria</a> object.</p>
 </div>
@@ -1736,7 +1787,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.NotSupportedException</span></td>
-        <td><p>Throws exception in case the 'obj' parameter is neither a filter criteria nor an argument.</p>
+        <td><p>Throws exception in case the 'obj' parameter is neither a filter criteria nor
+an argument.</p>
 </td>
       </tr>
     </tbody>

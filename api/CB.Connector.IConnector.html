@@ -295,13 +295,13 @@ A functional connector acts as a relational database that stores a collection of
   
   
   <a id="CB_Connector_IConnector_TestConnection_" data-uid="CB.Connector.IConnector.TestConnection*"></a>
-  <h4 id="CB_Connector_IConnector_TestConnection_CB_Connector_Property_IConnectorProperties_" data-uid="CB.Connector.IConnector.TestConnection(CB.Connector.Property.IConnectorProperties)">TestConnection(IConnectorProperties)</h4>
+  <h4 id="CB_Connector_IConnector_TestConnection_CB_Connector_Property_IConnectorProperties_System_Boolean_" data-uid="CB.Connector.IConnector.TestConnection(CB.Connector.Property.IConnectorProperties,System.Boolean)">TestConnection(IConnectorProperties, Boolean)</h4>
   <div class="markdown level1 summary"><p>Tests the connection against the data provider.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IConnectorProperties TestConnection(IConnectorProperties properties)</code></pre>
+    <pre><code class="lang-csharp hljs">IConnectorProperties TestConnection(IConnectorProperties properties, bool fullTestForce = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -318,6 +318,11 @@ A functional connector acts as a relational database that stores a collection of
         <td><span class="parametername">properties</span></td>
         <td><p>The properties.</p>
 </td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fullTestForce</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

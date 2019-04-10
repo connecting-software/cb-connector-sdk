@@ -83,9 +83,8 @@
   
   <h1 id="CB_Connector_Collections_Classes_RequestedElementCollection" data-uid="CB.Connector.Collections.Classes.RequestedElementCollection" class="text-break">Class RequestedElementCollection
   </h1>
-  <div class="markdown level0 summary"><p>Provides the base class for a generic collection of key/value pairs that can be individually accessed by index and
-by key.
-It collects elements that were requested by TryGetValue method (or added by Add method with requested flag)</p>
+  <div class="markdown level0 summary"><p>Provides the base class for a generic collection of key/value pairs that can be individually accessed by index and  by
+key.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -132,6 +131,9 @@ It collects elements that were requested by TryGetValue method (or added by Add 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class RequestedElementCollection : IRequestedElementCollection&lt;IColumnArgument&gt;, IElementCollection&lt;IColumnArgument&gt;, ICollection&lt;IColumnArgument&gt;, IEnumerable&lt;IColumnArgument&gt;, IEnumerable, IIndexableCollection&lt;string, IColumnArgument&gt;</code></pre>
   </div>
+  <h5 id="CB_Connector_Collections_Classes_RequestedElementCollection_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class collects elements that were requested by TryGetValue method or added by Add method with requested flag.</p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   
@@ -468,7 +470,8 @@ It collects elements that were requested by TryGetValue method (or added by Add 
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if <code data-dev-comment-type="paramref" class="paramref">item</code> is found in the <a class="xref" href="CB.Connector.Collections.Classes.RequestedElementCollection.html">RequestedElementCollection</a>; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if <code data-dev-comment-type="paramref" class="paramref">item</code> is found in the <a class="xref" href="CB.Connector.Collections.Classes.RequestedElementCollection.html">RequestedElementCollection</a>; otherwise,
+<code>false</code>.</p>
 </td>
       </tr>
     </tbody>
@@ -513,7 +516,8 @@ It collects elements that were requested by TryGetValue method (or added by Add 
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the <a class="xref" href="CB.Connector.Collections.Classes.RequestedElementCollection.html">RequestedElementCollection</a> contains an element with the key; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if the <a class="xref" href="CB.Connector.Collections.Classes.RequestedElementCollection.html">RequestedElementCollection</a> contains an element with the key; otherwise,
+<code>false</code>.</p>
 </td>
       </tr>
     </tbody>
@@ -522,7 +526,8 @@ It collects elements that were requested by TryGetValue method (or added by Add 
   
   <a id="CB_Connector_Collections_Classes_RequestedElementCollection_CopyTo_" data-uid="CB.Connector.Collections.Classes.RequestedElementCollection.CopyTo*"></a>
   <h4 id="CB_Connector_Collections_Classes_RequestedElementCollection_CopyTo_CB_Connector_Command_DataHandler_Argument_IColumnArgument___System_Int32_" data-uid="CB.Connector.Collections.Classes.RequestedElementCollection.CopyTo(CB.Connector.Command.DataHandler.Argument.IColumnArgument[],System.Int32)">CopyTo(IColumnArgument[], Int32)</h4>
-  <div class="markdown level1 summary"><p>Copies the elements of the <a class="xref" href="CB.Connector.Collections.Classes.RequestedElementCollection.html">RequestedElementCollection</a> to an <span class="xref">System.Array</span>, starting at a particular <span class="xref">System.Array</span> index.</p>
+  <div class="markdown level1 summary"><p>Copies the elements of the <a class="xref" href="CB.Connector.Collections.Classes.RequestedElementCollection.html">RequestedElementCollection</a> to an <span class="xref">System.Array</span>, starting at
+a particular <span class="xref">System.Array</span> index.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -542,7 +547,8 @@ It collects elements that were requested by TryGetValue method (or added by Add 
       <tr>
         <td><a class="xref" href="CB.Connector.Command.DataHandler.Argument.IColumnArgument.html">IColumnArgument</a>[]</td>
         <td><span class="parametername">array</span></td>
-        <td><p>The one-dimensional <span class="xref">System.Array</span> that is the destination of the elements copied from <a class="xref" href="CB.Connector.Collections.Classes.RequestedElementCollection.html">RequestedElementCollection</a>. The <span class="xref">System.Array</span> must have zero-based indexing.</p>
+        <td><p>The one-dimensional <span class="xref">System.Array</span> that is the destination of the elements copied from
+<a class="xref" href="CB.Connector.Collections.Classes.RequestedElementCollection.html">RequestedElementCollection</a>. The <span class="xref">System.Array</span> must have zero-based indexing.</p>
 </td>
       </tr>
       <tr>
@@ -572,7 +578,7 @@ It collects elements that were requested by TryGetValue method (or added by Add 
   
   <a id="CB_Connector_Collections_Classes_RequestedElementCollection_GetAllElements_" data-uid="CB.Connector.Collections.Classes.RequestedElementCollection.GetAllElements*"></a>
   <h4 id="CB_Connector_Collections_Classes_RequestedElementCollection_GetAllElements_System_String_" data-uid="CB.Connector.Collections.Classes.RequestedElementCollection.GetAllElements(System.String)">GetAllElements(String)</h4>
-  <div class="markdown level1 summary"><p>Gets a collection containing the all elements in the <a class="xref" href="CB.Connector.Collections.Classes.RequestedElementCollection.html">RequestedElementCollection</a>.</p>
+  <div class="markdown level1 summary"><p>Gets a collection containing all elements in the <a class="xref" href="CB.Connector.Collections.Classes.RequestedElementCollection.html">RequestedElementCollection</a> by name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -592,7 +598,8 @@ It collects elements that were requested by TryGetValue method (or added by Add 
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">filterName</span></td>
-        <td></td>
+        <td><p>The name of the element to get.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -739,7 +746,9 @@ It collects elements that were requested by TryGetValue method (or added by Add 
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if <code data-dev-comment-type="paramref" class="paramref">item</code> was successfully removed from the <a class="xref" href="CB.Connector.Collections.Classes.RequestedElementCollection.html">RequestedElementCollection</a>; otherwise, <code>false</code>. This method also returns <code>false</code> if <code data-dev-comment-type="paramref" class="paramref">item</code> is not found in the original <a class="xref" href="CB.Connector.Collections.Classes.ElementCollection-1.html">ElementCollection&lt;T&gt;</a>.</p>
+        <td><p><code>true</code> if <code data-dev-comment-type="paramref" class="paramref">item</code> was successfully removed from the
+<a class="xref" href="CB.Connector.Collections.Classes.RequestedElementCollection.html">RequestedElementCollection</a>; otherwise, <code>false</code>. This method also returns <code>false</code> if
+<code data-dev-comment-type="paramref" class="paramref">item</code> is not found in the original <a class="xref" href="CB.Connector.Collections.Classes.ElementCollection-1.html">ElementCollection&lt;T&gt;</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -775,7 +784,8 @@ It collects elements that were requested by TryGetValue method (or added by Add 
       <tr>
         <td><span class="xref">TValue</span></td>
         <td><span class="parametername">value</span></td>
-        <td><p>When this method returns, contains the value associated with the specified key, if the key is found; otherwise, the default value for the type of the value parameter. This parameter is passed uninitialized.</p>
+        <td><p>When this method returns, contains the value associated with the specified key, if the key is
+found; otherwise, the default value for the type of the value parameter. This parameter is passed uninitialized.</p>
 </td>
       </tr>
     </tbody>
@@ -791,7 +801,8 @@ It collects elements that were requested by TryGetValue method (or added by Add 
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the object that implements <a class="xref" href="CB.Connector.Collections.Classes.ElementCollection-1.html">ElementCollection&lt;T&gt;</a> contains an element with the specified key; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if the object that implements <a class="xref" href="CB.Connector.Collections.Classes.ElementCollection-1.html">ElementCollection&lt;T&gt;</a> contains an element with the
+specified key; otherwise, <code>false</code>.</p>
 </td>
       </tr>
     </tbody>

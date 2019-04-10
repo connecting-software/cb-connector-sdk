@@ -98,6 +98,8 @@
     <h5>Implements</h5>
     <div><a class="xref" href="CB.Connector.Command.DataHandler.Interfaces.IDataHandler.html">IDataHandler</a></div>
     <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="CB.Connector.Metadata.MetaModel.INamedElement.html">INamedElement</a></div>
+    <div><a class="xref" href="CB.Connector.Metadata.MetaModel.IElement.html">IElement</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -108,7 +110,22 @@
       <a class="xref" href="CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_ResultColumns">BaseDataSink.ResultColumns</a>
     </div>
     <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_Name">BaseDataSink.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_QualifiedName">BaseDataSink.QualifiedName</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_Owner">BaseDataSink.Owner</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_Description">BaseDataSink.Description</a>
+    </div>
+    <div>
       <a class="xref" href="CB.Connector.Command.DataHandler.BaseDataSink.html#CB_Connector_Command_DataHandler_BaseDataSink_GetAllColumns_System_String_">BaseDataSink.GetAllColumns(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_OnInitError">DataHandler.OnInitError</a>
     </div>
     <div>
       <a class="xref" href="CB.Connector.Command.DataHandler.DataHandler.html#CB_Connector_Command_DataHandler_DataHandler_Previous">DataHandler.Previous</a>
@@ -154,7 +171,7 @@
   <h6><strong>Assembly</strong>: CB.Connector.dll</h6>
   <h5 id="CB_Connector_Command_DataHandler_SelectSink_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class SelectSink : BaseDataSink, IDataHandler, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class SelectSink : BaseDataSink, IDataHandler, IDisposable, INamedElement, IElement</code></pre>
   </div>
   <h5 id="CB_Connector_Command_DataHandler_SelectSink_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>The responsibility of <code>select</code> statement is to retrieve data from the data source.</p>
@@ -194,7 +211,8 @@
   
   <a id="CB_Connector_Command_DataHandler_SelectSink_Init_" data-uid="CB.Connector.Command.DataHandler.SelectSink.Init*"></a>
   <h4 id="CB_Connector_Command_DataHandler_SelectSink_Init_CB_Connector_Command_DataHandler_Interfaces_IDataHandlerArguments_" data-uid="CB.Connector.Command.DataHandler.SelectSink.Init(CB.Connector.Command.DataHandler.Interfaces.IDataHandlerArguments)">Init(IDataHandlerArguments)</h4>
-  <div class="markdown level1 summary"><p>Initializes an object’s data at the time the server creates it without explicitly using a constructor for the object.</p>
+  <div class="markdown level1 summary"><p>Initializes an object’s data at the time the server creates it without explicitly using a constructor for the
+object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -244,6 +262,12 @@
   <div>
       <span class="xref">System.IDisposable</span>
   </div>
+  <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.INamedElement.html">INamedElement</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.IElement.html">IElement</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="CB.Connector.Property.Extensions.ConnectorPropertiesExtensions.html#CB_Connector_Property_Extensions_ConnectorPropertiesExtensions_TryParse_System_Object_System_Type_System_Object__">ConnectorPropertiesExtensions.TryParse(Object, Type, out Object)</a>
@@ -259,6 +283,12 @@
   </div>
   <div>
       <a class="xref" href="CB.Connector.Property.Extensions.ConnectorPropertiesExtensions.html#CB_Connector_Property_Extensions_ConnectorPropertiesExtensions_IsEncrypted_System_Object_System_String_System_Text_Encoding_">ConnectorPropertiesExtensions.IsEncrypted(Object, String, Encoding)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.Extensions.NamedElement.html#CB_Connector_Metadata_MetaModel_Extensions_NamedElement_GetQualifiedName_CB_Connector_Metadata_MetaModel_INamedElement_">NamedElement.GetQualifiedName(INamedElement)</a>
+  </div>
+  <div>
+      <a class="xref" href="CB.Connector.Metadata.MetaModel.Extensions.NamedElement.html#CB_Connector_Metadata_MetaModel_Extensions_NamedElement_GetDepth_CB_Connector_Metadata_MetaModel_INamedElement_">NamedElement.GetDepth(INamedElement)</a>
   </div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">

@@ -173,13 +173,15 @@ by key. Default implementation for <code>Lazy Loading</code>.</p>
       <tr>
         <td><a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a></td>
         <td><span class="parametername">loader</span></td>
-        <td><p>An <a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a> object that enable loading an element (or a set of elements).</p>
+        <td><p>An <a class="xref" href="CB.Connector.Metadata.MetaModel.ILoader.html">ILoader</a> object that enables loading an element (or a set of elements).</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="CB.Connector.Metadata.MetaModel.INamedElement.html">INamedElement</a></td>
         <td><span class="parametername">ghost</span></td>
-        <td><p>Corresponds to the real object, but not in its full state. It may be empty, or it may contain just some fields (such as the Name, QualifiedName, etc,). When the user tries to access some fields that haven't been  loaded yet, the ghost object fully initializes itself.</p>
+        <td><p>Corresponds to the real object, but not in its full state. It may be empty, or it may contain just
+some fields (such as the Name, QualifiedName, etc,). When the user tries to access some fields that haven't been
+loaded yet, the ghost object fully initializes itself.</p>
 </td>
       </tr>
       <tr>
@@ -452,7 +454,7 @@ by key. Default implementation for <code>Lazy Loading</code>.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Add(T item)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Add(T item)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -523,7 +525,8 @@ by key. Default implementation for <code>Lazy Loading</code>.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if <code data-dev-comment-type="paramref" class="paramref">item</code> is found in the <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html">LoadableCollection&lt;T&gt;</a>; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if <code data-dev-comment-type="paramref" class="paramref">item</code> is found in the <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html">LoadableCollection&lt;T&gt;</a>; otherwise,
+<code>false</code>.</p>
 </td>
       </tr>
     </tbody>
@@ -568,7 +571,8 @@ by key. Default implementation for <code>Lazy Loading</code>.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html">LoadableCollection&lt;T&gt;</a> contains an element with the key; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if the <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html">LoadableCollection&lt;T&gt;</a> contains an element with the key; otherwise,
+<code>false</code>.</p>
 </td>
       </tr>
     </tbody>
@@ -577,7 +581,8 @@ by key. Default implementation for <code>Lazy Loading</code>.</p>
   
   <a id="CB_Connector_Collections_Classes_LoadableCollection_1_CopyTo_" data-uid="CB.Connector.Collections.Classes.LoadableCollection`1.CopyTo*"></a>
   <h4 id="CB_Connector_Collections_Classes_LoadableCollection_1_CopyTo__0___System_Int32_" data-uid="CB.Connector.Collections.Classes.LoadableCollection`1.CopyTo(`0[],System.Int32)">CopyTo(T[], Int32)</h4>
-  <div class="markdown level1 summary"><p>Copies the elements of the <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html">LoadableCollection&lt;T&gt;</a> to an <span class="xref">System.Array</span>, starting at a particular <span class="xref">System.Array</span> index.</p>
+  <div class="markdown level1 summary"><p>Copies the elements of the <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html">LoadableCollection&lt;T&gt;</a> to an <span class="xref">System.Array</span>, starting at a
+particular <span class="xref">System.Array</span> index.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -597,7 +602,8 @@ by key. Default implementation for <code>Lazy Loading</code>.</p>
       <tr>
         <td>T[]</td>
         <td><span class="parametername">array</span></td>
-        <td><p>The one-dimensional <span class="xref">System.Array</span> that is the destination of the elements copied from <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html">LoadableCollection&lt;T&gt;</a>. The <span class="xref">System.Array</span> must have zero-based indexing.</p>
+        <td><p>The one-dimensional <span class="xref">System.Array</span> that is the destination of the elements copied from
+<a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html">LoadableCollection&lt;T&gt;</a>. The <span class="xref">System.Array</span> must have zero-based indexing.</p>
 </td>
       </tr>
       <tr>
@@ -735,7 +741,9 @@ by key. Default implementation for <code>Lazy Loading</code>.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if <code data-dev-comment-type="paramref" class="paramref">item</code> was successfully removed from the <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html">LoadableCollection&lt;T&gt;</a>; otherwise, <code>false</code>. This method also returns <code>false</code> if <code data-dev-comment-type="paramref" class="paramref">item</code> is not found in the original <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html">LoadableCollection&lt;T&gt;</a>.</p>
+        <td><p><code>true</code> if <code data-dev-comment-type="paramref" class="paramref">item</code> was successfully removed from the
+<a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html">LoadableCollection&lt;T&gt;</a>; otherwise, <code>false</code>. This method also returns <code>false</code> if
+<code data-dev-comment-type="paramref" class="paramref">item</code> is not found in the original <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html">LoadableCollection&lt;T&gt;</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -771,7 +779,8 @@ by key. Default implementation for <code>Lazy Loading</code>.</p>
       <tr>
         <td><span class="xref">TValue</span></td>
         <td><span class="parametername">value</span></td>
-        <td><p>When this method returns, contains the value associated with the specified key, if the key is found; otherwise, the default value for the type of the value parameter. This parameter is passed uninitialized.</p>
+        <td><p>When this method returns, contains the value associated with the specified key, if the key is
+found; otherwise, the default value for the type of the value parameter. This parameter is passed uninitialized.</p>
 </td>
       </tr>
     </tbody>
@@ -787,7 +796,8 @@ by key. Default implementation for <code>Lazy Loading</code>.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if the object that implements <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html">LoadableCollection&lt;T&gt;</a> contains an element with the specified key; otherwise, <code>false</code>.</p>
+        <td><p><code>true</code> if the object that implements <a class="xref" href="CB.Connector.Collections.Classes.LoadableCollection-1.html">LoadableCollection&lt;T&gt;</a> contains an element with the
+specified key; otherwise, <code>false</code>.</p>
 </td>
       </tr>
     </tbody>
